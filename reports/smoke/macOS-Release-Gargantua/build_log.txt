@@ -20,7 +20,7 @@
 [ 10%] Building CXX object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/PoissonRecon/poisson_geogram.cpp.o
 [ 11%] Building CXX object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/xatlas/xatlas.cpp.o
 [ 11%] Built target geogram_third_party
-[ 11%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/algorithm.cpp.o
+[ 12%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/algorithm.cpp.o
 [ 12%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/android_utils.cpp.o
 [ 12%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/assert.cpp.o
 [ 13%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/attributes.cpp.o
@@ -53,6 +53,14 @@
 [ 26%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/numerics/matrix_util.cpp.o
 [ 27%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/numerics/multi_precision.cpp.o
 [ 27%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/numerics/optimizer.cpp.o
+/Users/runner/work/geogram/geogram/src/lib/geogram/numerics/multi_precision.cpp:709:10: warning: no previous prototype for function 'compress_expansion' [-Wmissing-prototypes]
+    void compress_expansion(expansion& e) {
+         ^
+/Users/runner/work/geogram/geogram/src/lib/geogram/numerics/multi_precision.cpp:709:5: note: declare 'static' if the function is not intended to be used outside of this translation unit
+    void compress_expansion(expansion& e) {
+    ^
+    static 
+1 warning generated.
 [ 28%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/numerics/predicates.cpp.o
 [ 28%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh.cpp.o
 [ 29%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_AABB.cpp.o
@@ -138,7 +146,7 @@
 [ 69%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/bibliography/embedded_references.cpp.o
 [ 70%] Linking CXX shared library ../../../lib/libgeogram.dylib
 [ 70%] Built target geogram
-[ 71%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
+[ 72%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
 [ 72%] Building CXX object src/bin/vorpacomp/CMakeFiles/vorpacomp.dir/main.cpp.o
 [ 72%] Linking CXX executable ../../../bin/vorpacomp
 [ 73%] Linking CXX executable ../../../bin/vorpastat
@@ -170,26 +178,26 @@
 [ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_pr_search.cpp.o
 [ 83%] Linking CXX executable ../../../bin/test_locks
 [ 83%] Built target test_locks
+[ 83%] Building CXX object src/tests/test_expansion_nt/CMakeFiles/test_expansion_nt.dir/main.cpp.o
 [ 84%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_search.cpp.o
-[ 84%] Building CXX object src/tests/test_expansion_nt/CMakeFiles/test_expansion_nt.dir/main.cpp.o
-[ 84%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_split.cpp.o
-[ 85%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_tree.cpp.o
-[ 86%] Linking CXX executable ../../../bin/test_expansion_nt
-[ 86%] Built target test_expansion_nt
-[ 86%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_util.cpp.o
-[ 86%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
-[ 87%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/perf.cpp.o
-[ 88%] Linking CXX executable ../../../bin/test_HLBFGS
-[ 88%] Built target test_HLBFGS
-[ 88%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
-[ 88%] Linking CXX executable ../../../bin/test_nn_search
-[ 88%] Built target test_nn_search
-[ 88%] Building CXX object src/tests/test_logger/CMakeFiles/test_logger.dir/main.cpp.o
-[ 89%] Linking CXX executable ../../../bin/test_logger
-[ 89%] Built target test_logger
+[ 85%] Linking CXX executable ../../../bin/test_expansion_nt
+[ 85%] Built target test_expansion_nt
+[ 85%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
+[ 85%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_split.cpp.o
+[ 86%] Linking CXX executable ../../../bin/test_HLBFGS
+[ 87%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_tree.cpp.o
+[ 87%] Built target test_HLBFGS
+[ 87%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
+[ 87%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_util.cpp.o
+[ 88%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/perf.cpp.o
+[ 89%] Linking CXX executable ../../../bin/test_RVC
+[ 89%] Linking CXX executable ../../../bin/test_nn_search
+[ 89%] Built target test_RVC
+[ 89%] Building CXX object src/tests/test_logger/CMakeFiles/test_logger.dir/main.cpp.o
+[ 89%] Built target test_nn_search
 [ 89%] Building CXX object src/tests/test_CDT_2d/CMakeFiles/test_CDT_2d.dir/main.cpp.o
-[ 90%] Linking CXX executable ../../../bin/test_RVC
-[ 90%] Built target test_RVC
+[ 90%] Linking CXX executable ../../../bin/test_logger
+[ 90%] Built target test_logger
 [ 90%] Building CXX object src/examples/geogram/compute_delaunay/CMakeFiles/compute_delaunay.dir/main.cpp.o
 [ 91%] Linking CXX executable ../../../bin/test_CDT_2d
 [ 91%] Built target test_CDT_2d
@@ -197,19 +205,19 @@
 [ 92%] Linking CXX executable ../../../../bin/compute_delaunay
 [ 92%] Built target compute_delaunay
 [ 92%] Building CXX object src/examples/geogram/opennl_LSCM/CMakeFiles/opennl_LSCM.dir/main.cpp.o
-[ 93%] Linking CXX executable ../../../../bin/opennl_LSCM
-[ 93%] Built target opennl_LSCM
+[ 93%] Linking CXX executable ../../../../bin/compute_RVD
+[ 93%] Built target compute_RVD
 [ 93%] Building CXX object src/examples/geogram/opennl_mesh_smooth/CMakeFiles/opennl_mesh_smooth.dir/main.cpp.o
-[ 94%] Linking CXX executable ../../../../bin/compute_RVD
-[ 94%] Built target compute_RVD
+[ 94%] Linking CXX executable ../../../../bin/opennl_LSCM
+[ 94%] Built target opennl_LSCM
 [ 94%] Building CXX object src/examples/geogram/manifold_harmonics/CMakeFiles/manifold_harmonics.dir/main.cpp.o
-[ 95%] Linking CXX executable ../../../../bin/manifold_harmonics
-[ 96%] Linking CXX executable ../../../../bin/opennl_mesh_smooth
-[ 96%] Built target opennl_mesh_smooth
-[ 96%] Built target manifold_harmonics
-[ 96%] Building C object src/examples/geogram/opennl_basic_example/CMakeFiles/opennl_basic_example.dir/main.c.o
-[ 96%] Building CXX object src/examples/geogram/simple_raytrace/CMakeFiles/simple_raytrace.dir/main.cpp.o
+[ 95%] Linking CXX executable ../../../../bin/opennl_mesh_smooth
+[ 95%] Built target opennl_mesh_smooth
+[ 95%] Building C object src/examples/geogram/opennl_basic_example/CMakeFiles/opennl_basic_example.dir/main.c.o
+[ 96%] Linking CXX executable ../../../../bin/manifold_harmonics
 [ 97%] Linking C executable ../../../../bin/opennl_basic_example
+[ 97%] Built target manifold_harmonics
+[ 97%] Building CXX object src/examples/geogram/simple_raytrace/CMakeFiles/simple_raytrace.dir/main.cpp.o
 [ 97%] Built target opennl_basic_example
 [ 97%] Building CXX object src/examples/geogram/boolean_operations/CMakeFiles/boolean_op.dir/main.cpp.o
 [ 98%] Linking CXX executable ../../../../bin/boolean_op
