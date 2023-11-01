@@ -134,7 +134,11 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   mesh_subdivision.cpp
   mesh_surface_intersection.cpp
   mesh_surface_intersection_internal.cpp
+D:\a\geogram\geogram\src\lib\geogram/mesh/mesh_surface_intersection_internal.h(463,22): warning C4099: 'GEO::IsectInfo': type name first seen using 'class' now seen using 'struct' (compiling source file D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram/mesh/mesh_surface_intersection_internal.h(463,12): message : see declaration of 'GEO::IsectInfo' (compiling source file D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_tetrahedralize.cpp
+D:\a\geogram\geogram\src\lib\geogram/mesh/mesh_surface_intersection_internal.h(463,22): warning C4099: 'GEO::IsectInfo': type name first seen using 'class' now seen using 'struct' (compiling source file D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram/mesh/mesh_surface_intersection_internal.h(463,12): message : see declaration of 'GEO::IsectInfo' (compiling source file D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_topology.cpp
   triangle_intersection.cpp
   CDT_2d.cpp
