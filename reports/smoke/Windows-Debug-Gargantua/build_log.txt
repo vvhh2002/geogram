@@ -148,6 +148,10 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   Building Custom Rule D:/a/geogram/geogram/src/examples/geogram/boolean_operations/CMakeLists.txt
   main.cpp
   boolean_op.vcxproj -> D:\a\geogram\geogram\build\Windows\bin\Debug\boolean_op.exe
+  Building Custom Rule D:/a/geogram/geogram/src/examples/geogram/compute_CSG/CMakeLists.txt
+  main.cpp
+D:\a\geogram\geogram\src\examples\geogram\compute_CSG\stb_c_lexer.h(323,20): warning C4505: 'stb__strchr': unreferenced function with internal linkage has been removed [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
+  compute_CSG.vcxproj -> D:\a\geogram\geogram\build\Windows\bin\Debug\compute_CSG.exe
   Building Custom Rule D:/a/geogram/geogram/src/examples/geogram/compute_RVD/CMakeLists.txt
   main.cpp
   compute_RVD.vcxproj -> D:\a\geogram\geogram\build\Windows\bin\Debug\compute_RVD.exe
