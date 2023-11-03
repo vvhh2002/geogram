@@ -989,8 +989,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   dsortc.c
   dsortr.c
   dstatn.c
-  dstats.c
   dstqrb.c
+  dstats.c
   sgetv0.c
   slaqrb.c
   snaitr.c

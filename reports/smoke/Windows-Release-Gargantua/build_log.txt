@@ -150,17 +150,10 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   boolean_op.vcxproj -> D:\a\geogram\geogram\build\Windows\bin\Release\boolean_op.exe
   Building Custom Rule D:/a/geogram/geogram/src/examples/geogram/compute_CSG/CMakeLists.txt
   main.cpp
-D:\a\geogram\geogram\src\examples\geogram\compute_CSG\main.cpp(631): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
-D:\a\geogram\geogram\src\examples\geogram\compute_CSG\main.cpp(564): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
-D:\a\geogram\geogram\src\examples\geogram\compute_CSG\main.cpp(657): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
-D:\a\geogram\geogram\src\examples\geogram\compute_CSG\main.cpp(664): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
-D:\a\geogram\geogram\src\examples\geogram\compute_CSG\main.cpp(671): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
-D:\a\geogram\geogram\src\examples\geogram\compute_CSG\main.cpp(678): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
-D:\a\geogram\geogram\src\examples\geogram\compute_CSG\main.cpp(685): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
-D:\a\geogram\geogram\src\examples\geogram\compute_CSG\main.cpp(692): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
-D:\a\geogram\geogram\src\examples\geogram\compute_CSG\main.cpp(625): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
-D:\a\geogram\geogram\src\examples\geogram\compute_CSG\main.cpp(570): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
-D:\a\geogram\geogram\src\examples\geogram\compute_CSG\main.cpp(637): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\basic\smart_pointer.h(92): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\basic\smart_pointer.h(92): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\basic\smart_pointer.h(92): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\basic\smart_pointer.h(92): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\examples\geogram\compute_CSG\compute_CSG.vcxproj]
   compute_CSG.vcxproj -> D:\a\geogram\geogram\build\Windows\bin\Release\compute_CSG.exe
   Building Custom Rule D:/a/geogram/geogram/src/examples/geogram/compute_RVD/CMakeLists.txt
   main.cpp
