@@ -860,8 +860,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   ilu_dcolumn_dfs.c
   ilu_dcopy_to_ucol.c
   ilu_ddrop_row.c
-  ilu_dpivotL.c
   ilu_dpanel_dfs.c
+  ilu_dpivotL.c
   ilu_dsnode_dfs.c
   ilu_heap_relax_snode.c
   ilu_relax_snode.c
