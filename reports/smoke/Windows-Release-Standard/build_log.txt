@@ -487,8 +487,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   libf2c_wsfe.c
   libf2c_wsle.c
   libf2c_wsne.c
-  libf2c_z_abs.c
   libf2c_xwsne.c
+  libf2c_z_abs.c
   libf2c_z_cos.c
   libf2c_z_div.c
   libf2c_z_exp.c
