@@ -113,6 +113,7 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   predicates.cpp
   mesh.cpp
   mesh_AABB.cpp
+  mesh_CSG.cpp
   mesh_baking.cpp
   mesh_compare.cpp
   mesh_decimate.cpp
@@ -577,8 +578,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   scabs1.c
   scasum.c
   scnrm2.c
-  scopy.c
   sdot.c
+  scopy.c
   sdsdot.c
   sgbmv.c
   sgemm.c
