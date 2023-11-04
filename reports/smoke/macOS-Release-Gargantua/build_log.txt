@@ -1,4 +1,4 @@
-[  0%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/libMeshb/sources/libmeshb7.c.o
+[  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/libMeshb/sources/libmeshb7.c.o
 [  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/rply/rply.c.o
 [  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/adler32.c.o
 [  2%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/compress.c.o
@@ -58,18 +58,12 @@
 [ 28%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_AABB.cpp.o
 [ 28%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_CSG.cpp.o
 [ 29%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_baking.cpp.o
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:654:6: warning: extra ';' outside of a function is incompatible with C++98 [-Wc++98-compat-extra-semi]
-    };
-     ^
 In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:40:
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:58:11: warning: 'CSGMesh' has no out-of-line virtual method definitions; its vtable will be emitted in every translation unit [-Wweak-vtables]
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:59:11: warning: 'CSGMesh' has no out-of-line virtual method definitions; its vtable will be emitted in every translation unit [-Wweak-vtables]
     class CSGMesh : public Mesh, public Counted {
           ^
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:257:14: warning: private field 'create_center_vertex_' is not used [-Wunused-private-field]
-        bool create_center_vertex_;
-             ^
 [ 29%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_compare.cpp.o
-3 warnings generated.
+1 warning generated.
 [ 30%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_decimate.cpp.o
 [ 30%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_degree3_vertices.cpp.o
 [ 31%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_distance.cpp.o
@@ -150,8 +144,8 @@ In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/me
 [ 68%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/bibliography/embedded_references.cpp.o
 [ 69%] Linking CXX shared library ../../../lib/libgeogram.dylib
 [ 69%] Built target geogram
-[ 69%] Building CXX object src/bin/vorpacomp/CMakeFiles/vorpacomp.dir/main.cpp.o
 [ 69%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
+[ 69%] Building CXX object src/bin/vorpacomp/CMakeFiles/vorpacomp.dir/main.cpp.o
 [ 70%] Linking CXX executable ../../../bin/vorpacomp
 [ 71%] Linking CXX executable ../../../bin/vorpastat
 [ 71%] Built target vorpacomp
@@ -188,13 +182,13 @@ In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/me
 [ 84%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_tree.cpp.o
 [ 84%] Linking CXX executable ../../../bin/test_expansion_nt
 [ 84%] Built target test_expansion_nt
-[ 85%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_util.cpp.o
-[ 86%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
-[ 86%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/perf.cpp.o
+[ 85%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
+[ 86%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_util.cpp.o
 [ 86%] Linking CXX executable ../../../bin/test_HLBFGS
 [ 86%] Built target test_HLBFGS
-[ 87%] Linking CXX executable ../../../bin/test_nn_search
-[ 88%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
+[ 86%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/perf.cpp.o
+[ 87%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
+[ 88%] Linking CXX executable ../../../bin/test_nn_search
 [ 88%] Built target test_nn_search
 [ 89%] Building CXX object src/tests/test_logger/CMakeFiles/test_logger.dir/main.cpp.o
 [ 89%] Linking CXX executable ../../../bin/test_logger
@@ -209,6 +203,14 @@ In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/me
 [ 91%] Linking CXX executable ../../../../bin/compute_delaunay
 [ 91%] Built target compute_delaunay
 [ 91%] Building CXX object src/examples/geogram/compute_CSG/CMakeFiles/compute_CSG.dir/main.cpp.o
+/Users/runner/work/geogram/geogram/src/examples/geogram/compute_CSG/main.cpp:48:18: warning: no previous prototype for function 'example001' [-Wmissing-prototypes]
+GEO::CSGMesh_var example001() {
+                 ^
+/Users/runner/work/geogram/geogram/src/examples/geogram/compute_CSG/main.cpp:48:1: note: declare 'static' if the function is not intended to be used outside of this translation unit
+GEO::CSGMesh_var example001() {
+^
+static 
+1 warning generated.
 [ 92%] Linking CXX executable ../../../../bin/compute_CSG
 [ 92%] Built target compute_CSG
 [ 93%] Building CXX object src/examples/geogram/opennl_LSCM/CMakeFiles/opennl_LSCM.dir/main.cpp.o
