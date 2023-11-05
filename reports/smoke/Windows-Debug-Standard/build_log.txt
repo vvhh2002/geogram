@@ -935,8 +935,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   zgsitrf.c
   zgsrfs.c
   zgssv.c
-  zgssvx.c
   zgstrf.c
+  zgssvx.c
   zgstrs.c
   zlacon2.c
   zlangs.c
@@ -996,8 +996,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   slaqrb.c
   snaitr.c
   snapps.c
-  snaup2.c
   snaupd.c
+  snaup2.c
   snaupe.c
   snconv.c
   sneigh.c
