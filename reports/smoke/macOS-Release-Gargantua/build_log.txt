@@ -1,4 +1,4 @@
-[  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/libMeshb/sources/libmeshb7.c.o
+[  0%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/libMeshb/sources/libmeshb7.c.o
 [  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/rply/rply.c.o
 [  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/adler32.c.o
 [  2%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/compress.c.o
@@ -58,7 +58,37 @@
 [ 28%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_AABB.cpp.o
 [ 28%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_CSG.cpp.o
 [ 29%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_baking.cpp.o
+In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:40:
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:156:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
+         * \param(in] scope the meshes 
+                 ^~~~
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:156:18: note: did you mean 'scope'?
+         * \param(in] scope the meshes 
+                 ^~~~
+                 scope
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:162:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
+         * \param(in] scope the meshes 
+                 ^~~~
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:162:18: note: did you mean 'scope'?
+         * \param(in] scope the meshes 
+                 ^~~~
+                 scope
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:170:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
+         * \param(in] scope the meshes 
+                 ^~~~
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:170:18: note: did you mean 'scope'?
+         * \param(in] scope the meshes 
+                 ^~~~
+                 scope
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:241:23: warning: parameter 'fa' not found in the function declaration [-Wdocumentation]
+         * \param[in] fa minimum size for a fragment.
+                      ^~
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:241:23: note: did you mean 'fs'?
+         * \param[in] fa minimum size for a fragment.
+                      ^~
+                      fs
 [ 29%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_compare.cpp.o
+4 warnings generated.
 [ 30%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_decimate.cpp.o
 [ 30%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_degree3_vertices.cpp.o
 [ 31%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_distance.cpp.o
@@ -71,8 +101,8 @@
 [ 34%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_manifold_harmonics.cpp.o
 [ 35%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_partition.cpp.o
 [ 35%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_preprocessing.cpp.o
-[ 36%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_reorder.cpp.o
 [ 36%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_remesh.cpp.o
+[ 36%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_reorder.cpp.o
 [ 37%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_repair.cpp.o
 [ 37%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_smoothing.cpp.o
 [ 38%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_subdivision.cpp.o
@@ -139,8 +169,8 @@
 [ 68%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/bibliography/embedded_references.cpp.o
 [ 69%] Linking CXX shared library ../../../lib/libgeogram.dylib
 [ 69%] Built target geogram
-[ 69%] Building CXX object src/bin/vorpacomp/CMakeFiles/vorpacomp.dir/main.cpp.o
 [ 69%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
+[ 69%] Building CXX object src/bin/vorpacomp/CMakeFiles/vorpacomp.dir/main.cpp.o
 [ 70%] Linking CXX executable ../../../bin/vorpacomp
 [ 71%] Linking CXX executable ../../../bin/vorpastat
 [ 71%] Built target vorpacomp
@@ -152,28 +182,28 @@
 [ 73%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/main.cpp.o
 [ 74%] Linking CXX executable ../../../bin/vorpalite
 [ 74%] Built target vorpalite
-[ 74%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/nn_search_ANN.cpp.o
 [ 75%] Building CXX object src/tests/test_convex_cell/CMakeFiles/test_convex_cell.dir/main.cpp.o
+[ 75%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/nn_search_ANN.cpp.o
 [ 76%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/ANN.cpp.o
 [ 76%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_fix_rad_search.cpp.o
 [ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_pr_search.cpp.o
-[ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_search.cpp.o
 [ 77%] Linking CXX executable ../../../bin/test_convex_cell
 [ 77%] Built target test_convex_cell
+[ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_search.cpp.o
+[ 77%] Building CXX object src/tests/bench_load/CMakeFiles/bench_load.dir/main.cpp.o
 [ 78%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_tree.cpp.o
-[ 78%] Building CXX object src/tests/bench_load/CMakeFiles/bench_load.dir/main.cpp.o
 [ 78%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/brute.cpp.o
-[ 79%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_dump.cpp.o
-[ 80%] Linking CXX executable ../../../bin/bench_load
-[ 80%] Built target bench_load
-[ 80%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_fix_rad_search.cpp.o
+[ 79%] Linking CXX executable ../../../bin/bench_load
+[ 79%] Built target bench_load
+[ 80%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_dump.cpp.o
 [ 81%] Building CXX object src/tests/test_locks/CMakeFiles/test_locks.dir/main.cpp.o
+[ 81%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_fix_rad_search.cpp.o
 [ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_pr_search.cpp.o
+[ 82%] Linking CXX executable ../../../bin/test_locks
+[ 82%] Built target test_locks
 [ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_search.cpp.o
-[ 83%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_split.cpp.o
-[ 83%] Linking CXX executable ../../../bin/test_locks
-[ 83%] Built target test_locks
-[ 84%] Building CXX object src/tests/test_expansion_nt/CMakeFiles/test_expansion_nt.dir/main.cpp.o
+[ 83%] Building CXX object src/tests/test_expansion_nt/CMakeFiles/test_expansion_nt.dir/main.cpp.o
+[ 84%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_split.cpp.o
 [ 84%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_tree.cpp.o
 [ 84%] Linking CXX executable ../../../bin/test_expansion_nt
 [ 84%] Built target test_expansion_nt
@@ -181,9 +211,9 @@
 [ 86%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
 [ 86%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/perf.cpp.o
 [ 86%] Linking CXX executable ../../../bin/test_HLBFGS
-[ 86%] Built target test_HLBFGS
-[ 87%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
-[ 88%] Linking CXX executable ../../../bin/test_nn_search
+[ 87%] Linking CXX executable ../../../bin/test_nn_search
+[ 87%] Built target test_HLBFGS
+[ 88%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
 [ 88%] Built target test_nn_search
 [ 89%] Building CXX object src/tests/test_logger/CMakeFiles/test_logger.dir/main.cpp.o
 [ 89%] Linking CXX executable ../../../bin/test_logger
@@ -198,11 +228,41 @@
 [ 91%] Linking CXX executable ../../../../bin/compute_delaunay
 [ 91%] Built target compute_delaunay
 [ 91%] Building CXX object src/examples/geogram/compute_CSG/CMakeFiles/compute_CSG.dir/main.cpp.o
-[ 92%] Linking CXX executable ../../../../bin/compute_CSG
-[ 92%] Built target compute_CSG
+In file included from /Users/runner/work/geogram/geogram/src/examples/geogram/compute_CSG/main.cpp:45:
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:156:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
+         * \param(in] scope the meshes 
+                 ^~~~
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:156:18: note: did you mean 'scope'?
+         * \param(in] scope the meshes 
+                 ^~~~
+                 scope
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:162:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
+         * \param(in] scope the meshes 
+                 ^~~~
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:162:18: note: did you mean 'scope'?
+         * \param(in] scope the meshes 
+                 ^~~~
+                 scope
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:170:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
+         * \param(in] scope the meshes 
+                 ^~~~
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:170:18: note: did you mean 'scope'?
+         * \param(in] scope the meshes 
+                 ^~~~
+                 scope
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:241:23: warning: parameter 'fa' not found in the function declaration [-Wdocumentation]
+         * \param[in] fa minimum size for a fragment.
+                      ^~
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.h:241:23: note: did you mean 'fs'?
+         * \param[in] fa minimum size for a fragment.
+                      ^~
+                      fs
+[ 92%] Linking CXX executable ../../../../bin/compute_RVD
+[ 92%] Built target compute_RVD
 [ 93%] Building CXX object src/examples/geogram/opennl_LSCM/CMakeFiles/opennl_LSCM.dir/main.cpp.o
-[ 94%] Linking CXX executable ../../../../bin/compute_RVD
-[ 94%] Built target compute_RVD
+4 warnings generated.
+[ 94%] Linking CXX executable ../../../../bin/compute_CSG
+[ 94%] Built target compute_CSG
 [ 95%] Building CXX object src/examples/geogram/opennl_mesh_smooth/CMakeFiles/opennl_mesh_smooth.dir/main.cpp.o
 [ 95%] Linking CXX executable ../../../../bin/opennl_LSCM
 [ 95%] Built target opennl_LSCM

@@ -425,8 +425,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   libf2c_l_ge.c
   libf2c_l_gt.c
   libf2c_l_le.c
-  libf2c_lbitbits.c
   libf2c_l_lt.c
+  libf2c_lbitbits.c
   libf2c_lbitshft.c
   libf2c_lread.c
   libf2c_lwrite.c
