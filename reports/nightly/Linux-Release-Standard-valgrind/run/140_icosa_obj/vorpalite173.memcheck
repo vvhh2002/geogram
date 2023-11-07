@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/vorpalite pts=5000 /home/runner/work/geogram/geogram/tests/data/Small/icosa.obj out.meshb</line>
 </preamble>
 
-<pid>16289</pid>
-<ppid>12553</ppid>
+<pid>17182</pid>
+<ppid>12589</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -37,13 +37,13 @@
 
 <status>
   <state>RUNNING</state>
-  <time>00:00:00:00.036 </time>
+  <time>00:00:00:00.021 </time>
 </status>
 
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:00:52.681 </time>
+  <time>00:00:00:41.170 </time>
 </status>
 
 <errorcounts>
@@ -55,7 +55,7 @@
     <name>Vorpaline_gomp_64bits_leak_2</name>
   </pair>
   <pair>
-    <count>1</count>
+    <count>2</count>
     <name>Vorpaline_gomp_64bits_leak_4</name>
   </pair>
   <pair>
