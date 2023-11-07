@@ -954,8 +954,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   zreadtriple.c
   zsnode_bmod.c
   zsnode_dfs.c
-  zsp_blas2.c
   zsp_blas3.c
+  zsp_blas2.c
   zutil.c
   cgetv0.c
   cnaitr.c
