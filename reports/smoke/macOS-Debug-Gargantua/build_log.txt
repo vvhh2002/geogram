@@ -49,11 +49,6 @@
 [ 23%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/numerics/PCK.cpp.o
 [ 24%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/numerics/exact_geometry.cpp.o
 [ 24%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/numerics/expansion_nt.cpp.o
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/numerics/exact_geometry.cpp:40:
-/Users/runner/work/geogram/geogram/src/lib/geogram/numerics/exact_geometry.h:333:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
-         * \param(in] p0 , p1 , p2  the three points, 
-                 ^~~~
-1 warning generated.
 [ 25%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/numerics/lbfgs_optimizers.cpp.o
 [ 25%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/numerics/matrix_util.cpp.o
 [ 26%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/numerics/multi_precision.cpp.o
@@ -62,13 +57,7 @@ In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/numeric
 [ 27%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh.cpp.o
 [ 28%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_AABB.cpp.o
 [ 28%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_CSG.cpp.o
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:44:
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.h:45:
-/Users/runner/work/geogram/geogram/src/lib/geogram/numerics/exact_geometry.h:333:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
-         * \param(in] p0 , p1 , p2  the three points, 
-                 ^~~~
 [ 29%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_baking.cpp.o
-1 warning generated.
 [ 29%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_compare.cpp.o
 [ 30%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_decimate.cpp.o
 [ 30%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_degree3_vertices.cpp.o
@@ -88,11 +77,6 @@ In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/me
 [ 37%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_smoothing.cpp.o
 [ 38%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_subdivision.cpp.o
 [ 38%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_surface_intersection.cpp.o
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:40:
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.h:45:
-/Users/runner/work/geogram/geogram/src/lib/geogram/numerics/exact_geometry.h:333:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
-         * \param(in] p0 , p1 , p2  the three points, 
-                 ^~~~
 /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:635:38: warning: code will never be executed [-Wunreachable-code]
             Attribute<bool> selected(mesh_.facets.attributes(), "selection");
                                      ^~~~~
@@ -100,40 +84,18 @@ In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/me
         if(false) {
            ^
            /* DISABLES CODE */ ( )
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1126:74: warning: format specifies type 'int' but the argument has type 'GEO::index_t' (aka 'unsigned long long') [-Wformat]
-                                save_radial(String::format("radial_%03d",k),ib,ie);
-                                                                   ~~~~  ^
-                                                                   %03llu
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1103:39: warning: code will never be executed [-Wunreachable-code]
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1113:39: warning: code will never be executed [-Wunreachable-code]
                             std::cerr << std::endl;
                                       ^~
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1102:28: note: silence by adding parentheses to mark code as explicitly dead
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1112:28: note: silence by adding parentheses to mark code as explicitly dead
                         if(false && !OK) {
                            ^
                            /* DISABLES CODE */ ( )
-4 warnings generated.
+2 warnings generated.
 [ 39%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_surface_intersection_internal.cpp.o
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection_internal.cpp:40:
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection_internal.h:49:
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.h:45:
-/Users/runner/work/geogram/geogram/src/lib/geogram/numerics/exact_geometry.h:333:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
-         * \param(in] p0 , p1 , p2  the three points, 
-                 ^~~~
-1 warning generated.
 [ 39%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_tetrahedralize.cpp.o
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_tetrahedralize.cpp:41:
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.h:45:
-/Users/runner/work/geogram/geogram/src/lib/geogram/numerics/exact_geometry.h:333:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
-         * \param(in] p0 , p1 , p2  the three points, 
-                 ^~~~
-1 warning generated.
 [ 40%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_topology.cpp.o
 [ 40%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/triangle_intersection.cpp.o
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/triangle_intersection.cpp:42:
-/Users/runner/work/geogram/geogram/src/lib/geogram/numerics/exact_geometry.h:333:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
-         * \param(in] p0 , p1 , p2  the three points, 
-                 ^~~~
-1 warning generated.
 [ 41%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/CDT_2d.cpp.o
 [ 41%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/LFS.cpp.o
 [ 42%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay.cpp.o
@@ -197,59 +159,53 @@ In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/tr
 [ 70%] Linking CXX executable ../../../bin/vorpacomp
 [ 71%] Linking CXX executable ../../../bin/vorpastat
 [ 71%] Built target vorpacomp
-[ 71%] Building CXX object src/bin/geodump/CMakeFiles/geodump.dir/main.cpp.o
 [ 71%] Built target vorpastat
+[ 71%] Building CXX object src/bin/geodump/CMakeFiles/geodump.dir/main.cpp.o
 [ 71%] Building CXX object src/bin/vorpalite/CMakeFiles/vorpalite.dir/main.cpp.o
 [ 72%] Linking CXX executable ../../../bin/geodump
-In file included from /Users/runner/work/geogram/geogram/src/bin/vorpalite/main.cpp:19:
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.h:45:
-/Users/runner/work/geogram/geogram/src/lib/geogram/numerics/exact_geometry.h:333:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
-         * \param(in] p0 , p1 , p2  the three points, 
-                 ^~~~
 [ 72%] Built target geodump
 [ 73%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/main.cpp.o
-1 warning generated.
 [ 74%] Linking CXX executable ../../../bin/vorpalite
 [ 74%] Built target vorpalite
-[ 75%] Building CXX object src/tests/test_convex_cell/CMakeFiles/test_convex_cell.dir/main.cpp.o
-[ 75%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/nn_search_ANN.cpp.o
-[ 76%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/ANN.cpp.o
-[ 76%] Linking CXX executable ../../../bin/test_convex_cell
+[ 74%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/nn_search_ANN.cpp.o
+[ 75%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/ANN.cpp.o
+[ 76%] Building CXX object src/tests/test_convex_cell/CMakeFiles/test_convex_cell.dir/main.cpp.o
 [ 76%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_fix_rad_search.cpp.o
-[ 76%] Built target test_convex_cell
-[ 76%] Building CXX object src/tests/bench_load/CMakeFiles/bench_load.dir/main.cpp.o
 [ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_pr_search.cpp.o
 [ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_search.cpp.o
-[ 78%] Linking CXX executable ../../../bin/bench_load
-[ 78%] Built target bench_load
-[ 79%] Building CXX object src/tests/test_locks/CMakeFiles/test_locks.dir/main.cpp.o
-[ 80%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_tree.cpp.o
-[ 80%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/brute.cpp.o
-[ 80%] Linking CXX executable ../../../bin/test_locks
-[ 80%] Built target test_locks
-[ 81%] Building CXX object src/tests/test_expansion_nt/CMakeFiles/test_expansion_nt.dir/main.cpp.o
-[ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_dump.cpp.o
-[ 82%] Linking CXX executable ../../../bin/test_expansion_nt
-[ 82%] Built target test_expansion_nt
-[ 83%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
-[ 83%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_fix_rad_search.cpp.o
-[ 83%] Linking CXX executable ../../../bin/test_HLBFGS
-[ 83%] Built target test_HLBFGS
-[ 84%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_pr_search.cpp.o
-[ 85%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
-[ 85%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_search.cpp.o
-[ 86%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_split.cpp.o
-[ 86%] Linking CXX executable ../../../bin/test_RVC
-[ 86%] Built target test_RVC
-[ 87%] Building CXX object src/tests/test_logger/CMakeFiles/test_logger.dir/main.cpp.o
-[ 87%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_tree.cpp.o
-[ 88%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_util.cpp.o
-[ 88%] Linking CXX executable ../../../bin/test_logger
-[ 88%] Built target test_logger
-[ 88%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/perf.cpp.o
-[ 89%] Building CXX object src/tests/test_CDT_2d/CMakeFiles/test_CDT_2d.dir/main.cpp.o
-[ 90%] Linking CXX executable ../../../bin/test_nn_search
-[ 90%] Built target test_nn_search
+[ 77%] Linking CXX executable ../../../bin/test_convex_cell
+[ 77%] Built target test_convex_cell
+[ 78%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_tree.cpp.o
+[ 78%] Building CXX object src/tests/bench_load/CMakeFiles/bench_load.dir/main.cpp.o
+[ 78%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/brute.cpp.o
+[ 79%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_dump.cpp.o
+[ 80%] Linking CXX executable ../../../bin/bench_load
+[ 80%] Built target bench_load
+[ 80%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_fix_rad_search.cpp.o
+[ 81%] Building CXX object src/tests/test_locks/CMakeFiles/test_locks.dir/main.cpp.o
+[ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_pr_search.cpp.o
+[ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_search.cpp.o
+[ 82%] Linking CXX executable ../../../bin/test_locks
+[ 82%] Built target test_locks
+[ 83%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_split.cpp.o
+[ 84%] Building CXX object src/tests/test_expansion_nt/CMakeFiles/test_expansion_nt.dir/main.cpp.o
+[ 84%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_tree.cpp.o
+[ 84%] Linking CXX executable ../../../bin/test_expansion_nt
+[ 84%] Built target test_expansion_nt
+[ 85%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_util.cpp.o
+[ 86%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
+[ 86%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/perf.cpp.o
+[ 86%] Linking CXX executable ../../../bin/test_HLBFGS
+[ 86%] Built target test_HLBFGS
+[ 87%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
+[ 88%] Linking CXX executable ../../../bin/test_nn_search
+[ 88%] Built target test_nn_search
+[ 89%] Building CXX object src/tests/test_logger/CMakeFiles/test_logger.dir/main.cpp.o
+[ 89%] Linking CXX executable ../../../bin/test_RVC
+[ 89%] Built target test_RVC
+[ 90%] Building CXX object src/tests/test_CDT_2d/CMakeFiles/test_CDT_2d.dir/main.cpp.o
+[ 90%] Linking CXX executable ../../../bin/test_logger
+[ 90%] Built target test_logger
 [ 90%] Building CXX object src/examples/geogram/compute_delaunay/CMakeFiles/compute_delaunay.dir/main.cpp.o
 [ 90%] Linking CXX executable ../../../bin/test_CDT_2d
 [ 90%] Built target test_CDT_2d
@@ -257,11 +213,11 @@ In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/me
 [ 91%] Linking CXX executable ../../../../bin/compute_delaunay
 [ 91%] Built target compute_delaunay
 [ 91%] Building CXX object src/examples/geogram/compute_CSG/CMakeFiles/compute_CSG.dir/main.cpp.o
-[ 92%] Linking CXX executable ../../../../bin/compute_RVD
-[ 93%] Linking CXX executable ../../../../bin/compute_CSG
-[ 93%] Built target compute_RVD
-[ 94%] Building CXX object src/examples/geogram/opennl_LSCM/CMakeFiles/opennl_LSCM.dir/main.cpp.o
-[ 94%] Built target compute_CSG
+[ 92%] Linking CXX executable ../../../../bin/compute_CSG
+[ 92%] Built target compute_CSG
+[ 93%] Building CXX object src/examples/geogram/opennl_LSCM/CMakeFiles/opennl_LSCM.dir/main.cpp.o
+[ 94%] Linking CXX executable ../../../../bin/compute_RVD
+[ 94%] Built target compute_RVD
 [ 95%] Building CXX object src/examples/geogram/opennl_mesh_smooth/CMakeFiles/opennl_mesh_smooth.dir/main.cpp.o
 [ 95%] Linking CXX executable ../../../../bin/opennl_LSCM
 [ 95%] Built target opennl_LSCM
@@ -278,19 +234,7 @@ In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/me
 [ 98%] Linking CXX executable ../../../../bin/simple_raytrace
 [ 98%] Built target simple_raytrace
 [ 99%] Building CXX object src/examples/geogram/intersect/CMakeFiles/intersect.dir/main.cpp.o
-In file included from /Users/runner/work/geogram/geogram/src/examples/geogram/boolean_operations/main.cpp:49:
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.h:45:
-/Users/runner/work/geogram/geogram/src/lib/geogram/numerics/exact_geometry.h:333:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
-         * \param(in] p0 , p1 , p2  the three points, 
-                 ^~~~
-1 warning generated.
 [100%] Linking CXX executable ../../../../bin/boolean_op
 [100%] Built target boolean_op
-In file included from /Users/runner/work/geogram/geogram/src/examples/geogram/intersect/main.cpp:48:
-In file included from /Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.h:45:
-/Users/runner/work/geogram/geogram/src/lib/geogram/numerics/exact_geometry.h:333:18: warning: parameter '(in]' not found in the function declaration [-Wdocumentation]
-         * \param(in] p0 , p1 , p2  the three points, 
-                 ^~~~
-1 warning generated.
 [100%] Linking CXX executable ../../../../bin/intersect
 [100%] Built target intersect
