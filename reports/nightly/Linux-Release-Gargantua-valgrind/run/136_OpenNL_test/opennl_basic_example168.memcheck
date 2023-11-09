@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/opennl_basic_example</line>
 </preamble>
 
-<pid>11604</pid>
-<ppid>6921</ppid>
+<pid>10660</pid>
+<ppid>6888</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -34,107 +34,16 @@
 
 <status>
   <state>RUNNING</state>
-  <time>00:00:00:00.021 </time>
+  <time>00:00:00:00.027 </time>
 </status>
-
-<error>
-  <unique>0x0</unique>
-  <tid>1</tid>
-  <kind>InvalidRead</kind>
-  <what>Invalid read of size 8</what>
-  <stack>
-    <frame>
-      <ip>0x4CAF089</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>nlCRSMatrixComputeSlices</fn>
-    </frame>
-    <frame>
-      <ip>0x4CB025B</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>nlCRSMatrixNewFromSparseMatrix</fn>
-    </frame>
-    <frame>
-      <ip>0x4CB0620</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>nlMatrixCompress</fn>
-    </frame>
-    <frame>
-      <ip>0x4CA8A2F</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>nlDefaultSolver</fn>
-    </frame>
-    <frame>
-      <ip>0x4CA43CB</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>nlSolve</fn>
-    </frame>
-    <frame>
-      <ip>0x10956B</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/opennl_basic_example</obj>
-      <fn>test_simple_linear_solve</fn>
-    </frame>
-    <frame>
-      <ip>0x109293</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/opennl_basic_example</obj>
-      <fn>main</fn>
-    </frame>
-  </stack>
-  <auxwhat>Address 0x547e528 is 0 bytes after a block of size 24 alloc'd</auxwhat>
-  <stack>
-    <frame>
-      <ip>0x483DD99</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-    </frame>
-    <frame>
-      <ip>0x4CAEDCF</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>nlCRSMatrixConstruct</fn>
-    </frame>
-    <frame>
-      <ip>0x4CB027C</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>nlCRSMatrixNewFromSparseMatrix</fn>
-    </frame>
-    <frame>
-      <ip>0x4CB0620</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>nlMatrixCompress</fn>
-    </frame>
-    <frame>
-      <ip>0x4CA8A2F</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>nlDefaultSolver</fn>
-    </frame>
-    <frame>
-      <ip>0x4CA43CB</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>nlSolve</fn>
-    </frame>
-    <frame>
-      <ip>0x10956B</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/opennl_basic_example</obj>
-      <fn>test_simple_linear_solve</fn>
-    </frame>
-    <frame>
-      <ip>0x109293</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/opennl_basic_example</obj>
-      <fn>main</fn>
-    </frame>
-  </stack>
-</error>
 
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:00:05.566 </time>
+  <time>00:00:00:01.072 </time>
 </status>
 
 <errorcounts>
-  <pair>
-    <count>4</count>
-    <unique>0x0</unique>
-  </pair>
 </errorcounts>
 
 <suppcounts>
