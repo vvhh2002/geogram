@@ -536,8 +536,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1112,34)
   daxpy.c
   dcabs1.c
   dcopy.c
-  dgbmv.c
   ddot.c
+  dgbmv.c
   dgemm.c
   dgemv.c
   dger.c
