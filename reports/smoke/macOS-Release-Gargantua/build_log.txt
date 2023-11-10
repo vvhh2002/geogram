@@ -20,7 +20,7 @@
 [ 10%] Building CXX object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/PoissonRecon/poisson_geogram.cpp.o
 [ 10%] Building CXX object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/xatlas/xatlas.cpp.o
 [ 10%] Built target geogram_third_party
-[ 10%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/algorithm.cpp.o
+[ 11%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/algorithm.cpp.o
 [ 11%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/android_utils.cpp.o
 [ 11%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/assert.cpp.o
 [ 12%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/attributes.cpp.o
@@ -84,14 +84,23 @@
         /* DISABLES CODE  */ if(false) {
                                 ^
                                 /* DISABLES CODE */ ( )
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1113:39: warning: code will never be executed [-Wunreachable-code]
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1112:39: warning: code will never be executed [-Wunreachable-code]
                             std::cerr << std::endl;
                                       ^~
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1112:28: note: silence by adding parentheses to mark code as explicitly dead
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1111:28: note: silence by adding parentheses to mark code as explicitly dead
                         if(false && !OK) {
                            ^
                            /* DISABLES CODE */ ( )
-2 warnings generated.
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1653:30: warning: declaration shadows a local variable [-Wshadow]
+                        bool degenerate = false;
+                             ^
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1631:22: note: previous declaration is here
+                bool degenerate = true;
+                     ^
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1438:20: warning: unused function 'nb_bits_set' [-Wunused-function]
+    inline index_t nb_bits_set(index_t x) {
+                   ^
+4 warnings generated.
 [ 39%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_surface_intersection_internal.cpp.o
 [ 39%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_tetrahedralize.cpp.o
 [ 40%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_topology.cpp.o
@@ -167,14 +176,14 @@
 [ 73%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/main.cpp.o
 [ 74%] Linking CXX executable ../../../bin/vorpalite
 [ 74%] Built target vorpalite
+[ 74%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/nn_search_ANN.cpp.o
 [ 75%] Building CXX object src/tests/test_convex_cell/CMakeFiles/test_convex_cell.dir/main.cpp.o
-[ 75%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/nn_search_ANN.cpp.o
 [ 76%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/ANN.cpp.o
 [ 76%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_fix_rad_search.cpp.o
 [ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_pr_search.cpp.o
+[ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_search.cpp.o
 [ 77%] Linking CXX executable ../../../bin/test_convex_cell
 [ 77%] Built target test_convex_cell
-[ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_search.cpp.o
 [ 77%] Building CXX object src/tests/bench_load/CMakeFiles/bench_load.dir/main.cpp.o
 [ 78%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_tree.cpp.o
 [ 78%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/brute.cpp.o
@@ -213,11 +222,11 @@
 [ 91%] Linking CXX executable ../../../../bin/compute_delaunay
 [ 91%] Built target compute_delaunay
 [ 91%] Building CXX object src/examples/geogram/compute_CSG/CMakeFiles/compute_CSG.dir/main.cpp.o
-[ 92%] Linking CXX executable ../../../../bin/compute_RVD
-[ 92%] Built target compute_RVD
-[ 93%] Linking CXX executable ../../../../bin/compute_CSG
+[ 92%] Linking CXX executable ../../../../bin/compute_CSG
+[ 93%] Linking CXX executable ../../../../bin/compute_RVD
+[ 93%] Built target compute_CSG
 [ 94%] Building CXX object src/examples/geogram/opennl_LSCM/CMakeFiles/opennl_LSCM.dir/main.cpp.o
-[ 94%] Built target compute_CSG
+[ 94%] Built target compute_RVD
 [ 95%] Building CXX object src/examples/geogram/opennl_mesh_smooth/CMakeFiles/opennl_mesh_smooth.dir/main.cpp.o
 [ 95%] Linking CXX executable ../../../../bin/opennl_LSCM
 [ 95%] Built target opennl_LSCM
