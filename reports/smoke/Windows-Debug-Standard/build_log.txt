@@ -944,8 +944,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1631,22)
   zlacon2.c
   zlangs.c
   zlaqgs.c
-  zldperm.c
   zmemory.c
+  zldperm.c
   zmyblas2.c
   zpanel_bmod.c
   zpanel_dfs.c
