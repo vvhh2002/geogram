@@ -135,10 +135,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   mesh_subdivision.cpp
   mesh_surface_intersection.cpp
   mesh_surface_intersection_internal.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1111,34): warning C4127: conditional expression is constant [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1700): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1701): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_tetrahedralize.cpp
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1111,34): warning C4127: conditional expression is constant [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_topology.cpp
   triangle_intersection.cpp
   CDT_2d.cpp
@@ -716,8 +714,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1701): w
   clapack_ilaclc.c
   clapack_ilaclr.c
   clapack_iladlc.c
-  clapack_iladlr.c
   clapack_ilaslc.c
+  clapack_iladlr.c
   clapack_ilaslr.c
   clapack_ilazlc.c
   clapack_ilazlr.c
