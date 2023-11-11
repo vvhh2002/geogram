@@ -63,8 +63,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   mesh_AABB.cpp
   mesh_CSG.cpp
   mesh_baking.cpp
-  mesh_compare.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(226,45): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+  mesh_compare.cpp
   mesh_decimate.cpp
   mesh_degree3_vertices.cpp
   mesh_distance.cpp
@@ -84,8 +84,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(226,45): warning C4334: '
   mesh_subdivision.cpp
   mesh_surface_intersection.cpp
   mesh_surface_intersection_internal.cpp
-  mesh_tetrahedralize.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1111,34): warning C4127: conditional expression is constant [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+  mesh_tetrahedralize.cpp
   mesh_topology.cpp
   triangle_intersection.cpp
   CDT_2d.cpp
@@ -140,8 +140,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1111,34)
   nl_cuda.c
   nl_iterative_solvers.c
   nl_matrix.c
-  nl_os.c
   nl_mkl.c
+  nl_os.c
   nl_preconditioners.c
   nl_superlu.c
   geogram.vcxproj -> D:\a\geogram\geogram\build\Windows\lib\Debug\geogram.lib
