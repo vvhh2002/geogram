@@ -1,4 +1,4 @@
-[  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/libMeshb/sources/libmeshb7.c.o
+[  0%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/libMeshb/sources/libmeshb7.c.o
 [  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/rply/rply.c.o
 [  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/adler32.c.o
 [  2%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/compress.c.o
@@ -77,21 +77,6 @@
 [ 37%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_smoothing.cpp.o
 [ 38%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_subdivision.cpp.o
 [ 38%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_surface_intersection.cpp.o
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1114:39: warning: code will never be executed [-Wunreachable-code]
-                            std::cerr << std::endl;
-                                      ^~
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1113:28: note: silence by adding parentheses to mark code as explicitly dead
-                        if(false && !OK) {
-                           ^
-                           /* DISABLES CODE */ ( )
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1665:33: warning: code will never be executed [-Wunreachable-code]
-                                mesh_save(mesh_,"Weiler.geogram");
-                                ^~~~~~~~~
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_surface_intersection.cpp:1664:32: note: silence by adding parentheses to mark code as explicitly dead
-                            if(false) {
-                               ^
-                               /* DISABLES CODE */ ( )
-2 warnings generated.
 [ 39%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_surface_intersection_internal.cpp.o
 [ 39%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_tetrahedralize.cpp.o
 [ 40%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_topology.cpp.o

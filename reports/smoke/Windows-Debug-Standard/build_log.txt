@@ -135,7 +135,6 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   mesh_subdivision.cpp
   mesh_surface_intersection.cpp
   mesh_surface_intersection_internal.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1113,34): warning C4127: conditional expression is constant [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_tetrahedralize.cpp
   mesh_topology.cpp
   triangle_intersection.cpp
@@ -736,8 +735,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1113,34)
   clapack_slamch.c
   clapack_slange.c
   clapack_slanhs.c
-  clapack_slanv2.c
   clapack_slanst.c
+  clapack_slanv2.c
   clapack_slapy2.c
   clapack_slapy3.c
   clapack_slarf.c
@@ -959,8 +958,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1113,34)
   zsp_blas3.c
   zutil.c
   cgetv0.c
-  cnaitr.c
   cnapps.c
+  cnaitr.c
   cnaup2.c
   cnaupd.c
   cneigh.c

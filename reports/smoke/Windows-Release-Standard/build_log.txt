@@ -136,7 +136,6 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   mesh_surface_intersection.cpp
   mesh_surface_intersection_internal.cpp
   mesh_tetrahedralize.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1113,34): warning C4127: conditional expression is constant [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_topology.cpp
   triangle_intersection.cpp
   CDT_2d.cpp
@@ -428,8 +427,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1113,34)
   libf2c_l_le.c
   libf2c_l_lt.c
   libf2c_lbitbits.c
-  libf2c_lbitshft.c
   libf2c_lread.c
+  libf2c_lbitshft.c
   libf2c_lwrite.c
   libf2c_missing_erf.c
   libf2c_open.c
