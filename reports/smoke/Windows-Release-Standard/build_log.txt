@@ -1011,8 +1011,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1111,34)
   ssconv.c
   sseigt.c
   ssesrt.c
-  sseupd.c
   ssgets.c
+  sseupd.c
   ssortc.c
   ssortr.c
   sstatn.c
