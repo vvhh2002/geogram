@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/compute_delaunay /home/runner/work/geogram/geogram/tests/data/Small/cube.obj dbg:delaunay_benchmark=true dbg:delaunay_verbose=true</line>
 </preamble>
 
-<pid>16393</pid>
-<ppid>12610</ppid>
+<pid>16396</pid>
+<ppid>12616</ppid>
 <tool>memcheck</tool>
 
 <args>
