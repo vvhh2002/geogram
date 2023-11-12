@@ -427,8 +427,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   libf2c_l_le.c
   libf2c_l_lt.c
   libf2c_lbitbits.c
-  libf2c_lread.c
   libf2c_lbitshft.c
+  libf2c_lread.c
   libf2c_lwrite.c
   libf2c_missing_erf.c
   libf2c_open.c
@@ -834,8 +834,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   dmach.c
   dmemory.c
   dmyblas2.c
-  dpanel_bmod.c
   dpanel_dfs.c
+  dpanel_bmod.c
   dpivotL.c
   dpivotgrowth.c
   dpruneL.c
