@@ -433,8 +433,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp
   libf2c_l_le.c
   libf2c_l_lt.c
   libf2c_lbitbits.c
-  libf2c_lread.c
   libf2c_lbitshft.c
+  libf2c_lread.c
   libf2c_lwrite.c
   libf2c_missing_erf.c
   libf2c_open.c
@@ -472,8 +472,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp
   libf2c_rewind.c
   libf2c_rsfe.c
   libf2c_rsli.c
-  libf2c_s_cat.c
   libf2c_rsne.c
+  libf2c_s_cat.c
   libf2c_s_cmp.c
   libf2c_s_copy.c
   libf2c_s_paus.c
