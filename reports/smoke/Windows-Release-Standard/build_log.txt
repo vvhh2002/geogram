@@ -1,4 +1,4 @@
-MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+MSBuild version 17.7.2+d6990bcfa for .NET Framework
 
   1>Checking Build System
   Building Custom Rule D:/a/geogram/geogram/src/lib/geogram_gfx/third_party/CMakeLists.txt
@@ -135,14 +135,14 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   mesh_subdivision.cpp
   mesh_surface_intersection.cpp
   mesh_surface_intersection_internal.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1876,21): warning C4456: declaration of 'current_group' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_tetrahedralize.cpp
+  mesh_topology.cpp
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1876,21): warning C4456: declaration of 'current_group' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1863,17): message : see declaration of 'current_group' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1899,29): warning C4456: declaration of 'f' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp(932,25): warning C4457: declaration of 'f' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1875,21): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp(932,25): warning C4457: declaration of 'f' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp(874,38): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-  mesh_topology.cpp
   triangle_intersection.cpp
   CDT_2d.cpp
   LFS.cpp
@@ -433,8 +433,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp
   libf2c_l_le.c
   libf2c_l_lt.c
   libf2c_lbitbits.c
-  libf2c_lbitshft.c
   libf2c_lread.c
+  libf2c_lbitshft.c
   libf2c_lwrite.c
   libf2c_missing_erf.c
   libf2c_open.c
@@ -472,8 +472,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp
   libf2c_rewind.c
   libf2c_rsfe.c
   libf2c_rsli.c
-  libf2c_rsne.c
   libf2c_s_cat.c
+  libf2c_rsne.c
   libf2c_s_cmp.c
   libf2c_s_copy.c
   libf2c_s_paus.c
