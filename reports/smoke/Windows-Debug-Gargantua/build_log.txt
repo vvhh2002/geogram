@@ -1,4 +1,4 @@
-MSBuild version 17.7.2+d6990bcfa for .NET Framework
+MSBuild version 17.8.3+195e7f5a3 for .NET Framework
 
   1>Checking Build System
   Building Custom Rule D:/a/geogram/geogram/src/lib/geogram/third_party/CMakeLists.txt
@@ -146,8 +146,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp
   nl_iterative_solvers.c
   nl_matrix.c
   nl_mkl.c
-  nl_preconditioners.c
   nl_os.c
+  nl_preconditioners.c
   nl_superlu.c
   geogram.vcxproj -> D:\a\geogram\geogram\build\Windows\lib\Debug\geogram.lib
   Building Custom Rule D:/a/geogram/geogram/src/tests/bench_load/CMakeLists.txt

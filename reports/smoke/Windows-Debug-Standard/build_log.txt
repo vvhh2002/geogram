@@ -24,8 +24,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   gzlib.c
   gzread.c
   gzwrite.c
-  inffast.c
   inflate.c
+  inffast.c
   inftrees.c
   trees.c
   uncompr.c
@@ -138,9 +138,9 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   mesh_tetrahedralize.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1876,21): warning C4456: declaration of 'current_group' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1863,17): message : see declaration of 'current_group' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-  mesh_topology.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1899,29): warning C4456: declaration of 'f' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1875,21): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+  mesh_topology.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp(932,25): warning C4457: declaration of 'f' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp(874,38): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   triangle_intersection.cpp
@@ -193,8 +193,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp
   nl_arpack.c
   nl_blas.c
   nl_cholmod.c
-  nl_cuda.c
   nl_context.c
+  nl_cuda.c
   nl_iterative_solvers.c
   nl_matrix.c
   nl_mkl.c
@@ -515,8 +515,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp
   chemm.c
   chemv.c
   cher.c
-  cher2.c
   cher2k.c
+  cher2.c
   cherk.c
   chpmv.c
   chpr.c
@@ -737,8 +737,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp
   clapack_slaexc.c
   clapack_slahqr.c
   clapack_slaisnan.c
-  clapack_slamch.c
   clapack_slaln2.c
+  clapack_slamch.c
   clapack_slange.c
   clapack_slanhs.c
   clapack_slanst.c
@@ -840,8 +840,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp
   dmach.c
   dmemory.c
   dmyblas2.c
-  dpanel_bmod.c
   dpanel_dfs.c
+  dpanel_bmod.c
   dpivotL.c
   dpivotgrowth.c
   dpruneL.c
@@ -851,8 +851,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp
   dsnode_bmod.c
   dsnode_dfs.c
   dsp_blas2.c
-  dutil.c
   dsp_blas3.c
+  dutil.c
   dzsum1.c
   get_perm_c.c
   heap_relax_snode.c
