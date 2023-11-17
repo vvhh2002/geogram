@@ -1,4 +1,4 @@
-MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+MSBuild version 17.7.2+d6990bcfa for .NET Framework
 
   1>Checking Build System
   Building Custom Rule D:/a/geogram/geogram/src/lib/geogram/third_party/CMakeLists.txt
@@ -64,7 +64,6 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   mesh_CSG.cpp
   mesh_baking.cpp
   mesh_compare.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(233,46): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_decimate.cpp
   mesh_degree3_vertices.cpp
   mesh_distance.cpp

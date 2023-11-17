@@ -62,7 +62,6 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   mesh.cpp
   mesh_AABB.cpp
   mesh_CSG.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(233,46): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_baking.cpp
   mesh_compare.cpp
   mesh_decimate.cpp
