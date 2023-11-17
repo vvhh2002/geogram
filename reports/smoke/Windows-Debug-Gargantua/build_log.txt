@@ -1,4 +1,4 @@
-MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+MSBuild version 17.7.2+d6990bcfa for .NET Framework
 
   1>Checking Build System
   Building Custom Rule D:/a/geogram/geogram/src/lib/geogram/third_party/CMakeLists.txt
@@ -63,9 +63,9 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   mesh_AABB.cpp
   mesh_CSG.cpp
   mesh_baking.cpp
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(229,46): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_compare.cpp
   mesh_decimate.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(229,46): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?) [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_degree3_vertices.cpp
   mesh_distance.cpp
   mesh_fill_holes.cpp
@@ -85,11 +85,11 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(229,46): warning C4334: '
   mesh_surface_intersection.cpp
   mesh_surface_intersection_internal.cpp
   mesh_tetrahedralize.cpp
+  mesh_topology.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1876,21): warning C4456: declaration of 'current_group' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1863,17): message : see declaration of 'current_group' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1899,29): warning C4456: declaration of 'f' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1875,21): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-  mesh_topology.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp(932,25): warning C4457: declaration of 'f' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp(874,38): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   triangle_intersection.cpp
