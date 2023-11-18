@@ -82,6 +82,7 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   assert.cpp
   attributes.cpp
   b_stream.cpp
+  boolean_expression.cpp
   command_line.cpp
   command_line_args.cpp
   common.cpp
@@ -117,6 +118,10 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   mesh_baking.cpp
   mesh_compare.cpp
   mesh_decimate.cpp
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(664,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(646,57): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(711,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(692,58): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_degree3_vertices.cpp
   mesh_distance.cpp
   mesh_fill_holes.cpp
@@ -388,8 +393,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   libf2c_err.c
   libf2c_etime_.c
   libf2c_exit_.c
-  libf2c_f77vers.c
   libf2c_f77_aloc.c
+  libf2c_f77vers.c
   libf2c_fmt.c
   libf2c_fmtlib.c
   libf2c_ftell_.c
@@ -631,8 +636,8 @@ MSBuild version 17.7.2+d6990bcfa for .NET Framework
   zher2k.c
   zherk.c
   zhpmv.c
-  zhpr2.c
   zhpr.c
+  zhpr2.c
   zrotg.c
   zscal.c
   zswap.c
