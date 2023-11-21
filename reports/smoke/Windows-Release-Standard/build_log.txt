@@ -117,10 +117,6 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   mesh_CSG.cpp
   mesh_baking.cpp
   mesh_compare.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(675,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(650,57): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(722,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(703,58): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_decimate.cpp
   mesh_degree3_vertices.cpp
   mesh_distance.cpp

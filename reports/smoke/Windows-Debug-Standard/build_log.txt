@@ -118,10 +118,6 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   mesh_baking.cpp
   mesh_compare.cpp
   mesh_decimate.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(675,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(650,57): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(722,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(703,58): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_degree3_vertices.cpp
   mesh_distance.cpp
   mesh_fill_holes.cpp
@@ -458,8 +454,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(703,58): message : see de
   libf2c_r_imag.c
   libf2c_r_int.c
   libf2c_r_lg10.c
-  libf2c_r_mod.c
   libf2c_r_log.c
+  libf2c_r_mod.c
   libf2c_r_nint.c
   libf2c_r_sign.c
   libf2c_r_sin.c
@@ -611,8 +607,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(703,58): message : see de
   stbsv.c
   stpmv.c
   stpsv.c
-  strmv.c
   strmm.c
+  strmv.c
   strsm.c
   strsv.c
   xerbla.c
