@@ -116,11 +116,11 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   mesh_AABB.cpp
   mesh_CSG.cpp
   mesh_baking.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(670,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_compare.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(645,57): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(717,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(698,58): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(675,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(650,57): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(722,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(703,58): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_decimate.cpp
   mesh_degree3_vertices.cpp
   mesh_distance.cpp
@@ -429,8 +429,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(698,58): message : see de
   libf2c_inquire.c
   libf2c_l_ge.c
   libf2c_l_gt.c
-  libf2c_l_lt.c
   libf2c_l_le.c
+  libf2c_l_lt.c
   libf2c_lbitbits.c
   libf2c_lbitshft.c
   libf2c_lread.c
@@ -492,8 +492,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(698,58): message : see de
   libf2c_wrtfmt.c
   libf2c_wsfe.c
   libf2c_wsle.c
-  libf2c_xwsne.c
   libf2c_wsne.c
+  libf2c_xwsne.c
   libf2c_z_abs.c
   libf2c_z_cos.c
   libf2c_z_div.c
