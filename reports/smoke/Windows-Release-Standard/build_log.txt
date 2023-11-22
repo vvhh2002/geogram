@@ -61,8 +61,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   ltm.c
   lundump.c
   lutf8lib.c
-  lvm.c
   lzio.c
+  lvm.c
   triangle.c
   Factor.cpp
   Geometry.cpp
@@ -472,8 +472,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   libf2c_s_cmp.c
   libf2c_s_copy.c
   libf2c_s_paus.c
-  libf2c_s_rnge.c
   libf2c_s_stop.c
+  libf2c_s_rnge.c
   libf2c_sfe.c
   libf2c_sig_die.c
   libf2c_signal_.c
