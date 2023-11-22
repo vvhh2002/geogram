@@ -36,8 +36,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   lbitlib.c
   lcode.c
   lcorolib.c
-  lctype.c
   ldblib.c
+  lctype.c
   ldebug.c
   ldo.c
   ldump.c
@@ -61,8 +61,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   ltm.c
   lundump.c
   lutf8lib.c
-  lzio.c
   lvm.c
+  lzio.c
   triangle.c
   Factor.cpp
   Geometry.cpp
@@ -472,8 +472,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   libf2c_s_cmp.c
   libf2c_s_copy.c
   libf2c_s_paus.c
-  libf2c_s_stop.c
   libf2c_s_rnge.c
+  libf2c_s_stop.c
   libf2c_sfe.c
   libf2c_sig_die.c
   libf2c_signal_.c
@@ -487,8 +487,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   libf2c_wref.c
   libf2c_wrtfmt.c
   libf2c_wsfe.c
-  libf2c_wsle.c
   libf2c_wsne.c
+  libf2c_wsle.c
   libf2c_xwsne.c
   libf2c_z_abs.c
   libf2c_z_cos.c
