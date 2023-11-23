@@ -119,7 +119,7 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   mesh_compare.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1234,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1208,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1259,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1260,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1208,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_decimate.cpp
   mesh_degree3_vertices.cpp
@@ -400,8 +400,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1208,56): message : see d
   libf2c_ftell_.c
   libf2c_getarg_.c
   libf2c_getenv_.c
-  libf2c_h_dim.c
   libf2c_h_abs.c
+  libf2c_h_dim.c
   libf2c_h_dnnt.c
   libf2c_h_indx.c
   libf2c_h_len.c
