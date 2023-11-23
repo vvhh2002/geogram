@@ -36,8 +36,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   lbitlib.c
   lcode.c
   lcorolib.c
-  ldblib.c
   lctype.c
+  ldblib.c
   ldebug.c
   ldo.c
   ldump.c
@@ -117,6 +117,10 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   mesh_CSG.cpp
   mesh_baking.cpp
   mesh_compare.cpp
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1234,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1208,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1259,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1208,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_decimate.cpp
   mesh_degree3_vertices.cpp
   mesh_distance.cpp
@@ -396,8 +400,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   libf2c_ftell_.c
   libf2c_getarg_.c
   libf2c_getenv_.c
-  libf2c_h_abs.c
   libf2c_h_dim.c
+  libf2c_h_abs.c
   libf2c_h_dnnt.c
   libf2c_h_indx.c
   libf2c_h_len.c
@@ -487,8 +491,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   libf2c_wref.c
   libf2c_wrtfmt.c
   libf2c_wsfe.c
-  libf2c_wsne.c
   libf2c_wsle.c
+  libf2c_wsne.c
   libf2c_xwsne.c
   libf2c_z_abs.c
   libf2c_z_cos.c

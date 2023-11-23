@@ -118,7 +118,12 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   mesh_baking.cpp
   mesh_compare.cpp
   mesh_decimate.cpp
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1234,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1208,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1259,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1208,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_degree3_vertices.cpp
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1295): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_distance.cpp
   mesh_fill_holes.cpp
   mesh_frame_field.cpp
@@ -1028,8 +1033,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   zngets.c
   zsortc.c
   zstatn.c
-  cvout.c
   cmout.c
+  cvout.c
   dmout.c
   dvout.c
   icnteq.c
