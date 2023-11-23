@@ -1,4 +1,4 @@
-[  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/libMeshb/sources/libmeshb7.c.o
+[  0%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/libMeshb/sources/libmeshb7.c.o
 [  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/rply/rply.c.o
 [  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/adler32.c.o
 [  2%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/compress.c.o
@@ -59,19 +59,19 @@
 [ 29%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_AABB.cpp.o
 [ 29%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_CSG.cpp.o
 [ 30%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_baking.cpp.o
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1234:22: warning: declaration shadows a local variable [-Wshadow]
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1252:22: warning: declaration shadows a local variable [-Wshadow]
             CSGScope scope;
                      ^
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1208:56: note: previous declaration is here
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1226:56: note: previous declaration is here
     CSGMesh_var CSGBuilder::projection(const CSGScope& scope, bool cut) {
                                                        ^
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1260:22: warning: declaration shadows a local variable [-Wshadow]
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1278:22: warning: declaration shadows a local variable [-Wshadow]
             CSGScope scope;
                      ^
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1208:56: note: previous declaration is here
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1226:56: note: previous declaration is here
     CSGMesh_var CSGBuilder::projection(const CSGScope& scope, bool cut) {
                                                        ^
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1296:16: warning: 'return' will never be executed [-Wunreachable-code-return]
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1314:16: warning: 'return' will never be executed [-Wunreachable-code-return]
         return result;
                ^~~~~~
 [ 30%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_compare.cpp.o
@@ -198,8 +198,8 @@
 [ 85%] Built target test_expansion_nt
 [ 86%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
 [ 87%] Linking CXX executable ../../../bin/test_nn_search
-[ 87%] Built target test_nn_search
 [ 87%] Linking CXX executable ../../../bin/test_HLBFGS
+[ 87%] Built target test_nn_search
 [ 88%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
 [ 88%] Built target test_HLBFGS
 [ 89%] Building CXX object src/tests/test_logger/CMakeFiles/test_logger.dir/main.cpp.o
