@@ -20,7 +20,7 @@
 [ 10%] Building CXX object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/PoissonRecon/poisson_geogram.cpp.o
 [ 10%] Building CXX object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/xatlas/xatlas.cpp.o
 [ 10%] Built target geogram_third_party
-[ 10%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/android_utils.cpp.o
+[ 11%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/android_utils.cpp.o
 [ 11%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/algorithm.cpp.o
 [ 12%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/assert.cpp.o
 [ 12%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/attributes.cpp.o
@@ -59,24 +59,30 @@
 [ 29%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_AABB.cpp.o
 [ 29%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_CSG.cpp.o
 [ 30%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_baking.cpp.o
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1252:22: warning: declaration shadows a local variable [-Wshadow]
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:674:16: warning: 'return' will never be executed [-Wunreachable-code-return]
+        return nullptr;
+               ^~~~~~~
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:689:17: warning: 'break' will never be executed [-Wunreachable-code-break]
+                break;
+                ^~~~~
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1297:22: warning: declaration shadows a local variable [-Wshadow]
             CSGScope scope;
                      ^
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1226:56: note: previous declaration is here
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1271:56: note: previous declaration is here
     CSGMesh_var CSGBuilder::projection(const CSGScope& scope, bool cut) {
                                                        ^
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1278:22: warning: declaration shadows a local variable [-Wshadow]
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1323:22: warning: declaration shadows a local variable [-Wshadow]
             CSGScope scope;
                      ^
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1226:56: note: previous declaration is here
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1271:56: note: previous declaration is here
     CSGMesh_var CSGBuilder::projection(const CSGScope& scope, bool cut) {
                                                        ^
-/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1314:16: warning: 'return' will never be executed [-Wunreachable-code-return]
+/Users/runner/work/geogram/geogram/src/lib/geogram/mesh/mesh_CSG.cpp:1359:16: warning: 'return' will never be executed [-Wunreachable-code-return]
         return result;
                ^~~~~~
 [ 30%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_compare.cpp.o
 [ 31%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_decimate.cpp.o
-3 warnings generated.
+5 warnings generated.
 [ 31%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_degree3_vertices.cpp.o
 [ 32%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_distance.cpp.o
 [ 32%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/mesh/mesh_fill_holes.cpp.o
@@ -156,8 +162,8 @@
 [ 69%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/bibliography/embedded_references.cpp.o
 [ 70%] Linking CXX shared library ../../../lib/libgeogram.dylib
 [ 70%] Built target geogram
-[ 70%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
 [ 70%] Building CXX object src/bin/vorpacomp/CMakeFiles/vorpacomp.dir/main.cpp.o
+[ 70%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
 [ 71%] Linking CXX executable ../../../bin/vorpacomp
 [ 72%] Linking CXX executable ../../../bin/vorpastat
 [ 72%] Built target vorpacomp
@@ -198,8 +204,8 @@
 [ 85%] Built target test_expansion_nt
 [ 86%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
 [ 87%] Linking CXX executable ../../../bin/test_nn_search
-[ 87%] Linking CXX executable ../../../bin/test_HLBFGS
 [ 87%] Built target test_nn_search
+[ 88%] Linking CXX executable ../../../bin/test_HLBFGS
 [ 88%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
 [ 88%] Built target test_HLBFGS
 [ 89%] Building CXX object src/tests/test_logger/CMakeFiles/test_logger.dir/main.cpp.o
