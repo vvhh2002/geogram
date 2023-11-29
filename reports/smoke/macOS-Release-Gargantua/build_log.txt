@@ -20,7 +20,7 @@
 [ 10%] Building CXX object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/PoissonRecon/poisson_geogram.cpp.o
 [ 10%] Building CXX object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/xatlas/xatlas.cpp.o
 [ 10%] Built target geogram_third_party
-[ 11%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/android_utils.cpp.o
+[ 10%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/android_utils.cpp.o
 [ 11%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/algorithm.cpp.o
 [ 12%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/assert.cpp.o
 [ 12%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/attributes.cpp.o
@@ -201,8 +201,8 @@
 [ 85%] Built target test_expansion_nt
 [ 86%] Building CXX object src/tests/test_HLBFGS/CMakeFiles/test_HLBFGS.dir/main.cpp.o
 [ 87%] Linking CXX executable ../../../bin/test_nn_search
-[ 87%] Built target test_nn_search
 [ 87%] Linking CXX executable ../../../bin/test_HLBFGS
+[ 87%] Built target test_nn_search
 [ 88%] Building CXX object src/tests/test_RVC/CMakeFiles/test_RVC.dir/main.cpp.o
 [ 88%] Built target test_HLBFGS
 [ 89%] Building CXX object src/tests/test_logger/CMakeFiles/test_logger.dir/main.cpp.o
