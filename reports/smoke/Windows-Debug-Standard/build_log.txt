@@ -55,8 +55,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   lparser.c
   lstate.c
   lstring.c
-  lstrlib.c
   ltable.c
+  lstrlib.c
   ltablib.c
   ltm.c
   lundump.c
@@ -117,11 +117,11 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   mesh_CSG.cpp
   mesh_baking.cpp
   mesh_compare.cpp
-  mesh_decimate.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1428,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1402,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1454,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1402,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+  mesh_decimate.cpp
   mesh_degree3_vertices.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1490): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_distance.cpp
