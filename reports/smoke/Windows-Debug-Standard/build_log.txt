@@ -122,8 +122,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1428,22): warning C4457: 
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1402,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1454,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1402,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-  mesh_degree3_vertices.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1490): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+  mesh_degree3_vertices.cpp
   mesh_distance.cpp
   mesh_fill_holes.cpp
   mesh_frame_field.cpp
