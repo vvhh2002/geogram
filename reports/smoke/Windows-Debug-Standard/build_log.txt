@@ -198,8 +198,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1490): warning C4702: unr
   nl_iterative_solvers.c
   nl_matrix.c
   nl_mkl.c
-  nl_os.c
   nl_preconditioners.c
+  nl_os.c
   nl_superlu.c
   geogram.vcxproj -> D:\a\geogram\geogram\build\Windows\lib\Debug\geogram.lib
   Building Custom Rule D:/a/geogram/geogram/src/tests/bench_load/CMakeLists.txt
