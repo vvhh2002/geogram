@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/bin/compute_CSG /home/runner/work/geogram/geogram/tests/data/CSG/example022.csg</line>
 </preamble>
 
-<pid>9657</pid>
-<ppid>6908</ppid>
+<pid>9587</pid>
+<ppid>6913</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -39,7 +39,7 @@
 </status>
 
 <fatal_signal>
-  <tid>8</tid>
+  <tid>5</tid>
   <signo>6</signo>
   <signame>SIGABRT</signame>
   <sicode>-6</sicode>
@@ -138,7 +138,7 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:00:37.886 </time>
+  <time>00:00:00:37.505 </time>
 </status>
 
 <error>
@@ -17307,7 +17307,86 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>88 bytes in 1 blocks are still reachable in loss record 201 of 406</text>
+    <text>85 bytes in 1 blocks are still reachable in loss record 201 of 406</text>
+    <leakedbytes>85</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x530DD6C</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>void std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_construct&lt;char const*&gt;(char const*, char const*, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4BD3717</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned long, unsigned long)#2}::operator()(unsigned long, unsigned long) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection.cpp</file>
+      <line>1225</line>
+    </frame>
+    <frame>
+      <ip>0x4BDC2D6</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::_Function_handler&lt;void (unsigned long, unsigned long), GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned long, unsigned long)#2}&gt;::_M_invoke(std::_Any_data const&amp;, unsigned long&amp;&amp;, std::_Any_data const&amp;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>std_function.h</file>
+      <line>300</line>
+    </frame>
+    <frame>
+      <ip>0x4A0355F</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::function&lt;void (unsigned long, unsigned long)&gt;::operator()(unsigned long, unsigned long) const</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>std_function.h</file>
+      <line>688</line>
+    </frame>
+    <frame>
+      <ip>0x4A00F2B</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::ParallelForSliceThread::run()</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>process.cpp</file>
+      <line>671</line>
+    </frame>
+    <frame>
+      <ip>0x4A05358</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::PThreadManager::run_thread(void*)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>process_unix.cpp</file>
+      <line>209</line>
+    </frame>
+    <frame>
+      <ip>0x55C1608</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>start_thread</fn>
+      <dir>/build/glibc-BHL3KM/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x54E4132</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>clone</fn>
+      <dir>/build/glibc-BHL3KM/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>95</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xc9</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>88 bytes in 1 blocks are still reachable in loss record 202 of 406</text>
     <leakedbytes>88</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -17345,11 +17424,11 @@
 </error>
 
 <error>
-  <unique>0xc9</unique>
+  <unique>0xca</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>88 bytes in 1 blocks are still reachable in loss record 202 of 406</text>
+    <text>88 bytes in 1 blocks are still reachable in loss record 203 of 406</text>
     <leakedbytes>88</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -17387,11 +17466,11 @@
 </error>
 
 <error>
-  <unique>0xca</unique>
+  <unique>0xcb</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 203 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 204 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -17485,11 +17564,11 @@
 </error>
 
 <error>
-  <unique>0xcb</unique>
+  <unique>0xcc</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 204 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 205 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -17583,11 +17662,11 @@
 </error>
 
 <error>
-  <unique>0xcc</unique>
+  <unique>0xcd</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 205 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 206 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -17681,11 +17760,11 @@
 </error>
 
 <error>
-  <unique>0xcd</unique>
+  <unique>0xce</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 206 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 207 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -17750,104 +17829,6 @@
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
       <line>509</line>
-    </frame>
-    <frame>
-      <ip>0x49A3B12</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::geo_register_attribute_type&lt;unsigned char&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>attributes.h</file>
-      <line>707</line>
-    </frame>
-    <frame>
-      <ip>0x49A1145</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::initialize(int)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>common.cpp</file>
-      <line>114</line>
-    </frame>
-    <frame>
-      <ip>0x10D82D</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/bin/compute_CSG</obj>
-      <fn>main</fn>
-      <dir>/home/runner/work/geogram/geogram/src/examples/geogram/compute_CSG</dir>
-      <file>main.cpp</file>
-      <line>128</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0xce</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 207 of 406</text>
-    <leakedbytes>96</leakedbytes>
-    <leakedblocks>1</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483BE63</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>operator new(unsigned long)</fn>
-    </frame>
-    <frame>
-      <ip>0x49ADE69</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>__gnu_cxx::new_allocator&lt;std::_Rb_tree_node&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;::allocate(unsigned long, void const*)</fn>
-      <dir>/usr/include/c++/9/ext</dir>
-      <file>new_allocator.h</file>
-      <line>114</line>
-    </frame>
-    <frame>
-      <ip>0x49ACDA1</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::allocator_traits&lt;std::allocator&lt;std::_Rb_tree_node&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt; &gt;::allocate(std::allocator&lt;std::_Rb_tree_node&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;&amp;, unsigned long)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>alloc_traits.h</file>
-      <line>443</line>
-    </frame>
-    <frame>
-      <ip>0x49AB083</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::_Rb_tree&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::_Select1st&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt;, std::less&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;::_M_get_node()</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>stl_tree.h</file>
-      <line>580</line>
-    </frame>
-    <frame>
-      <ip>0x49A889F</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::_Rb_tree_node&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt;* std::_Rb_tree&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::_Select1st&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt;, std::less&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;::_M_create_node&lt;std::piecewise_construct_t const&amp;, std::tuple&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;&gt;, std::tuple&lt;&gt; &gt;(std::piecewise_construct_t const&amp;, std::tuple&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;&gt;&amp;&amp;, std::tuple&lt;&gt;&amp;&amp;)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>stl_tree.h</file>
-      <line>630</line>
-    </frame>
-    <frame>
-      <ip>0x49A57A0</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::_Rb_tree_iterator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; std::_Rb_tree&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::_Select1st&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt;, std::less&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;::_M_emplace_hint_unique&lt;std::piecewise_construct_t const&amp;, std::tuple&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;&gt;, std::tuple&lt;&gt; &gt;(std::_Rb_tree_const_iterator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt;, std::piecewise_construct_t const&amp;, std::tuple&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;&gt;&amp;&amp;, std::tuple&lt;&gt;&amp;&amp;)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>stl_tree.h</file>
-      <line>2460</line>
-    </frame>
-    <frame>
-      <ip>0x49A31F5</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::map&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::less&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;::operator[](std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>stl_map.h</file>
-      <line>499</line>
-    </frame>
-    <frame>
-      <ip>0x49A25DC</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>attributes.h</file>
-      <line>510</line>
     </frame>
     <frame>
       <ip>0x49A3B12</ip>
@@ -17940,28 +17921,28 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25B4</ip>
+      <ip>0x49A25DC</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>509</line>
+      <line>510</line>
     </frame>
     <frame>
-      <ip>0x49A3C94</ip>
+      <ip>0x49A3B12</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::geo_register_attribute_type&lt;char&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <fn>GEO::geo_register_attribute_type&lt;unsigned char&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
       <line>707</line>
     </frame>
     <frame>
-      <ip>0x49A1193</ip>
+      <ip>0x49A1145</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::initialize(int)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>common.cpp</file>
-      <line>115</line>
+      <line>114</line>
     </frame>
     <frame>
       <ip>0x10D82D</ip>
@@ -18038,12 +18019,12 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25DC</ip>
+      <ip>0x49A25B4</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>510</line>
+      <line>509</line>
     </frame>
     <frame>
       <ip>0x49A3C94</ip>
@@ -18136,28 +18117,28 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25B4</ip>
+      <ip>0x49A25DC</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>509</line>
+      <line>510</line>
     </frame>
     <frame>
-      <ip>0x49A3E16</ip>
+      <ip>0x49A3C94</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::geo_register_attribute_type&lt;int&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <fn>GEO::geo_register_attribute_type&lt;char&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
       <line>707</line>
     </frame>
     <frame>
-      <ip>0x49A11E1</ip>
+      <ip>0x49A1193</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::initialize(int)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>common.cpp</file>
-      <line>116</line>
+      <line>115</line>
     </frame>
     <frame>
       <ip>0x10D82D</ip>
@@ -18234,12 +18215,12 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25DC</ip>
+      <ip>0x49A25B4</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>510</line>
+      <line>509</line>
     </frame>
     <frame>
       <ip>0x49A3E16</ip>
@@ -18332,28 +18313,28 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25B4</ip>
+      <ip>0x49A25DC</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>509</line>
+      <line>510</line>
     </frame>
     <frame>
-      <ip>0x49A3F98</ip>
+      <ip>0x49A3E16</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::geo_register_attribute_type&lt;unsigned int&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <fn>GEO::geo_register_attribute_type&lt;int&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
       <line>707</line>
     </frame>
     <frame>
-      <ip>0x49A122F</ip>
+      <ip>0x49A11E1</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::initialize(int)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>common.cpp</file>
-      <line>117</line>
+      <line>116</line>
     </frame>
     <frame>
       <ip>0x10D82D</ip>
@@ -18430,12 +18411,12 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25DC</ip>
+      <ip>0x49A25B4</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>510</line>
+      <line>509</line>
     </frame>
     <frame>
       <ip>0x49A3F98</ip>
@@ -18528,28 +18509,28 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25B4</ip>
+      <ip>0x49A25DC</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>509</line>
+      <line>510</line>
     </frame>
     <frame>
-      <ip>0x49A411A</ip>
+      <ip>0x49A3F98</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::geo_register_attribute_type&lt;unsigned long&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <fn>GEO::geo_register_attribute_type&lt;unsigned int&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
       <line>707</line>
     </frame>
     <frame>
-      <ip>0x49A127D</ip>
+      <ip>0x49A122F</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::initialize(int)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>common.cpp</file>
-      <line>118</line>
+      <line>117</line>
     </frame>
     <frame>
       <ip>0x10D82D</ip>
@@ -18626,12 +18607,12 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25DC</ip>
+      <ip>0x49A25B4</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>510</line>
+      <line>509</line>
     </frame>
     <frame>
       <ip>0x49A411A</ip>
@@ -18724,28 +18705,28 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25B4</ip>
+      <ip>0x49A25DC</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>509</line>
+      <line>510</line>
     </frame>
     <frame>
-      <ip>0x49A429C</ip>
+      <ip>0x49A411A</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::geo_register_attribute_type&lt;long&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <fn>GEO::geo_register_attribute_type&lt;unsigned long&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
       <line>707</line>
     </frame>
     <frame>
-      <ip>0x49A12CB</ip>
+      <ip>0x49A127D</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::initialize(int)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>common.cpp</file>
-      <line>119</line>
+      <line>118</line>
     </frame>
     <frame>
       <ip>0x10D82D</ip>
@@ -18822,12 +18803,12 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25DC</ip>
+      <ip>0x49A25B4</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>510</line>
+      <line>509</line>
     </frame>
     <frame>
       <ip>0x49A429C</ip>
@@ -18920,28 +18901,28 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25B4</ip>
+      <ip>0x49A25DC</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>509</line>
+      <line>510</line>
     </frame>
     <frame>
-      <ip>0x49A441E</ip>
+      <ip>0x49A429C</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::geo_register_attribute_type&lt;float&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <fn>GEO::geo_register_attribute_type&lt;long&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
       <line>707</line>
     </frame>
     <frame>
-      <ip>0x49A1319</ip>
+      <ip>0x49A12CB</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::initialize(int)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>common.cpp</file>
-      <line>120</line>
+      <line>119</line>
     </frame>
     <frame>
       <ip>0x10D82D</ip>
@@ -19018,12 +18999,12 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25DC</ip>
+      <ip>0x49A25B4</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>510</line>
+      <line>509</line>
     </frame>
     <frame>
       <ip>0x49A441E</ip>
@@ -19116,28 +19097,28 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25B4</ip>
+      <ip>0x49A25DC</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>509</line>
+      <line>510</line>
     </frame>
     <frame>
-      <ip>0x49A45A0</ip>
+      <ip>0x49A441E</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::geo_register_attribute_type&lt;double&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <fn>GEO::geo_register_attribute_type&lt;float&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
       <line>707</line>
     </frame>
     <frame>
-      <ip>0x49A1367</ip>
+      <ip>0x49A1319</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::initialize(int)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>common.cpp</file>
-      <line>121</line>
+      <line>120</line>
     </frame>
     <frame>
       <ip>0x10D82D</ip>
@@ -19214,12 +19195,12 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25DC</ip>
+      <ip>0x49A25B4</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>510</line>
+      <line>509</line>
     </frame>
     <frame>
       <ip>0x49A45A0</ip>
@@ -19312,28 +19293,28 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25B4</ip>
+      <ip>0x49A25DC</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>509</line>
+      <line>510</line>
     </frame>
     <frame>
-      <ip>0x49A471F</ip>
+      <ip>0x49A45A0</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::geo_register_attribute_type&lt;GEO::vecng&lt;2ul, double&gt; &gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <fn>GEO::geo_register_attribute_type&lt;double&gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
       <line>707</line>
     </frame>
     <frame>
-      <ip>0x49A13B5</ip>
+      <ip>0x49A1367</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::initialize(int)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>common.cpp</file>
-      <line>123</line>
+      <line>121</line>
     </frame>
     <frame>
       <ip>0x10D82D</ip>
@@ -19410,12 +19391,12 @@
       <line>499</line>
     </frame>
     <frame>
-      <ip>0x49A25DC</ip>
+      <ip>0x49A25B4</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
-      <line>510</line>
+      <line>509</line>
     </frame>
     <frame>
       <ip>0x49A471F</ip>
@@ -19508,6 +19489,104 @@
       <line>499</line>
     </frame>
     <frame>
+      <ip>0x49A25DC</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>attributes.h</file>
+      <line>510</line>
+    </frame>
+    <frame>
+      <ip>0x49A471F</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::geo_register_attribute_type&lt;GEO::vecng&lt;2ul, double&gt; &gt;::geo_register_attribute_type(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>attributes.h</file>
+      <line>707</line>
+    </frame>
+    <frame>
+      <ip>0x49A13B5</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::initialize(int)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>common.cpp</file>
+      <line>123</line>
+    </frame>
+    <frame>
+      <ip>0x10D82D</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/bin/compute_CSG</obj>
+      <fn>main</fn>
+      <dir>/home/runner/work/geogram/geogram/src/examples/geogram/compute_CSG</dir>
+      <file>main.cpp</file>
+      <line>128</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xe0</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>96 bytes in 1 blocks are still reachable in loss record 225 of 406</text>
+    <leakedbytes>96</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x49ADE69</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>__gnu_cxx::new_allocator&lt;std::_Rb_tree_node&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;::allocate(unsigned long, void const*)</fn>
+      <dir>/usr/include/c++/9/ext</dir>
+      <file>new_allocator.h</file>
+      <line>114</line>
+    </frame>
+    <frame>
+      <ip>0x49ACDA1</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::allocator_traits&lt;std::allocator&lt;std::_Rb_tree_node&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt; &gt;::allocate(std::allocator&lt;std::_Rb_tree_node&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;&amp;, unsigned long)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>alloc_traits.h</file>
+      <line>443</line>
+    </frame>
+    <frame>
+      <ip>0x49AB083</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::_Rb_tree&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::_Select1st&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt;, std::less&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;::_M_get_node()</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>stl_tree.h</file>
+      <line>580</line>
+    </frame>
+    <frame>
+      <ip>0x49A889F</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::_Rb_tree_node&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt;* std::_Rb_tree&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::_Select1st&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt;, std::less&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;::_M_create_node&lt;std::piecewise_construct_t const&amp;, std::tuple&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;&gt;, std::tuple&lt;&gt; &gt;(std::piecewise_construct_t const&amp;, std::tuple&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;&gt;&amp;&amp;, std::tuple&lt;&gt;&amp;&amp;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>stl_tree.h</file>
+      <line>630</line>
+    </frame>
+    <frame>
+      <ip>0x49A57A0</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::_Rb_tree_iterator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; std::_Rb_tree&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::_Select1st&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt;, std::less&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;::_M_emplace_hint_unique&lt;std::piecewise_construct_t const&amp;, std::tuple&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;&gt;, std::tuple&lt;&gt; &gt;(std::_Rb_tree_const_iterator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt;, std::piecewise_construct_t const&amp;, std::tuple&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;&gt;&amp;&amp;, std::tuple&lt;&gt;&amp;&amp;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>stl_tree.h</file>
+      <line>2460</line>
+    </frame>
+    <frame>
+      <ip>0x49A31F5</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::map&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::less&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;::operator[](std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>stl_map.h</file>
+      <line>499</line>
+    </frame>
+    <frame>
       <ip>0x49A25B4</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::AttributeStore::register_attribute_creator(GEO::AttributeStoreCreator*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
@@ -19543,11 +19622,11 @@
 </error>
 
 <error>
-  <unique>0xe0</unique>
+  <unique>0xe1</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 225 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 226 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -19641,11 +19720,11 @@
 </error>
 
 <error>
-  <unique>0xe1</unique>
+  <unique>0xe2</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 226 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 227 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -19747,11 +19826,11 @@
 </error>
 
 <error>
-  <unique>0xe2</unique>
+  <unique>0xe3</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 227 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 228 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -19853,11 +19932,11 @@
 </error>
 
 <error>
-  <unique>0xe3</unique>
+  <unique>0xe4</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 228 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 229 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -19959,11 +20038,11 @@
 </error>
 
 <error>
-  <unique>0xe4</unique>
+  <unique>0xe5</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 229 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 230 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -20065,11 +20144,11 @@
 </error>
 
 <error>
-  <unique>0xe5</unique>
+  <unique>0xe6</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 230 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 231 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -20171,11 +20250,11 @@
 </error>
 
 <error>
-  <unique>0xe6</unique>
+  <unique>0xe7</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 231 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 232 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -20277,11 +20356,11 @@
 </error>
 
 <error>
-  <unique>0xe7</unique>
+  <unique>0xe8</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 232 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 233 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -20383,11 +20462,11 @@
 </error>
 
 <error>
-  <unique>0xe8</unique>
+  <unique>0xe9</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 233 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 234 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -20489,11 +20568,11 @@
 </error>
 
 <error>
-  <unique>0xe9</unique>
+  <unique>0xea</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 234 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 235 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -20595,11 +20674,11 @@
 </error>
 
 <error>
-  <unique>0xea</unique>
+  <unique>0xeb</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 235 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 236 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -20701,11 +20780,11 @@
 </error>
 
 <error>
-  <unique>0xeb</unique>
+  <unique>0xec</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 236 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 237 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -20807,11 +20886,11 @@
 </error>
 
 <error>
-  <unique>0xec</unique>
+  <unique>0xed</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 237 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 238 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -20913,11 +20992,11 @@
 </error>
 
 <error>
-  <unique>0xed</unique>
+  <unique>0xee</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 238 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 239 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -21019,11 +21098,11 @@
 </error>
 
 <error>
-  <unique>0xee</unique>
+  <unique>0xef</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 239 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 240 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -21125,11 +21204,11 @@
 </error>
 
 <error>
-  <unique>0xef</unique>
+  <unique>0xf0</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 240 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 241 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -21231,11 +21310,11 @@
 </error>
 
 <error>
-  <unique>0xf0</unique>
+  <unique>0xf1</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 241 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 242 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -21337,11 +21416,11 @@
 </error>
 
 <error>
-  <unique>0xf1</unique>
+  <unique>0xf2</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 242 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 243 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -21443,11 +21522,11 @@
 </error>
 
 <error>
-  <unique>0xf2</unique>
+  <unique>0xf3</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 243 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 244 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -21549,11 +21628,11 @@
 </error>
 
 <error>
-  <unique>0xf3</unique>
+  <unique>0xf4</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 244 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 245 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -21655,11 +21734,11 @@
 </error>
 
 <error>
-  <unique>0xf4</unique>
+  <unique>0xf5</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 245 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 246 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -21761,11 +21840,11 @@
 </error>
 
 <error>
-  <unique>0xf5</unique>
+  <unique>0xf6</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 246 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 247 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -21867,11 +21946,11 @@
 </error>
 
 <error>
-  <unique>0xf6</unique>
+  <unique>0xf7</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 247 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 248 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -21973,11 +22052,11 @@
 </error>
 
 <error>
-  <unique>0xf7</unique>
+  <unique>0xf8</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 248 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 249 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -22079,11 +22158,11 @@
 </error>
 
 <error>
-  <unique>0xf8</unique>
+  <unique>0xf9</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 249 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 250 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -22185,11 +22264,11 @@
 </error>
 
 <error>
-  <unique>0xf9</unique>
+  <unique>0xfa</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 250 of 406</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 251 of 406</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -22288,11 +22367,11 @@
 </error>
 
 <error>
-  <unique>0xfa</unique>
+  <unique>0xfb</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>99 bytes in 4 blocks are still reachable in loss record 251 of 406</text>
+    <text>99 bytes in 4 blocks are still reachable in loss record 252 of 406</text>
     <leakedbytes>99</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -22391,11 +22470,11 @@
 </error>
 
 <error>
-  <unique>0xfb</unique>
+  <unique>0xfc</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>104 bytes in 1 blocks are still reachable in loss record 252 of 406</text>
+    <text>104 bytes in 1 blocks are still reachable in loss record 253 of 406</text>
     <leakedbytes>104</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -22494,64 +22573,6 @@
 </error>
 
 <error>
-  <unique>0xfc</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>112 bytes in 1 blocks are still reachable in loss record 253 of 406</text>
-    <leakedbytes>112</leakedbytes>
-    <leakedblocks>1</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483BE63</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>operator new(unsigned long)</fn>
-    </frame>
-    <frame>
-      <ip>0x49F3435</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::LoggerStream::LoggerStream(GEO::Logger*)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>logger.cpp</file>
-      <line>73</line>
-    </frame>
-    <frame>
-      <ip>0x49F4D2E</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::Logger::Logger()</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>logger.cpp</file>
-      <line>344</line>
-    </frame>
-    <frame>
-      <ip>0x49F3FEA</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::Logger::initialize()</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>logger.cpp</file>
-      <line>182</line>
-    </frame>
-    <frame>
-      <ip>0x49A10CD</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::initialize(int)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>common.cpp</file>
-      <line>93</line>
-    </frame>
-    <frame>
-      <ip>0x10D82D</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/bin/compute_CSG</obj>
-      <fn>main</fn>
-      <dir>/home/runner/work/geogram/geogram/src/examples/geogram/compute_CSG</dir>
-      <file>main.cpp</file>
-      <line>128</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
   <unique>0xfd</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
@@ -22575,7 +22596,7 @@
       <line>73</line>
     </frame>
     <frame>
-      <ip>0x49F4D48</ip>
+      <ip>0x49F4D2E</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::Logger::Logger()</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
@@ -22633,7 +22654,7 @@
       <line>73</line>
     </frame>
     <frame>
-      <ip>0x49F4D62</ip>
+      <ip>0x49F4D48</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::Logger::Logger()</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
@@ -22691,7 +22712,7 @@
       <line>73</line>
     </frame>
     <frame>
-      <ip>0x49F4D7C</ip>
+      <ip>0x49F4D62</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::Logger::Logger()</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
@@ -22730,7 +22751,65 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 257 of 406</text>
+    <text>112 bytes in 1 blocks are still reachable in loss record 257 of 406</text>
+    <leakedbytes>112</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x49F3435</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::LoggerStream::LoggerStream(GEO::Logger*)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>logger.cpp</file>
+      <line>73</line>
+    </frame>
+    <frame>
+      <ip>0x49F4D7C</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::Logger::Logger()</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>logger.cpp</file>
+      <line>344</line>
+    </frame>
+    <frame>
+      <ip>0x49F3FEA</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::Logger::initialize()</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>logger.cpp</file>
+      <line>182</line>
+    </frame>
+    <frame>
+      <ip>0x49A10CD</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::initialize(int)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>common.cpp</file>
+      <line>93</line>
+    </frame>
+    <frame>
+      <ip>0x10D82D</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/bin/compute_CSG</obj>
+      <fn>main</fn>
+      <dir>/home/runner/work/geogram/geogram/src/examples/geogram/compute_CSG</dir>
+      <file>main.cpp</file>
+      <line>128</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x101</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>128 bytes in 1 blocks are still reachable in loss record 258 of 406</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -22824,11 +22903,11 @@
 </error>
 
 <error>
-  <unique>0x101</unique>
+  <unique>0x102</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 258 of 406</text>
+    <text>128 bytes in 1 blocks are still reachable in loss record 259 of 406</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -22930,112 +23009,6 @@
 </error>
 
 <error>
-  <unique>0x102</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 259 of 406</text>
-    <leakedbytes>128</leakedbytes>
-    <leakedblocks>1</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483BE63</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>operator new(unsigned long)</fn>
-    </frame>
-    <frame>
-      <ip>0x4BEB9EC</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::TypedAttributeStore&lt;GEO::vec3Hg&lt;GEO::expansion_nt&gt; const*&gt;::clone() const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>attributes.h</file>
-      <line>650</line>
-    </frame>
-    <frame>
-      <ip>0x4977848</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::AttributesManager::copy(GEO::AttributesManager const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>attributes.cpp</file>
-      <line>314</line>
-    </frame>
-    <frame>
-      <ip>0x4A79CA7</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSubElementsStore::copy(GEO::MeshSubElementsStore const&amp;, bool)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh.h</file>
-      <line>209</line>
-    </frame>
-    <frame>
-      <ip>0x4A7A7E9</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshVertices::copy(GEO::MeshVertices const&amp;, bool)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh.h</file>
-      <line>563</line>
-    </frame>
-    <frame>
-      <ip>0x4A755E1</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::Mesh::copy(GEO::Mesh const&amp;, bool, GEO::MeshElementsFlags)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh.cpp</file>
-      <line>1837</line>
-    </frame>
-    <frame>
-      <ip>0x4BD0494</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::intersect_remesh_intersections(GEO::vector&lt;GEO::IsectInfo&gt;&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection.cpp</file>
-      <line>423</line>
-    </frame>
-    <frame>
-      <ip>0x4BD1617</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::intersect()</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection.cpp</file>
-      <line>715</line>
-    </frame>
-    <frame>
-      <ip>0x4AA1644</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CSGBuilder::do_CSG(GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_CSG.cpp</file>
-      <line>1501</line>
-    </frame>
-    <frame>
-      <ip>0x4A9CAF9</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CSGBuilder::union_instr(std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_CSG.cpp</file>
-      <line>891</line>
-    </frame>
-    <frame>
-      <ip>0x4AACA77</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CSGBuilder::group(std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_CSG.h</file>
-      <line>203</line>
-    </frame>
-    <frame>
-      <ip>0x4AA6585</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CSGCompiler::group(GEO::CSGCompiler::ArgList const&amp;, std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_CSG.cpp</file>
-      <line>1928</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
   <unique>0x103</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
@@ -23051,9 +23024,9 @@
       <fn>operator new(unsigned long)</fn>
     </frame>
     <frame>
-      <ip>0x49B02A6</ip>
+      <ip>0x4BEB9EC</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::TypedAttributeStore&lt;double&gt;::clone() const</fn>
+      <fn>GEO::TypedAttributeStore&lt;GEO::vec3Hg&lt;GEO::expansion_nt&gt; const*&gt;::clone() const</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
       <file>attributes.h</file>
       <line>650</line>
@@ -23157,6 +23130,112 @@
       <fn>operator new(unsigned long)</fn>
     </frame>
     <frame>
+      <ip>0x49B02A6</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::TypedAttributeStore&lt;double&gt;::clone() const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>attributes.h</file>
+      <line>650</line>
+    </frame>
+    <frame>
+      <ip>0x4977848</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::AttributesManager::copy(GEO::AttributesManager const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>attributes.cpp</file>
+      <line>314</line>
+    </frame>
+    <frame>
+      <ip>0x4A79CA7</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSubElementsStore::copy(GEO::MeshSubElementsStore const&amp;, bool)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh.h</file>
+      <line>209</line>
+    </frame>
+    <frame>
+      <ip>0x4A7A7E9</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshVertices::copy(GEO::MeshVertices const&amp;, bool)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh.h</file>
+      <line>563</line>
+    </frame>
+    <frame>
+      <ip>0x4A755E1</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::Mesh::copy(GEO::Mesh const&amp;, bool, GEO::MeshElementsFlags)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh.cpp</file>
+      <line>1837</line>
+    </frame>
+    <frame>
+      <ip>0x4BD0494</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::intersect_remesh_intersections(GEO::vector&lt;GEO::IsectInfo&gt;&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection.cpp</file>
+      <line>423</line>
+    </frame>
+    <frame>
+      <ip>0x4BD1617</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::intersect()</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection.cpp</file>
+      <line>715</line>
+    </frame>
+    <frame>
+      <ip>0x4AA1644</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CSGBuilder::do_CSG(GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_CSG.cpp</file>
+      <line>1501</line>
+    </frame>
+    <frame>
+      <ip>0x4A9CAF9</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CSGBuilder::union_instr(std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_CSG.cpp</file>
+      <line>891</line>
+    </frame>
+    <frame>
+      <ip>0x4AACA77</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CSGBuilder::group(std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_CSG.h</file>
+      <line>203</line>
+    </frame>
+    <frame>
+      <ip>0x4AA6585</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CSGCompiler::group(GEO::CSGCompiler::ArgList const&amp;, std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_CSG.cpp</file>
+      <line>1928</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x105</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>128 bytes in 1 blocks are still reachable in loss record 262 of 406</text>
+    <leakedbytes>128</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
       <ip>0x49BBE2A</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::TypedAttributeStore&lt;unsigned long&gt;::clone() const</fn>
@@ -23248,11 +23327,11 @@
 </error>
 
 <error>
-  <unique>0x105</unique>
+  <unique>0x106</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 262 of 406</text>
+    <text>128 bytes in 1 blocks are still reachable in loss record 263 of 406</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -23354,11 +23433,11 @@
 </error>
 
 <error>
-  <unique>0x106</unique>
+  <unique>0x107</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 263 of 406</text>
+    <text>128 bytes in 1 blocks are still reachable in loss record 264 of 406</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -23460,11 +23539,11 @@
 </error>
 
 <error>
-  <unique>0x107</unique>
+  <unique>0x108</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 264 of 406</text>
+    <text>128 bytes in 1 blocks are still reachable in loss record 265 of 406</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -23566,11 +23645,11 @@
 </error>
 
 <error>
-  <unique>0x108</unique>
+  <unique>0x109</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 265 of 406</text>
+    <text>128 bytes in 1 blocks are still reachable in loss record 266 of 406</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -23606,112 +23685,6 @@
     </frame>
     <frame>
       <ip>0x4BF6FD8</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CoplanarFacets::CoplanarFacets(GEO::MeshSurfaceIntersection&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.cpp</file>
-      <line>985</line>
-    </frame>
-    <frame>
-      <ip>0x4BD91E4</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::simplify_coplanar_facets()</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection.cpp</file>
-      <line>1852</line>
-    </frame>
-    <frame>
-      <ip>0x4AA166C</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CSGBuilder::do_CSG(GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_CSG.cpp</file>
-      <line>1503</line>
-    </frame>
-    <frame>
-      <ip>0x4A9CAF9</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CSGBuilder::union_instr(std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_CSG.cpp</file>
-      <line>891</line>
-    </frame>
-    <frame>
-      <ip>0x4AACA77</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CSGBuilder::group(std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_CSG.h</file>
-      <line>203</line>
-    </frame>
-    <frame>
-      <ip>0x4AA6585</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CSGCompiler::group(GEO::CSGCompiler::ArgList const&amp;, std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_CSG.cpp</file>
-      <line>1928</line>
-    </frame>
-    <frame>
-      <ip>0x4AA7EAD</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CSGCompiler::parse_instruction()</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_CSG.cpp</file>
-      <line>2107</line>
-    </frame>
-    <frame>
-      <ip>0x4AA6F0B</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CSGCompiler::parse_instruction_or_object()</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_CSG.cpp</file>
-      <line>1993</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x109</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 266 of 406</text>
-    <leakedbytes>128</leakedbytes>
-    <leakedblocks>1</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483BE63</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>operator new(unsigned long)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A82465</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::AttributeBase&lt;unsigned char&gt;::bind(GEO::AttributesManager&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>attributes.h</file>
-      <line>1046</line>
-    </frame>
-    <frame>
-      <ip>0x4A7FAD7</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::AttributeBase&lt;unsigned char&gt;::AttributeBase(GEO::AttributesManager&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>attributes.h</file>
-      <line>1004</line>
-    </frame>
-    <frame>
-      <ip>0x4A79691</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::Attribute&lt;bool&gt;::Attribute(GEO::AttributesManager&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>attributes.h</file>
-      <line>1405</line>
-    </frame>
-    <frame>
-      <ip>0x4BF7051</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::CoplanarFacets::CoplanarFacets(GEO::MeshSurfaceIntersection&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
@@ -23817,6 +23790,112 @@
       <line>1405</line>
     </frame>
     <frame>
+      <ip>0x4BF7051</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CoplanarFacets::CoplanarFacets(GEO::MeshSurfaceIntersection&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.cpp</file>
+      <line>985</line>
+    </frame>
+    <frame>
+      <ip>0x4BD91E4</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::simplify_coplanar_facets()</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection.cpp</file>
+      <line>1852</line>
+    </frame>
+    <frame>
+      <ip>0x4AA166C</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CSGBuilder::do_CSG(GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_CSG.cpp</file>
+      <line>1503</line>
+    </frame>
+    <frame>
+      <ip>0x4A9CAF9</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CSGBuilder::union_instr(std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_CSG.cpp</file>
+      <line>891</line>
+    </frame>
+    <frame>
+      <ip>0x4AACA77</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CSGBuilder::group(std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_CSG.h</file>
+      <line>203</line>
+    </frame>
+    <frame>
+      <ip>0x4AA6585</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CSGCompiler::group(GEO::CSGCompiler::ArgList const&amp;, std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_CSG.cpp</file>
+      <line>1928</line>
+    </frame>
+    <frame>
+      <ip>0x4AA7EAD</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CSGCompiler::parse_instruction()</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_CSG.cpp</file>
+      <line>2107</line>
+    </frame>
+    <frame>
+      <ip>0x4AA6F0B</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CSGCompiler::parse_instruction_or_object()</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_CSG.cpp</file>
+      <line>1993</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x10b</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>128 bytes in 1 blocks are still reachable in loss record 268 of 406</text>
+    <leakedbytes>128</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A82465</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::AttributeBase&lt;unsigned char&gt;::bind(GEO::AttributesManager&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>attributes.h</file>
+      <line>1046</line>
+    </frame>
+    <frame>
+      <ip>0x4A7FAD7</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::AttributeBase&lt;unsigned char&gt;::AttributeBase(GEO::AttributesManager&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>attributes.h</file>
+      <line>1004</line>
+    </frame>
+    <frame>
+      <ip>0x4A79691</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::Attribute&lt;bool&gt;::Attribute(GEO::AttributesManager&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>attributes.h</file>
+      <line>1405</line>
+    </frame>
+    <frame>
       <ip>0x4BD935D</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::MeshSurfaceIntersection::simplify_coplanar_facets()</fn>
@@ -23884,11 +23963,11 @@
 </error>
 
 <error>
-  <unique>0x10b</unique>
+  <unique>0x10c</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 4 blocks are still reachable in loss record 268 of 406</text>
+    <text>128 bytes in 4 blocks are still reachable in loss record 269 of 406</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -23987,11 +24066,11 @@
 </error>
 
 <error>
-  <unique>0x10c</unique>
+  <unique>0x10d</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 4 blocks are still reachable in loss record 269 of 406</text>
+    <text>128 bytes in 4 blocks are still reachable in loss record 270 of 406</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -24090,11 +24169,11 @@
 </error>
 
 <error>
-  <unique>0x10d</unique>
+  <unique>0x10e</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 270 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 271 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -24132,11 +24211,11 @@
 </error>
 
 <error>
-  <unique>0x10e</unique>
+  <unique>0x10f</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 271 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 272 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -24182,11 +24261,11 @@
 </error>
 
 <error>
-  <unique>0x10f</unique>
+  <unique>0x110</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 272 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 273 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -24288,11 +24367,11 @@
 </error>
 
 <error>
-  <unique>0x110</unique>
+  <unique>0x111</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 273 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 274 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -24394,11 +24473,11 @@
 </error>
 
 <error>
-  <unique>0x111</unique>
+  <unique>0x112</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 274 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 275 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -24500,11 +24579,11 @@
 </error>
 
 <error>
-  <unique>0x112</unique>
+  <unique>0x113</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 275 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 276 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -24606,11 +24685,11 @@
 </error>
 
 <error>
-  <unique>0x113</unique>
+  <unique>0x114</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 276 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 277 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -24712,11 +24791,11 @@
 </error>
 
 <error>
-  <unique>0x114</unique>
+  <unique>0x115</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 277 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 278 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -24818,11 +24897,11 @@
 </error>
 
 <error>
-  <unique>0x115</unique>
+  <unique>0x116</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 278 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 279 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -24924,11 +25003,11 @@
 </error>
 
 <error>
-  <unique>0x116</unique>
+  <unique>0x117</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 279 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 280 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -25030,11 +25109,11 @@
 </error>
 
 <error>
-  <unique>0x117</unique>
+  <unique>0x118</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 280 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 281 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -25136,11 +25215,11 @@
 </error>
 
 <error>
-  <unique>0x118</unique>
+  <unique>0x119</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 281 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 282 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -25242,11 +25321,11 @@
 </error>
 
 <error>
-  <unique>0x119</unique>
+  <unique>0x11a</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 282 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 283 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -25348,11 +25427,11 @@
 </error>
 
 <error>
-  <unique>0x11a</unique>
+  <unique>0x11b</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 283 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 284 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -25454,11 +25533,11 @@
 </error>
 
 <error>
-  <unique>0x11b</unique>
+  <unique>0x11c</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 284 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 285 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -25560,11 +25639,11 @@
 </error>
 
 <error>
-  <unique>0x11c</unique>
+  <unique>0x11d</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 285 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 286 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -25666,11 +25745,11 @@
 </error>
 
 <error>
-  <unique>0x11d</unique>
+  <unique>0x11e</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 286 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 287 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -25772,11 +25851,11 @@
 </error>
 
 <error>
-  <unique>0x11e</unique>
+  <unique>0x11f</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 287 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 288 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -25878,11 +25957,11 @@
 </error>
 
 <error>
-  <unique>0x11f</unique>
+  <unique>0x120</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 288 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 289 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -25984,11 +26063,11 @@
 </error>
 
 <error>
-  <unique>0x120</unique>
+  <unique>0x121</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 289 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 290 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -26090,11 +26169,11 @@
 </error>
 
 <error>
-  <unique>0x121</unique>
+  <unique>0x122</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 290 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 291 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -26196,11 +26275,11 @@
 </error>
 
 <error>
-  <unique>0x122</unique>
+  <unique>0x123</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 291 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 292 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -26302,11 +26381,11 @@
 </error>
 
 <error>
-  <unique>0x123</unique>
+  <unique>0x124</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 292 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 293 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -26408,11 +26487,11 @@
 </error>
 
 <error>
-  <unique>0x124</unique>
+  <unique>0x125</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 293 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 294 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -26514,11 +26593,11 @@
 </error>
 
 <error>
-  <unique>0x125</unique>
+  <unique>0x126</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 294 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 295 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -26620,11 +26699,11 @@
 </error>
 
 <error>
-  <unique>0x126</unique>
+  <unique>0x127</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 295 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 296 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -26726,11 +26805,11 @@
 </error>
 
 <error>
-  <unique>0x127</unique>
+  <unique>0x128</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 296 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 297 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -26832,11 +26911,11 @@
 </error>
 
 <error>
-  <unique>0x128</unique>
+  <unique>0x129</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 297 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 298 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -26938,11 +27017,11 @@
 </error>
 
 <error>
-  <unique>0x129</unique>
+  <unique>0x12a</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 298 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 299 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -27044,11 +27123,11 @@
 </error>
 
 <error>
-  <unique>0x12a</unique>
+  <unique>0x12b</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>136 bytes in 1 blocks are still reachable in loss record 299 of 406</text>
+    <text>136 bytes in 1 blocks are still reachable in loss record 300 of 406</text>
     <leakedbytes>136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -27134,11 +27213,11 @@
 </error>
 
 <error>
-  <unique>0x12b</unique>
+  <unique>0x12c</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>144 bytes in 2 blocks are still reachable in loss record 300 of 406</text>
+    <text>144 bytes in 2 blocks are still reachable in loss record 301 of 406</text>
     <leakedbytes>144</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -27240,11 +27319,11 @@
 </error>
 
 <error>
-  <unique>0x12c</unique>
+  <unique>0x12d</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>144 bytes in 2 blocks are still reachable in loss record 301 of 406</text>
+    <text>144 bytes in 2 blocks are still reachable in loss record 302 of 406</text>
     <leakedbytes>144</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -27346,11 +27425,11 @@
 </error>
 
 <error>
-  <unique>0x12d</unique>
+  <unique>0x12e</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>144 bytes in 2 blocks are still reachable in loss record 302 of 406</text>
+    <text>144 bytes in 2 blocks are still reachable in loss record 303 of 406</text>
     <leakedbytes>144</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -27452,11 +27531,11 @@
 </error>
 
 <error>
-  <unique>0x12e</unique>
+  <unique>0x12f</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>144 bytes in 2 blocks are still reachable in loss record 303 of 406</text>
+    <text>144 bytes in 2 blocks are still reachable in loss record 304 of 406</text>
     <leakedbytes>144</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -27558,11 +27637,11 @@
 </error>
 
 <error>
-  <unique>0x12f</unique>
+  <unique>0x130</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>144 bytes in 2 blocks are still reachable in loss record 304 of 406</text>
+    <text>144 bytes in 2 blocks are still reachable in loss record 305 of 406</text>
     <leakedbytes>144</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -27664,11 +27743,11 @@
 </error>
 
 <error>
-  <unique>0x130</unique>
+  <unique>0x131</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>144 bytes in 3 blocks are still reachable in loss record 305 of 406</text>
+    <text>144 bytes in 3 blocks are still reachable in loss record 306 of 406</text>
     <leakedbytes>144</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -27770,11 +27849,11 @@
 </error>
 
 <error>
-  <unique>0x131</unique>
+  <unique>0x132</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>152 bytes in 1 blocks are still reachable in loss record 306 of 406</text>
+    <text>152 bytes in 1 blocks are still reachable in loss record 307 of 406</text>
     <leakedbytes>152</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -27812,11 +27891,11 @@
 </error>
 
 <error>
-  <unique>0x132</unique>
+  <unique>0x133</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>160 bytes in 1 blocks are still reachable in loss record 307 of 406</text>
+    <text>160 bytes in 1 blocks are still reachable in loss record 308 of 406</text>
     <leakedbytes>160</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -27910,11 +27989,11 @@
 </error>
 
 <error>
-  <unique>0x133</unique>
+  <unique>0x134</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>160 bytes in 1 blocks are still reachable in loss record 308 of 406</text>
+    <text>160 bytes in 1 blocks are still reachable in loss record 309 of 406</text>
     <leakedbytes>160</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -28008,11 +28087,11 @@
 </error>
 
 <error>
-  <unique>0x134</unique>
+  <unique>0x135</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>160 bytes in 1 blocks are still reachable in loss record 309 of 406</text>
+    <text>160 bytes in 1 blocks are still reachable in loss record 310 of 406</text>
     <leakedbytes>160</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -28106,11 +28185,11 @@
 </error>
 
 <error>
-  <unique>0x135</unique>
+  <unique>0x136</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>160 bytes in 1 blocks are still reachable in loss record 310 of 406</text>
+    <text>160 bytes in 1 blocks are still reachable in loss record 311 of 406</text>
     <leakedbytes>160</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -28204,11 +28283,11 @@
 </error>
 
 <error>
-  <unique>0x136</unique>
+  <unique>0x137</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>160 bytes in 1 blocks are still reachable in loss record 311 of 406</text>
+    <text>160 bytes in 1 blocks are still reachable in loss record 312 of 406</text>
     <leakedbytes>160</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -28302,11 +28381,11 @@
 </error>
 
 <error>
-  <unique>0x137</unique>
+  <unique>0x138</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>160 bytes in 1 blocks are still reachable in loss record 312 of 406</text>
+    <text>160 bytes in 1 blocks are still reachable in loss record 313 of 406</text>
     <leakedbytes>160</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -28400,11 +28479,11 @@
 </error>
 
 <error>
-  <unique>0x138</unique>
+  <unique>0x139</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>160 bytes in 4 blocks are still reachable in loss record 313 of 406</text>
+    <text>160 bytes in 4 blocks are still reachable in loss record 314 of 406</text>
     <leakedbytes>160</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -28506,11 +28585,11 @@
 </error>
 
 <error>
-  <unique>0x139</unique>
+  <unique>0x13a</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>167 bytes in 9 blocks are still reachable in loss record 314 of 406</text>
+    <text>167 bytes in 9 blocks are still reachable in loss record 315 of 406</text>
     <leakedbytes>167</leakedbytes>
     <leakedblocks>9</leakedblocks>
   </xwhat>
@@ -28609,11 +28688,11 @@
 </error>
 
 <error>
-  <unique>0x13a</unique>
+  <unique>0x13b</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>168 bytes in 1 blocks are still reachable in loss record 315 of 406</text>
+    <text>168 bytes in 1 blocks are still reachable in loss record 316 of 406</text>
     <leakedbytes>168</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -28707,85 +28786,6 @@
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
       <file>mesh_reorder.cpp</file>
       <line>1061</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x13b</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>170 bytes in 2 blocks are still reachable in loss record 316 of 406</text>
-    <leakedbytes>170</leakedbytes>
-    <leakedblocks>2</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483BE63</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>operator new(unsigned long)</fn>
-    </frame>
-    <frame>
-      <ip>0x530DD6C</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
-      <fn>void std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_construct&lt;char const*&gt;(char const*, char const*, std::forward_iterator_tag)</fn>
-    </frame>
-    <frame>
-      <ip>0x4BD3717</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned long, unsigned long)#2}::operator()(unsigned long, unsigned long) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection.cpp</file>
-      <line>1225</line>
-    </frame>
-    <frame>
-      <ip>0x4BDC2D6</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::_Function_handler&lt;void (unsigned long, unsigned long), GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned long, unsigned long)#2}&gt;::_M_invoke(std::_Any_data const&amp;, unsigned long&amp;&amp;, std::_Any_data const&amp;)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>std_function.h</file>
-      <line>300</line>
-    </frame>
-    <frame>
-      <ip>0x4A0355F</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::function&lt;void (unsigned long, unsigned long)&gt;::operator()(unsigned long, unsigned long) const</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>std_function.h</file>
-      <line>688</line>
-    </frame>
-    <frame>
-      <ip>0x4A00F2B</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::ParallelForSliceThread::run()</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>process.cpp</file>
-      <line>671</line>
-    </frame>
-    <frame>
-      <ip>0x4A05358</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::PThreadManager::run_thread(void*)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>process_unix.cpp</file>
-      <line>209</line>
-    </frame>
-    <frame>
-      <ip>0x55C1608</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
-      <fn>start_thread</fn>
-      <dir>/build/glibc-BHL3KM/glibc-2.31/nptl</dir>
-      <file>pthread_create.c</file>
-      <line>477</line>
-    </frame>
-    <frame>
-      <ip>0x54E4132</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
-      <fn>clone</fn>
-      <dir>/build/glibc-BHL3KM/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
-      <file>clone.S</file>
-      <line>95</line>
     </frame>
   </stack>
 </error>
@@ -28943,7 +28943,110 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>256 bytes in 1 blocks are still reachable in loss record 320 of 406</text>
+    <text>224 bytes in 4 blocks are still reachable in loss record 320 of 406</text>
+    <leakedbytes>224</leakedbytes>
+    <leakedblocks>4</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483E0F0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x483E212</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>posix_memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x497923B</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::Memory::aligned_malloc(unsigned long, unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>memory.h</file>
+      <line>293</line>
+    </frame>
+    <frame>
+      <ip>0x4BE9F77</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt;::allocate(unsigned long, void const*)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>memory.h</file>
+      <line>530</line>
+    </frame>
+    <frame>
+      <ip>0x4BE9090</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::allocator_traits&lt;GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt;::allocate(GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt;&amp;, unsigned long)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>alloc_traits.h</file>
+      <line>305</line>
+    </frame>
+    <frame>
+      <ip>0x4BE7CBE</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::_Vector_base&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt;::_M_allocate(unsigned long)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>stl_vector.h</file>
+      <line>343</line>
+    </frame>
+    <frame>
+      <ip>0x4BE7EDE</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>void std::vector&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt;::_M_realloc_insert&lt;std::pair&lt;unsigned long, GEO::Sign&gt; &gt;(__gnu_cxx::__normal_iterator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;*, std::vector&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt; &gt;, std::pair&lt;unsigned long, GEO::Sign&gt;&amp;&amp;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>vector.tcc</file>
+      <line>440</line>
+    </frame>
+    <frame>
+      <ip>0x4BE625A</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>void std::vector&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt;::emplace_back&lt;std::pair&lt;unsigned long, GEO::Sign&gt; &gt;(std::pair&lt;unsigned long, GEO::Sign&gt;&amp;&amp;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>vector.tcc</file>
+      <line>121</line>
+    </frame>
+    <frame>
+      <ip>0x4BE45FA</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::vector&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt;::push_back(std::pair&lt;unsigned long, GEO::Sign&gt;&amp;&amp;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>stl_vector.h</file>
+      <line>1201</line>
+    </frame>
+    <frame>
+      <ip>0x4BD30E0</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::RadialSort::h_refNorient(unsigned long) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection.cpp</file>
+      <line>975</line>
+    </frame>
+    <frame>
+      <ip>0x4BD273B</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::RadialSort::operator()(unsigned long, unsigned long) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection.cpp</file>
+      <line>864</line>
+    </frame>
+    <frame>
+      <ip>0x4BD3202</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;)::{lambda(unsigned long, unsigned long)#1}::operator()(unsigned long, unsigned long) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection.cpp</file>
+      <line>989</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x140</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>256 bytes in 1 blocks are still reachable in loss record 321 of 406</text>
     <leakedbytes>256</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -29037,11 +29140,11 @@
 </error>
 
 <error>
-  <unique>0x140</unique>
+  <unique>0x141</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>256 bytes in 1 blocks are still reachable in loss record 321 of 406</text>
+    <text>256 bytes in 1 blocks are still reachable in loss record 322 of 406</text>
     <leakedbytes>256</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -29127,11 +29230,11 @@
 </error>
 
 <error>
-  <unique>0x141</unique>
+  <unique>0x142</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>256 bytes in 1 blocks are still reachable in loss record 322 of 406</text>
+    <text>256 bytes in 1 blocks are still reachable in loss record 323 of 406</text>
     <leakedbytes>256</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -29225,11 +29328,11 @@
 </error>
 
 <error>
-  <unique>0x142</unique>
+  <unique>0x143</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>256 bytes in 2 blocks are still reachable in loss record 323 of 406</text>
+    <text>256 bytes in 2 blocks are still reachable in loss record 324 of 406</text>
     <leakedbytes>256</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -29331,11 +29434,11 @@
 </error>
 
 <error>
-  <unique>0x143</unique>
+  <unique>0x144</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>256 bytes in 2 blocks are still reachable in loss record 324 of 406</text>
+    <text>256 bytes in 2 blocks are still reachable in loss record 325 of 406</text>
     <leakedbytes>256</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -29437,11 +29540,11 @@
 </error>
 
 <error>
-  <unique>0x144</unique>
+  <unique>0x145</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>256 bytes in 2 blocks are still reachable in loss record 325 of 406</text>
+    <text>256 bytes in 2 blocks are still reachable in loss record 326 of 406</text>
     <leakedbytes>256</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -29543,11 +29646,11 @@
 </error>
 
 <error>
-  <unique>0x145</unique>
+  <unique>0x146</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>256 bytes in 2 blocks are still reachable in loss record 326 of 406</text>
+    <text>256 bytes in 2 blocks are still reachable in loss record 327 of 406</text>
     <leakedbytes>256</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -29649,11 +29752,11 @@
 </error>
 
 <error>
-  <unique>0x146</unique>
+  <unique>0x147</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>256 bytes in 2 blocks are still reachable in loss record 327 of 406</text>
+    <text>256 bytes in 2 blocks are still reachable in loss record 328 of 406</text>
     <leakedbytes>256</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -29755,11 +29858,11 @@
 </error>
 
 <error>
-  <unique>0x147</unique>
+  <unique>0x148</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>256 bytes in 2 blocks are still reachable in loss record 328 of 406</text>
+    <text>256 bytes in 2 blocks are still reachable in loss record 329 of 406</text>
     <leakedbytes>256</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -29856,109 +29959,6 @@
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
       <file>mesh_CSG.cpp</file>
       <line>2087</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x148</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>256 bytes in 3 blocks are still reachable in loss record 329 of 406</text>
-    <leakedbytes>256</leakedbytes>
-    <leakedblocks>3</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483E0F0</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>memalign</fn>
-    </frame>
-    <frame>
-      <ip>0x483E212</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>posix_memalign</fn>
-    </frame>
-    <frame>
-      <ip>0x497923B</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::Memory::aligned_malloc(unsigned long, unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>memory.h</file>
-      <line>293</line>
-    </frame>
-    <frame>
-      <ip>0x4BE9F77</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt;::allocate(unsigned long, void const*)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>memory.h</file>
-      <line>530</line>
-    </frame>
-    <frame>
-      <ip>0x4BE9090</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::allocator_traits&lt;GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt;::allocate(GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt;&amp;, unsigned long)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>alloc_traits.h</file>
-      <line>305</line>
-    </frame>
-    <frame>
-      <ip>0x4BE7CBE</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::_Vector_base&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt;::_M_allocate(unsigned long)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>stl_vector.h</file>
-      <line>343</line>
-    </frame>
-    <frame>
-      <ip>0x4BE7EDE</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>void std::vector&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt;::_M_realloc_insert&lt;std::pair&lt;unsigned long, GEO::Sign&gt; &gt;(__gnu_cxx::__normal_iterator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;*, std::vector&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt; &gt;, std::pair&lt;unsigned long, GEO::Sign&gt;&amp;&amp;)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>vector.tcc</file>
-      <line>440</line>
-    </frame>
-    <frame>
-      <ip>0x4BE625A</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>void std::vector&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt;::emplace_back&lt;std::pair&lt;unsigned long, GEO::Sign&gt; &gt;(std::pair&lt;unsigned long, GEO::Sign&gt;&amp;&amp;)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>vector.tcc</file>
-      <line>121</line>
-    </frame>
-    <frame>
-      <ip>0x4BE45FA</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::vector&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt;::push_back(std::pair&lt;unsigned long, GEO::Sign&gt;&amp;&amp;)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>stl_vector.h</file>
-      <line>1201</line>
-    </frame>
-    <frame>
-      <ip>0x4BD30E0</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::RadialSort::h_refNorient(unsigned long) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection.cpp</file>
-      <line>975</line>
-    </frame>
-    <frame>
-      <ip>0x4BD273B</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::RadialSort::operator()(unsigned long, unsigned long) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection.cpp</file>
-      <line>864</line>
-    </frame>
-    <frame>
-      <ip>0x4BD3202</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;)::{lambda(unsigned long, unsigned long)#1}::operator()(unsigned long, unsigned long) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection.cpp</file>
-      <line>989</line>
     </frame>
   </stack>
 </error>
@@ -30452,11 +30452,102 @@
 </error>
 
 <error>
-  <unique>0x150</unique>
+  <unique>0x14f</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>672 bytes in 2 blocks are still reachable in loss record 337 of 406</text>
+    <text>513 bytes in 1 blocks are still reachable in loss record 336 of 406</text>
+    <leakedbytes>513</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x530B8AF</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::reserve(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x5301366</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::__cxx11::basic_stringbuf&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::overflow(int)</fn>
+    </frame>
+    <frame>
+      <ip>0x5309B89</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::basic_streambuf&lt;char, std::char_traits&lt;char&gt; &gt;::xsputn(char const*, long)</fn>
+    </frame>
+    <frame>
+      <ip>0x52FB853</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&amp; std::__ostream_insert&lt;char, std::char_traits&lt;char&gt; &gt;(std::basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&amp;, char const*, long)</fn>
+    </frame>
+    <frame>
+      <ip>0x52FBC0B</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&amp; std::operator&lt;&lt; &lt;std::char_traits&lt;char&gt; &gt;(std::basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&amp;, char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x4975030</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::geo_assertion_failed(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, int)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>assert.cpp</file>
+      <line>105</line>
+    </frame>
+    <frame>
+      <ip>0x4BD3758</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned long, unsigned long)#2}::operator()(unsigned long, unsigned long) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection.cpp</file>
+      <line>1225</line>
+    </frame>
+    <frame>
+      <ip>0x4BDC2D6</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::_Function_handler&lt;void (unsigned long, unsigned long), GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned long, unsigned long)#2}&gt;::_M_invoke(std::_Any_data const&amp;, unsigned long&amp;&amp;, std::_Any_data const&amp;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>std_function.h</file>
+      <line>300</line>
+    </frame>
+    <frame>
+      <ip>0x4A0355F</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::function&lt;void (unsigned long, unsigned long)&gt;::operator()(unsigned long, unsigned long) const</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>std_function.h</file>
+      <line>688</line>
+    </frame>
+    <frame>
+      <ip>0x4A00F2B</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::ParallelForSliceThread::run()</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>process.cpp</file>
+      <line>671</line>
+    </frame>
+    <frame>
+      <ip>0x4A05358</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::PThreadManager::run_thread(void*)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>process_unix.cpp</file>
+      <line>209</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x151</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>672 bytes in 2 blocks are still reachable in loss record 338 of 406</text>
     <leakedbytes>672</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -30555,11 +30646,11 @@
 </error>
 
 <error>
-  <unique>0x151</unique>
+  <unique>0x152</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>1,024 bytes in 2 blocks are still reachable in loss record 338 of 406</text>
+    <text>1,024 bytes in 2 blocks are still reachable in loss record 339 of 406</text>
     <leakedbytes>1024</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -30658,11 +30749,11 @@
 </error>
 
 <error>
-  <unique>0x152</unique>
+  <unique>0x153</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>1,024 bytes in 2 blocks are still reachable in loss record 339 of 406</text>
+    <text>1,024 bytes in 2 blocks are still reachable in loss record 340 of 406</text>
     <leakedbytes>1024</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -30756,97 +30847,6 @@
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
       <file>mesh_CSG.cpp</file>
       <line>1749</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x153</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>1,026 bytes in 2 blocks are still reachable in loss record 340 of 406</text>
-    <leakedbytes>1026</leakedbytes>
-    <leakedblocks>2</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483BE63</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>operator new(unsigned long)</fn>
-    </frame>
-    <frame>
-      <ip>0x530B8AF</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
-      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::reserve(unsigned long)</fn>
-    </frame>
-    <frame>
-      <ip>0x5301366</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
-      <fn>std::__cxx11::basic_stringbuf&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::overflow(int)</fn>
-    </frame>
-    <frame>
-      <ip>0x5309B89</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
-      <fn>std::basic_streambuf&lt;char, std::char_traits&lt;char&gt; &gt;::xsputn(char const*, long)</fn>
-    </frame>
-    <frame>
-      <ip>0x52FB853</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
-      <fn>std::basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&amp; std::__ostream_insert&lt;char, std::char_traits&lt;char&gt; &gt;(std::basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&amp;, char const*, long)</fn>
-    </frame>
-    <frame>
-      <ip>0x52FBC0B</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
-      <fn>std::basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&amp; std::operator&lt;&lt; &lt;std::char_traits&lt;char&gt; &gt;(std::basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&amp;, char const*)</fn>
-    </frame>
-    <frame>
-      <ip>0x4975030</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::geo_assertion_failed(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, int)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>assert.cpp</file>
-      <line>105</line>
-    </frame>
-    <frame>
-      <ip>0x4BD3758</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned long, unsigned long)#2}::operator()(unsigned long, unsigned long) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection.cpp</file>
-      <line>1225</line>
-    </frame>
-    <frame>
-      <ip>0x4BDC2D6</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::_Function_handler&lt;void (unsigned long, unsigned long), GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned long, unsigned long)#2}&gt;::_M_invoke(std::_Any_data const&amp;, unsigned long&amp;&amp;, std::_Any_data const&amp;)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>std_function.h</file>
-      <line>300</line>
-    </frame>
-    <frame>
-      <ip>0x4A0355F</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::function&lt;void (unsigned long, unsigned long)&gt;::operator()(unsigned long, unsigned long) const</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>std_function.h</file>
-      <line>688</line>
-    </frame>
-    <frame>
-      <ip>0x4A00F2B</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::ParallelForSliceThread::run()</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>process.cpp</file>
-      <line>671</line>
-    </frame>
-    <frame>
-      <ip>0x4A05358</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::PThreadManager::run_thread(void*)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>process_unix.cpp</file>
-      <line>209</line>
     </frame>
   </stack>
 </error>
@@ -33888,8 +33888,8 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>19,560 bytes in 1 blocks are still reachable in loss record 374 of 406</text>
-    <leakedbytes>19560</leakedbytes>
+    <text>19,704 bytes in 1 blocks are still reachable in loss record 374 of 406</text>
+    <leakedbytes>19704</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
   <stack>
@@ -35508,8 +35508,8 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>90,112 bytes in 1 blocks are still reachable in loss record 390 of 406</text>
-    <leakedbytes>90112</leakedbytes>
+    <text>106,496 bytes in 1 blocks are still reachable in loss record 390 of 406</text>
+    <leakedbytes>106496</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
   <stack>
@@ -35996,12 +35996,12 @@
       <line>1195</line>
     </frame>
     <frame>
-      <ip>0x4BCEF55</ip>
+      <ip>0x4BCF078</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::MeshSurfaceIntersection::intersect_get_intersections(GEO::vector&lt;GEO::IsectInfo&gt;&amp;)::{lambda(unsigned long, unsigned long)#2}::operator()(unsigned long, unsigned long) const</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
       <file>mesh_surface_intersection.cpp</file>
-      <line>352</line>
+      <line>377</line>
     </frame>
     <frame>
       <ip>0x4BDBA1A</ip>
@@ -36353,7 +36353,219 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>245,760 bytes in 2 blocks are still reachable in loss record 398 of 406</text>
+    <text>221,184 bytes in 2 blocks are still reachable in loss record 398 of 406</text>
+    <leakedbytes>221184</leakedbytes>
+    <leakedblocks>2</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483C583</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A1DE2F</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::Pools::new_chunk(unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>143</line>
+    </frame>
+    <frame>
+      <ip>0x4A1DCE4</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::Pools::malloc(unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>104</line>
+    </frame>
+    <frame>
+      <ip>0x4A2033A</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::expansion::new_expansion_on_heap(unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>774</line>
+    </frame>
+    <frame>
+      <ip>0x4A193F7</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::expansion_nt::operator+(GEO::expansion_nt const&amp;) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>expansion_nt.cpp</file>
+      <line>113</line>
+    </frame>
+    <frame>
+      <ip>0x4A0F6FB</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::PCK::incircle_2d_SOS_with_lengths(GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, double, double, double, double)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>exact_geometry.cpp</file>
+      <line>394</line>
+    </frame>
+    <frame>
+      <ip>0x4BF32D1</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshInTriangle::incircle(unsigned long, unsigned long, unsigned long, unsigned long) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.cpp</file>
+      <line>531</line>
+    </frame>
+    <frame>
+      <ip>0x4C18F9F</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CDTBase2d::Delaunayize_vertex_neighbors(unsigned long, GEO::CDTBase2d::DList&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
+      <file>CDT_2d.cpp</file>
+      <line>684</line>
+    </frame>
+    <frame>
+      <ip>0x4C1623D</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CDTBase2d::insert(unsigned long, unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
+      <file>CDT_2d.cpp</file>
+      <line>230</line>
+    </frame>
+    <frame>
+      <ip>0x4BF227E</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshInTriangle::add_vertex(unsigned long, GEO::TriangleRegion, GEO::TriangleRegion)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.cpp</file>
+      <line>333</line>
+    </frame>
+    <frame>
+      <ip>0x4BF23B9</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshInTriangle::add_edge(unsigned long, GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.cpp</file>
+      <line>347</line>
+    </frame>
+    <frame>
+      <ip>0x4BCFB11</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::intersect_remesh_intersections(GEO::vector&lt;GEO::IsectInfo&gt;&amp;)::{lambda(unsigned long, unsigned long)#2}::operator()(unsigned long, unsigned long) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection.cpp</file>
+      <line>534</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x18e</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>233,472 bytes in 2 blocks are still reachable in loss record 399 of 406</text>
+    <leakedbytes>233472</leakedbytes>
+    <leakedblocks>2</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483C583</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A1DE2F</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::Pools::new_chunk(unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>143</line>
+    </frame>
+    <frame>
+      <ip>0x4A1DCE4</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::Pools::malloc(unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>104</line>
+    </frame>
+    <frame>
+      <ip>0x4A2033A</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::expansion::new_expansion_on_heap(unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>774</line>
+    </frame>
+    <frame>
+      <ip>0x4A194B3</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::expansion_nt::operator-(GEO::expansion_nt const&amp;) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>expansion_nt.cpp</file>
+      <line>121</line>
+    </frame>
+    <frame>
+      <ip>0x4A0F6DB</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::PCK::incircle_2d_SOS_with_lengths(GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, double, double, double, double)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>exact_geometry.cpp</file>
+      <line>393</line>
+    </frame>
+    <frame>
+      <ip>0x4BF32D1</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshInTriangle::incircle(unsigned long, unsigned long, unsigned long, unsigned long) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.cpp</file>
+      <line>531</line>
+    </frame>
+    <frame>
+      <ip>0x4C18F9F</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CDTBase2d::Delaunayize_vertex_neighbors(unsigned long, GEO::CDTBase2d::DList&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
+      <file>CDT_2d.cpp</file>
+      <line>684</line>
+    </frame>
+    <frame>
+      <ip>0x4C1623D</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CDTBase2d::insert(unsigned long, unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
+      <file>CDT_2d.cpp</file>
+      <line>230</line>
+    </frame>
+    <frame>
+      <ip>0x4BF227E</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshInTriangle::add_vertex(unsigned long, GEO::TriangleRegion, GEO::TriangleRegion)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.cpp</file>
+      <line>333</line>
+    </frame>
+    <frame>
+      <ip>0x4BF23D3</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshInTriangle::add_edge(unsigned long, GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.cpp</file>
+      <line>348</line>
+    </frame>
+    <frame>
+      <ip>0x4BCFB11</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::intersect_remesh_intersections(GEO::vector&lt;GEO::IsectInfo&gt;&amp;)::{lambda(unsigned long, unsigned long)#2}::operator()(unsigned long, unsigned long) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection.cpp</file>
+      <line>534</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x18f</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>245,760 bytes in 2 blocks are still reachable in loss record 400 of 406</text>
     <leakedbytes>245760</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -36455,11 +36667,11 @@
 </error>
 
 <error>
-  <unique>0x18e</unique>
+  <unique>0x190</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>258,048 bytes in 1 blocks are still reachable in loss record 399 of 406</text>
+    <text>258,048 bytes in 1 blocks are still reachable in loss record 401 of 406</text>
     <leakedbytes>258048</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -36502,12 +36714,12 @@
       <line>129</line>
     </frame>
     <frame>
-      <ip>0x4A0F677</ip>
+      <ip>0x4A0F6BB</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::PCK::incircle_2d_SOS_with_lengths(GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, double, double, double, double)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
       <file>exact_geometry.cpp</file>
-      <line>393</line>
+      <line>392</line>
     </frame>
     <frame>
       <ip>0x4BF32D1</ip>
@@ -36561,117 +36773,11 @@
 </error>
 
 <error>
-  <unique>0x18f</unique>
+  <unique>0x191</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>258,048 bytes in 2 blocks are still reachable in loss record 400 of 406</text>
-    <leakedbytes>258048</leakedbytes>
-    <leakedblocks>2</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483C583</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>operator new[](unsigned long)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A1DE2F</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::Pools::new_chunk(unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>143</line>
-    </frame>
-    <frame>
-      <ip>0x4A1DCE4</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::Pools::malloc(unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>104</line>
-    </frame>
-    <frame>
-      <ip>0x4A2033A</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::expansion::new_expansion_on_heap(unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>774</line>
-    </frame>
-    <frame>
-      <ip>0x4A193F7</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::expansion_nt::operator+(GEO::expansion_nt const&amp;) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>expansion_nt.cpp</file>
-      <line>113</line>
-    </frame>
-    <frame>
-      <ip>0x4A0F6FB</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::PCK::incircle_2d_SOS_with_lengths(GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, double, double, double, double)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>exact_geometry.cpp</file>
-      <line>394</line>
-    </frame>
-    <frame>
-      <ip>0x4BF32D1</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshInTriangle::incircle(unsigned long, unsigned long, unsigned long, unsigned long) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.cpp</file>
-      <line>531</line>
-    </frame>
-    <frame>
-      <ip>0x4C18F9F</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CDTBase2d::Delaunayize_vertex_neighbors(unsigned long, GEO::CDTBase2d::DList&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
-      <file>CDT_2d.cpp</file>
-      <line>684</line>
-    </frame>
-    <frame>
-      <ip>0x4C1623D</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CDTBase2d::insert(unsigned long, unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
-      <file>CDT_2d.cpp</file>
-      <line>230</line>
-    </frame>
-    <frame>
-      <ip>0x4BF227E</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshInTriangle::add_vertex(unsigned long, GEO::TriangleRegion, GEO::TriangleRegion)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.cpp</file>
-      <line>333</line>
-    </frame>
-    <frame>
-      <ip>0x4BF23B9</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshInTriangle::add_edge(unsigned long, GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.cpp</file>
-      <line>347</line>
-    </frame>
-    <frame>
-      <ip>0x4BCFB11</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::intersect_remesh_intersections(GEO::vector&lt;GEO::IsectInfo&gt;&amp;)::{lambda(unsigned long, unsigned long)#2}::operator()(unsigned long, unsigned long) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection.cpp</file>
-      <line>534</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x190</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>339,968 bytes in 1 blocks are still reachable in loss record 401 of 406</text>
+    <text>339,968 bytes in 1 blocks are still reachable in loss record 402 of 406</text>
     <leakedbytes>339968</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -36714,12 +36820,12 @@
       <line>129</line>
     </frame>
     <frame>
-      <ip>0x4A0F677</ip>
+      <ip>0x4A0F636</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::PCK::incircle_2d_SOS_with_lengths(GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, double, double, double, double)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
       <file>exact_geometry.cpp</file>
-      <line>393</line>
+      <line>394</line>
     </frame>
     <frame>
       <ip>0x4BF32D1</ip>
@@ -36768,112 +36874,6 @@
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
       <file>mesh_surface_intersection.cpp</file>
       <line>552</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x191</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>339,968 bytes in 3 blocks are still reachable in loss record 402 of 406</text>
-    <leakedbytes>339968</leakedbytes>
-    <leakedblocks>3</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483C583</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>operator new[](unsigned long)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A1DE2F</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::Pools::new_chunk(unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>143</line>
-    </frame>
-    <frame>
-      <ip>0x4A1DCE4</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::Pools::malloc(unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>104</line>
-    </frame>
-    <frame>
-      <ip>0x4A2033A</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::expansion::new_expansion_on_heap(unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>774</line>
-    </frame>
-    <frame>
-      <ip>0x4A194B3</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::expansion_nt::operator-(GEO::expansion_nt const&amp;) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>expansion_nt.cpp</file>
-      <line>121</line>
-    </frame>
-    <frame>
-      <ip>0x4A0F6DB</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::PCK::incircle_2d_SOS_with_lengths(GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, double, double, double, double)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>exact_geometry.cpp</file>
-      <line>393</line>
-    </frame>
-    <frame>
-      <ip>0x4BF32D1</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshInTriangle::incircle(unsigned long, unsigned long, unsigned long, unsigned long) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.cpp</file>
-      <line>531</line>
-    </frame>
-    <frame>
-      <ip>0x4C18F9F</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CDTBase2d::Delaunayize_vertex_neighbors(unsigned long, GEO::CDTBase2d::DList&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
-      <file>CDT_2d.cpp</file>
-      <line>684</line>
-    </frame>
-    <frame>
-      <ip>0x4C1623D</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CDTBase2d::insert(unsigned long, unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
-      <file>CDT_2d.cpp</file>
-      <line>230</line>
-    </frame>
-    <frame>
-      <ip>0x4BF227E</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshInTriangle::add_vertex(unsigned long, GEO::TriangleRegion, GEO::TriangleRegion)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.cpp</file>
-      <line>333</line>
-    </frame>
-    <frame>
-      <ip>0x4BF23D3</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshInTriangle::add_edge(unsigned long, GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.cpp</file>
-      <line>348</line>
-    </frame>
-    <frame>
-      <ip>0x4BCFB11</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::intersect_remesh_intersections(GEO::vector&lt;GEO::IsectInfo&gt;&amp;)::{lambda(unsigned long, unsigned long)#2}::operator()(unsigned long, unsigned long) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection.cpp</file>
-      <line>534</line>
     </frame>
   </stack>
 </error>
@@ -37201,9 +37201,9 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>614,400 bytes in 5 blocks are still reachable in loss record 406 of 406</text>
-    <leakedbytes>614400</leakedbytes>
-    <leakedblocks>5</leakedblocks>
+    <text>880,640 bytes in 7 blocks are still reachable in loss record 406 of 406</text>
+    <leakedbytes>880640</leakedbytes>
+    <leakedblocks>7</leakedblocks>
   </xwhat>
   <stack>
     <frame>
