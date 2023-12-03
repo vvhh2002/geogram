@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/compute_CSG /home/runner/work/geogram/geogram/tests/data/CSG/example022.csg</line>
 </preamble>
 
-<pid>8846</pid>
-<ppid>6954</ppid>
+<pid>8839</pid>
+<ppid>6930</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -41,7 +41,7 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:00:05.732 </time>
+  <time>00:00:00:05.669 </time>
 </status>
 
 <error>
@@ -5153,11 +5153,11 @@
 </error>
 
 <error>
-  <unique>0x59</unique>
+  <unique>0x5a</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>480 bytes in 1 blocks are still reachable in loss record 90 of 127</text>
+    <text>480 bytes in 1 blocks are still reachable in loss record 91 of 127</text>
     <leakedbytes>480</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5226,11 +5226,11 @@
 </error>
 
 <error>
-  <unique>0x5a</unique>
+  <unique>0x5b</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>513 bytes in 1 blocks are still reachable in loss record 91 of 127</text>
+    <text>513 bytes in 1 blocks are still reachable in loss record 92 of 127</text>
     <leakedbytes>513</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5300,11 +5300,11 @@
 </error>
 
 <error>
-  <unique>0x5c</unique>
+  <unique>0x5d</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>768 bytes in 2 blocks are still reachable in loss record 93 of 127</text>
+    <text>768 bytes in 2 blocks are still reachable in loss record 94 of 127</text>
     <leakedbytes>768</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -7234,8 +7234,8 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>19,560 bytes in 1 blocks are still reachable in loss record 122 of 127</text>
-    <leakedbytes>19560</leakedbytes>
+    <text>19,656 bytes in 1 blocks are still reachable in loss record 122 of 127</text>
+    <leakedbytes>19656</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
   <stack>
@@ -7562,7 +7562,7 @@
       <fn>void std::vector&lt;GEO::IsectInfo, GEO::Memory::aligned_allocator&lt;GEO::IsectInfo, 64&gt; &gt;::_M_realloc_insert&lt;GEO::IsectInfo const&amp;&gt;(__gnu_cxx::__normal_iterator&lt;GEO::IsectInfo*, std::vector&lt;GEO::IsectInfo, GEO::Memory::aligned_allocator&lt;GEO::IsectInfo, 64&gt; &gt; &gt;, GEO::IsectInfo const&amp;)</fn>
     </frame>
     <frame>
-      <ip>0x4A60247</ip>
+      <ip>0x4A60257</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>std::_Function_handler&lt;void (unsigned long, unsigned long), GEO::MeshSurfaceIntersection::intersect_get_intersections(GEO::vector&lt;GEO::IsectInfo&gt;&amp;)::{lambda(unsigned long, unsigned long)#2}&gt;::_M_invoke(std::_Any_data const&amp;, unsigned long&amp;&amp;, std::_Any_data const&amp;)</fn>
     </frame>

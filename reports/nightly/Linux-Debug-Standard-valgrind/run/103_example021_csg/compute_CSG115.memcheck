@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/bin/compute_CSG /home/runner/work/geogram/geogram/tests/data/CSG/example021.csg</line>
 </preamble>
 
-<pid>15289</pid>
-<ppid>12567</ppid>
+<pid>15271</pid>
+<ppid>12581</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -35,7 +35,7 @@
 
 <status>
   <state>RUNNING</state>
-  <time>00:00:00:00.022 </time>
+  <time>00:00:00:00.021 </time>
 </status>
 
 <fatal_signal>
@@ -146,7 +146,7 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:05:52.127 </time>
+  <time>00:00:05:27.691 </time>
 </status>
 
 <error>
@@ -27167,10 +27167,10 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0x1FFEFFF87A</ip>
+      <ip>0x1FFEFFF86E</ip>
     </frame>
     <frame>
-      <ip>0x1FFEFFF8CC</ip>
+      <ip>0x1FFEFFF8C0</ip>
     </frame>
   </stack>
 </error>
@@ -27262,10 +27262,10 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0x1FFEFFF87A</ip>
+      <ip>0x1FFEFFF86E</ip>
     </frame>
     <frame>
-      <ip>0x1FFEFFF8CC</ip>
+      <ip>0x1FFEFFF8C0</ip>
     </frame>
   </stack>
 </error>
@@ -27357,10 +27357,10 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0x1FFEFFF87A</ip>
+      <ip>0x1FFEFFF86E</ip>
     </frame>
     <frame>
-      <ip>0x1FFEFFF8CC</ip>
+      <ip>0x1FFEFFF8C0</ip>
     </frame>
   </stack>
 </error>
@@ -27452,10 +27452,10 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0x1FFEFFF87A</ip>
+      <ip>0x1FFEFFF86E</ip>
     </frame>
     <frame>
-      <ip>0x1FFEFFF8CC</ip>
+      <ip>0x1FFEFFF8C0</ip>
     </frame>
   </stack>
 </error>
@@ -29086,7 +29086,7 @@
       <line>263</line>
     </frame>
     <frame>
-      <ip>0x4C1223C</ip>
+      <ip>0x4C12257</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::vec2Hg&lt;GEO::expansion_nt&gt;::vec2Hg(GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;)</fn>
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
@@ -29141,7 +29141,113 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>40,960 bytes in 1 blocks are still reachable in loss record 327 of 359</text>
+    <text>36,864 bytes in 3 blocks are still reachable in loss record 327 of 359</text>
+    <leakedbytes>36864</leakedbytes>
+    <leakedblocks>3</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483C583</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A2C845</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::Pools::new_chunk(unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>143</line>
+    </frame>
+    <frame>
+      <ip>0x4A2C6FA</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::Pools::malloc(unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>104</line>
+    </frame>
+    <frame>
+      <ip>0x4A2EBD5</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::expansion::new_expansion_on_heap(unsigned int)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>774</line>
+    </frame>
+    <frame>
+      <ip>0x4A23582</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::expansion_nt::copy(GEO::expansion_nt const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>expansion_nt.h</file>
+      <line>636</line>
+    </frame>
+    <frame>
+      <ip>0x4A231BF</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::expansion_nt::expansion_nt(GEO::expansion_nt const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>expansion_nt.h</file>
+      <line>263</line>
+    </frame>
+    <frame>
+      <ip>0x4C1223C</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::vec2Hg&lt;GEO::expansion_nt&gt;::vec2Hg(GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>vechg.h</file>
+      <line>85</line>
+    </frame>
+    <frame>
+      <ip>0x4C12316</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt;::construct(GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>memory.h</file>
+      <line>575</line>
+    </frame>
+    <frame>
+      <ip>0x4C10814</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::enable_if&lt;std::__and_&lt;std::allocator_traits&lt;GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt; &gt;::__construct_helper&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;&gt;::type&gt;::value, void&gt;::type std::allocator_traits&lt;GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt; &gt;::_S_construct&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;&gt;(GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt;&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>alloc_traits.h</file>
+      <line>244</line>
+    </frame>
+    <frame>
+      <ip>0x4C0DA59</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>decltype (_S_construct({parm#1}, {parm#2}, (forward&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;&gt;)({parm#3}))) std::allocator_traits&lt;GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt; &gt;::construct&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;&gt;(GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt;&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>alloc_traits.h</file>
+      <line>350</line>
+    </frame>
+    <frame>
+      <ip>0x4C12106</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::vec2Hg&lt;GEO::expansion_nt&gt;* std::__uninitialized_copy_a&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt; const*, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt; &gt;(GEO::vec2Hg&lt;GEO::expansion_nt&gt; const*, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const*, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt;&amp;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>stl_uninitialized.h</file>
+      <line>293</line>
+    </frame>
+    <frame>
+      <ip>0x4C10666</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::vec2Hg&lt;GEO::expansion_nt&gt;* std::__uninitialized_move_if_noexcept_a&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt; &gt;(GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt;&amp;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>stl_uninitialized.h</file>
+      <line>329</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x147</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>40,960 bytes in 1 blocks are still reachable in loss record 328 of 359</text>
     <leakedbytes>40960</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -29243,11 +29349,11 @@
 </error>
 
 <error>
-  <unique>0x147</unique>
+  <unique>0x148</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>45,056 bytes in 1 blocks are still reachable in loss record 328 of 359</text>
+    <text>45,056 bytes in 1 blocks are still reachable in loss record 329 of 359</text>
     <leakedbytes>45056</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -29349,11 +29455,114 @@
 </error>
 
 <error>
-  <unique>0x148</unique>
+  <unique>0x149</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>49,152 bytes in 1 blocks are still reachable in loss record 329 of 359</text>
+    <text>46,752 bytes in 1 blocks are still reachable in loss record 330 of 359</text>
+    <leakedbytes>46752</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483E0F0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x483E212</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>posix_memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x498F47B</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::Memory::aligned_malloc(unsigned long, unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>memory.h</file>
+      <line>293</line>
+    </frame>
+    <frame>
+      <ip>0x49CCBC3</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::Memory::aligned_allocator&lt;double, 64&gt;::allocate(unsigned long, void const*)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>memory.h</file>
+      <line>530</line>
+    </frame>
+    <frame>
+      <ip>0x49CB2AA</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::allocator_traits&lt;GEO::Memory::aligned_allocator&lt;double, 64&gt; &gt;::allocate(GEO::Memory::aligned_allocator&lt;double, 64&gt;&amp;, unsigned long)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>alloc_traits.h</file>
+      <line>305</line>
+    </frame>
+    <frame>
+      <ip>0x49C91DA</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::_Vector_base&lt;double, GEO::Memory::aligned_allocator&lt;double, 64&gt; &gt;::_M_allocate(unsigned long)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>stl_vector.h</file>
+      <line>343</line>
+    </frame>
+    <frame>
+      <ip>0x49C92DC</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>double* std::vector&lt;double, GEO::Memory::aligned_allocator&lt;double, 64&gt; &gt;::_M_allocate_and_copy&lt;std::move_iterator&lt;double*&gt; &gt;(unsigned long, std::move_iterator&lt;double*&gt;, std::move_iterator&lt;double*&gt;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>stl_vector.h</file>
+      <line>1508</line>
+    </frame>
+    <frame>
+      <ip>0x49C6D45</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>std::vector&lt;double, GEO::Memory::aligned_allocator&lt;double, 64&gt; &gt;::reserve(unsigned long)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>vector.tcc</file>
+      <line>85</line>
+    </frame>
+    <frame>
+      <ip>0x49C56B7</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::TypedAttributeStore&lt;double&gt;::redim(unsigned int)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>attributes.h</file>
+      <line>623</line>
+    </frame>
+    <frame>
+      <ip>0x4A8F1B3</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::AttributeBase&lt;double&gt;::redim(unsigned int)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
+      <file>attributes.h</file>
+      <line>1148</line>
+    </frame>
+    <frame>
+      <ip>0x4A896C8</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshVertices::set_dimension(unsigned int)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh.h</file>
+      <line>433</line>
+    </frame>
+    <frame>
+      <ip>0x4AADB10</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CSGBuilder::linear_extrude(std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;, double, bool, GEO::vecng&lt;2u, double&gt;, unsigned int, double)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_CSG.cpp</file>
+      <line>1080</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x14a</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>49,152 bytes in 1 blocks are still reachable in loss record 331 of 359</text>
     <leakedbytes>49152</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -29455,11 +29664,11 @@
 </error>
 
 <error>
-  <unique>0x149</unique>
+  <unique>0x14b</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>49,152 bytes in 4 blocks are still reachable in loss record 330 of 359</text>
+    <text>49,152 bytes in 4 blocks are still reachable in loss record 332 of 359</text>
     <leakedbytes>49152</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -29556,215 +29765,6 @@
       <dir>/usr/include/c++/9/bits</dir>
       <file>stl_uninitialized.h</file>
       <line>329</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x14a</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>49,152 bytes in 4 blocks are still reachable in loss record 331 of 359</text>
-    <leakedbytes>49152</leakedbytes>
-    <leakedblocks>4</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483C583</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>operator new[](unsigned long)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A2C845</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::Pools::new_chunk(unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>143</line>
-    </frame>
-    <frame>
-      <ip>0x4A2C6FA</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::Pools::malloc(unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>104</line>
-    </frame>
-    <frame>
-      <ip>0x4A2EBD5</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::expansion::new_expansion_on_heap(unsigned int)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>774</line>
-    </frame>
-    <frame>
-      <ip>0x4A23582</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::expansion_nt::copy(GEO::expansion_nt const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>expansion_nt.h</file>
-      <line>636</line>
-    </frame>
-    <frame>
-      <ip>0x4A231BF</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::expansion_nt::expansion_nt(GEO::expansion_nt const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>expansion_nt.h</file>
-      <line>263</line>
-    </frame>
-    <frame>
-      <ip>0x4C12257</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::vec2Hg&lt;GEO::expansion_nt&gt;::vec2Hg(GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>vechg.h</file>
-      <line>85</line>
-    </frame>
-    <frame>
-      <ip>0x4C12316</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt;::construct(GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>memory.h</file>
-      <line>575</line>
-    </frame>
-    <frame>
-      <ip>0x4C10814</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::enable_if&lt;std::__and_&lt;std::allocator_traits&lt;GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt; &gt;::__construct_helper&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;&gt;::type&gt;::value, void&gt;::type std::allocator_traits&lt;GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt; &gt;::_S_construct&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;&gt;(GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt;&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>alloc_traits.h</file>
-      <line>244</line>
-    </frame>
-    <frame>
-      <ip>0x4C0DA59</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>decltype (_S_construct({parm#1}, {parm#2}, (forward&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;&gt;)({parm#3}))) std::allocator_traits&lt;GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt; &gt;::construct&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;&gt;(GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt;&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>alloc_traits.h</file>
-      <line>350</line>
-    </frame>
-    <frame>
-      <ip>0x4C12106</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::vec2Hg&lt;GEO::expansion_nt&gt;* std::__uninitialized_copy_a&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt; const*, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt; &gt;(GEO::vec2Hg&lt;GEO::expansion_nt&gt; const*, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const*, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt;&amp;)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>stl_uninitialized.h</file>
-      <line>293</line>
-    </frame>
-    <frame>
-      <ip>0x4C10666</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::vec2Hg&lt;GEO::expansion_nt&gt;* std::__uninitialized_move_if_noexcept_a&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt; &gt;(GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::vec2Hg&lt;GEO::expansion_nt&gt;*, GEO::Memory::aligned_allocator&lt;GEO::vec2Hg&lt;GEO::expansion_nt&gt;, 64&gt;&amp;)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>stl_uninitialized.h</file>
-      <line>329</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x14b</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>50,640 bytes in 1 blocks are still reachable in loss record 332 of 359</text>
-    <leakedbytes>50640</leakedbytes>
-    <leakedblocks>1</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483E0F0</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>memalign</fn>
-    </frame>
-    <frame>
-      <ip>0x483E212</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>posix_memalign</fn>
-    </frame>
-    <frame>
-      <ip>0x498F47B</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::Memory::aligned_malloc(unsigned long, unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>memory.h</file>
-      <line>293</line>
-    </frame>
-    <frame>
-      <ip>0x49CCBC3</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::Memory::aligned_allocator&lt;double, 64&gt;::allocate(unsigned long, void const*)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>memory.h</file>
-      <line>530</line>
-    </frame>
-    <frame>
-      <ip>0x49CB2AA</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::allocator_traits&lt;GEO::Memory::aligned_allocator&lt;double, 64&gt; &gt;::allocate(GEO::Memory::aligned_allocator&lt;double, 64&gt;&amp;, unsigned long)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>alloc_traits.h</file>
-      <line>305</line>
-    </frame>
-    <frame>
-      <ip>0x49C91DA</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::_Vector_base&lt;double, GEO::Memory::aligned_allocator&lt;double, 64&gt; &gt;::_M_allocate(unsigned long)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>stl_vector.h</file>
-      <line>343</line>
-    </frame>
-    <frame>
-      <ip>0x49C92DC</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>double* std::vector&lt;double, GEO::Memory::aligned_allocator&lt;double, 64&gt; &gt;::_M_allocate_and_copy&lt;std::move_iterator&lt;double*&gt; &gt;(unsigned long, std::move_iterator&lt;double*&gt;, std::move_iterator&lt;double*&gt;)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>stl_vector.h</file>
-      <line>1508</line>
-    </frame>
-    <frame>
-      <ip>0x49C6D45</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>std::vector&lt;double, GEO::Memory::aligned_allocator&lt;double, 64&gt; &gt;::reserve(unsigned long)</fn>
-      <dir>/usr/include/c++/9/bits</dir>
-      <file>vector.tcc</file>
-      <line>85</line>
-    </frame>
-    <frame>
-      <ip>0x49C56B7</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::TypedAttributeStore&lt;double&gt;::redim(unsigned int)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>attributes.h</file>
-      <line>623</line>
-    </frame>
-    <frame>
-      <ip>0x4A8F1B3</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::AttributeBase&lt;double&gt;::redim(unsigned int)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/basic</dir>
-      <file>attributes.h</file>
-      <line>1148</line>
-    </frame>
-    <frame>
-      <ip>0x4A896C8</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshVertices::set_dimension(unsigned int)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh.h</file>
-      <line>433</line>
-    </frame>
-    <frame>
-      <ip>0x4AADB10</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CSGBuilder::linear_extrude(std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;, double, bool, GEO::vecng&lt;2u, double&gt;, unsigned int, double)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_CSG.cpp</file>
-      <line>1080</line>
     </frame>
   </stack>
 </error>
@@ -30770,7 +30770,113 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>450,560 bytes in 1 blocks are still reachable in loss record 343 of 359</text>
+    <text>282,624 bytes in 1 blocks are still reachable in loss record 343 of 359</text>
+    <leakedbytes>282624</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483C583</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A2C845</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::Pools::new_chunk(unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>143</line>
+    </frame>
+    <frame>
+      <ip>0x4A2C6FA</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::Pools::malloc(unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>104</line>
+    </frame>
+    <frame>
+      <ip>0x4A2EBD5</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::expansion::new_expansion_on_heap(unsigned int)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>774</line>
+    </frame>
+    <frame>
+      <ip>0x4A26C24</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::expansion_nt::operator+(GEO::expansion_nt const&amp;) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>expansion_nt.cpp</file>
+      <line>113</line>
+    </frame>
+    <frame>
+      <ip>0x4BFBE9F</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshInTriangle::Vertex::init_geometry(GEO::vec3Hg&lt;GEO::expansion_nt&gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.cpp</file>
+      <line>243</line>
+    </frame>
+    <frame>
+      <ip>0x4C0808B</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshInTriangle::Vertex::Vertex(GEO::MeshInTriangle*, GEO::vec3Hg&lt;GEO::expansion_nt&gt; const&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.h</file>
+      <line>166</line>
+    </frame>
+    <frame>
+      <ip>0x4BFD8A5</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshInTriangle::create_intersection(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.cpp</file>
+      <line>552</line>
+    </frame>
+    <frame>
+      <ip>0x4C20E09</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CDTBase2d::walk_constraint_t(GEO::CDT2d_ConstraintWalker&amp;, GEO::CDTBase2d::DList&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
+      <file>CDT_2d.cpp</file>
+      <line>533</line>
+    </frame>
+    <frame>
+      <ip>0x4C20230</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CDTBase2d::find_intersected_edges(unsigned int, unsigned int, GEO::CDTBase2d::DList&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
+      <file>CDT_2d.cpp</file>
+      <line>409</line>
+    </frame>
+    <frame>
+      <ip>0x4C1FA41</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CDTBase2d::insert_constraint(unsigned int, unsigned int)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
+      <file>CDT_2d.cpp</file>
+      <line>263</line>
+    </frame>
+    <frame>
+      <ip>0x4BFC9FF</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshInTriangle::commit()</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.cpp</file>
+      <line>368</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x157</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>450,560 bytes in 1 blocks are still reachable in loss record 344 of 359</text>
     <leakedbytes>450560</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -30872,11 +30978,11 @@
 </error>
 
 <error>
-  <unique>0x157</unique>
+  <unique>0x158</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>458,752 bytes in 1 blocks are still reachable in loss record 344 of 359</text>
+    <text>458,752 bytes in 1 blocks are still reachable in loss record 345 of 359</text>
     <leakedbytes>458752</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -30978,11 +31084,11 @@
 </error>
 
 <error>
-  <unique>0x158</unique>
+  <unique>0x159</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>589,824 bytes in 3 blocks are still reachable in loss record 345 of 359</text>
+    <text>589,824 bytes in 3 blocks are still reachable in loss record 346 of 359</text>
     <leakedbytes>589824</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -31079,112 +31185,6 @@
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
       <file>mesh_surface_intersection.cpp</file>
       <line>534</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x159</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>606,208 bytes in 2 blocks are still reachable in loss record 346 of 359</text>
-    <leakedbytes>606208</leakedbytes>
-    <leakedblocks>2</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483C583</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>operator new[](unsigned long)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A2C845</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::Pools::new_chunk(unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>143</line>
-    </frame>
-    <frame>
-      <ip>0x4A2C6FA</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::Pools::malloc(unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>104</line>
-    </frame>
-    <frame>
-      <ip>0x4A2EBD5</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::expansion::new_expansion_on_heap(unsigned int)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>774</line>
-    </frame>
-    <frame>
-      <ip>0x4A26C24</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::expansion_nt::operator+(GEO::expansion_nt const&amp;) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>expansion_nt.cpp</file>
-      <line>113</line>
-    </frame>
-    <frame>
-      <ip>0x4BFBE9F</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshInTriangle::Vertex::init_geometry(GEO::vec3Hg&lt;GEO::expansion_nt&gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.cpp</file>
-      <line>243</line>
-    </frame>
-    <frame>
-      <ip>0x4C0808B</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshInTriangle::Vertex::Vertex(GEO::MeshInTriangle*, GEO::vec3Hg&lt;GEO::expansion_nt&gt; const&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.h</file>
-      <line>166</line>
-    </frame>
-    <frame>
-      <ip>0x4BFD8A5</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshInTriangle::create_intersection(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.cpp</file>
-      <line>552</line>
-    </frame>
-    <frame>
-      <ip>0x4C20E09</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CDTBase2d::walk_constraint_t(GEO::CDT2d_ConstraintWalker&amp;, GEO::CDTBase2d::DList&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
-      <file>CDT_2d.cpp</file>
-      <line>533</line>
-    </frame>
-    <frame>
-      <ip>0x4C20230</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CDTBase2d::find_intersected_edges(unsigned int, unsigned int, GEO::CDTBase2d::DList&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
-      <file>CDT_2d.cpp</file>
-      <line>409</line>
-    </frame>
-    <frame>
-      <ip>0x4C1FA41</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CDTBase2d::insert_constraint(unsigned int, unsigned int)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
-      <file>CDT_2d.cpp</file>
-      <line>263</line>
-    </frame>
-    <frame>
-      <ip>0x4BFC9FF</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshInTriangle::commit()</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.cpp</file>
-      <line>368</line>
     </frame>
   </stack>
 </error>
@@ -32254,8 +32254,8 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>4,399,104 bytes in 11 blocks are still reachable in loss record 357 of 359</text>
-    <leakedbytes>4399104</leakedbytes>
+    <text>4,276,224 bytes in 11 blocks are still reachable in loss record 357 of 359</text>
+    <leakedbytes>4276224</leakedbytes>
     <leakedblocks>11</leakedblocks>
   </xwhat>
   <stack>
@@ -32360,114 +32360,8 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>5,521,408 bytes in 15 blocks are still reachable in loss record 358 of 359</text>
-    <leakedbytes>5521408</leakedbytes>
-    <leakedblocks>15</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483C583</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>operator new[](unsigned long)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A2C845</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::Pools::new_chunk(unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>143</line>
-    </frame>
-    <frame>
-      <ip>0x4A2C6FA</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::Pools::malloc(unsigned long)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>104</line>
-    </frame>
-    <frame>
-      <ip>0x4A2EBD5</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::expansion::new_expansion_on_heap(unsigned int)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>multi_precision.cpp</file>
-      <line>774</line>
-    </frame>
-    <frame>
-      <ip>0x4A26CE0</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::expansion_nt::operator-(GEO::expansion_nt const&amp;) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>expansion_nt.cpp</file>
-      <line>121</line>
-    </frame>
-    <frame>
-      <ip>0x4A1CFAB</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::PCK::incircle_2d_SOS_with_lengths(GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, double, double, double, double)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
-      <file>exact_geometry.cpp</file>
-      <line>393</line>
-    </frame>
-    <frame>
-      <ip>0x4BFD6FE</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshInTriangle::incircle(unsigned int, unsigned int, unsigned int, unsigned int) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.cpp</file>
-      <line>531</line>
-    </frame>
-    <frame>
-      <ip>0x4C22356</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CDTBase2d::Delaunayize_vertex_neighbors(unsigned int, GEO::CDTBase2d::DList&amp;)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
-      <file>CDT_2d.cpp</file>
-      <line>684</line>
-    </frame>
-    <frame>
-      <ip>0x4C1F84A</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::CDTBase2d::insert(unsigned int, unsigned int)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
-      <file>CDT_2d.cpp</file>
-      <line>230</line>
-    </frame>
-    <frame>
-      <ip>0x4BFC79A</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshInTriangle::add_vertex(unsigned int, GEO::TriangleRegion, GEO::TriangleRegion)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.cpp</file>
-      <line>333</line>
-    </frame>
-    <frame>
-      <ip>0x4BFC8CF</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshInTriangle::add_edge(unsigned int, GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion)</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection_internal.cpp</file>
-      <line>347</line>
-    </frame>
-    <frame>
-      <ip>0x4BDA87D</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::intersect_remesh_intersections(GEO::vector&lt;GEO::IsectInfo&gt;&amp;)::{lambda(unsigned int, unsigned int)#2}::operator()(unsigned int, unsigned int) const</fn>
-      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
-      <file>mesh_surface_intersection.cpp</file>
-      <line>534</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x166</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>5,615,616 bytes in 15 blocks are still reachable in loss record 359 of 359</text>
-    <leakedbytes>5615616</leakedbytes>
+    <text>5,582,848 bytes in 15 blocks are still reachable in loss record 358 of 359</text>
+    <leakedbytes>5582848</leakedbytes>
     <leakedblocks>15</leakedblocks>
   </xwhat>
   <stack>
@@ -32555,6 +32449,112 @@
       <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
       <file>mesh_surface_intersection_internal.cpp</file>
       <line>348</line>
+    </frame>
+    <frame>
+      <ip>0x4BDA87D</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::intersect_remesh_intersections(GEO::vector&lt;GEO::IsectInfo&gt;&amp;)::{lambda(unsigned int, unsigned int)#2}::operator()(unsigned int, unsigned int) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection.cpp</file>
+      <line>534</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x166</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>6,000,640 bytes in 16 blocks are still reachable in loss record 359 of 359</text>
+    <leakedbytes>6000640</leakedbytes>
+    <leakedblocks>16</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483C583</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A2C845</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::Pools::new_chunk(unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>143</line>
+    </frame>
+    <frame>
+      <ip>0x4A2C6FA</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::Pools::malloc(unsigned long)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>104</line>
+    </frame>
+    <frame>
+      <ip>0x4A2EBD5</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::expansion::new_expansion_on_heap(unsigned int)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>multi_precision.cpp</file>
+      <line>774</line>
+    </frame>
+    <frame>
+      <ip>0x4A26CE0</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::expansion_nt::operator-(GEO::expansion_nt const&amp;) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>expansion_nt.cpp</file>
+      <line>121</line>
+    </frame>
+    <frame>
+      <ip>0x4A1CFAB</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::PCK::incircle_2d_SOS_with_lengths(GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, GEO::vec2Hg&lt;GEO::expansion_nt&gt; const&amp;, double, double, double, double)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/numerics</dir>
+      <file>exact_geometry.cpp</file>
+      <line>393</line>
+    </frame>
+    <frame>
+      <ip>0x4BFD6FE</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshInTriangle::incircle(unsigned int, unsigned int, unsigned int, unsigned int) const</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.cpp</file>
+      <line>531</line>
+    </frame>
+    <frame>
+      <ip>0x4C22356</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CDTBase2d::Delaunayize_vertex_neighbors(unsigned int, GEO::CDTBase2d::DList&amp;)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
+      <file>CDT_2d.cpp</file>
+      <line>684</line>
+    </frame>
+    <frame>
+      <ip>0x4C1F84A</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::CDTBase2d::insert(unsigned int, unsigned int)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/delaunay</dir>
+      <file>CDT_2d.cpp</file>
+      <line>230</line>
+    </frame>
+    <frame>
+      <ip>0x4BFC79A</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshInTriangle::add_vertex(unsigned int, GEO::TriangleRegion, GEO::TriangleRegion)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.cpp</file>
+      <line>333</line>
+    </frame>
+    <frame>
+      <ip>0x4BFC8CF</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshInTriangle::add_edge(unsigned int, GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion, GEO::TriangleRegion)</fn>
+      <dir>/home/runner/work/geogram/geogram/src/lib/geogram/mesh</dir>
+      <file>mesh_surface_intersection_internal.cpp</file>
+      <line>347</line>
     </frame>
     <frame>
       <ip>0x4BDA87D</ip>

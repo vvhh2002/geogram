@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/compute_CSG /home/runner/work/geogram/geogram/tests/data/CSG/example022.csg</line>
 </preamble>
 
-<pid>14476</pid>
-<ppid>12569</ppid>
+<pid>14504</pid>
+<ppid>12606</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -41,7 +41,7 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:00:05.642 </time>
+  <time>00:00:00:05.688 </time>
 </status>
 
 <error>
@@ -739,86 +739,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>32 bytes in 1 blocks are still reachable in loss record 12 of 127</text>
-    <leakedbytes>32</leakedbytes>
-    <leakedblocks>1</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483E0F0</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>memalign</fn>
-    </frame>
-    <frame>
-      <ip>0x483E212</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>posix_memalign</fn>
-    </frame>
-    <frame>
-      <ip>0x4A71B7B</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>void std::vector&lt;std::pair&lt;unsigned int, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned int, GEO::Sign&gt;, 64&gt; &gt;::_M_realloc_insert&lt;std::pair&lt;unsigned int, GEO::Sign&gt; &gt;(__gnu_cxx::__normal_iterator&lt;std::pair&lt;unsigned int, GEO::Sign&gt;*, std::vector&lt;std::pair&lt;unsigned int, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned int, GEO::Sign&gt;, 64&gt; &gt; &gt;, std::pair&lt;unsigned int, GEO::Sign&gt;&amp;&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A6720A</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::RadialSort::h_refNorient(unsigned int) const</fn>
-    </frame>
-    <frame>
-      <ip>0x4A67399</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::RadialSort::operator()(unsigned int, unsigned int) const</fn>
-    </frame>
-    <frame>
-      <ip>0x4A678C3</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>void std::__insertion_sort&lt;__gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;, __gnu_cxx::__ops::_Iter_comp_iter&lt;GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;)::{lambda(unsigned int, unsigned int)#1}&gt; &gt;(__gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;, __gnu_cxx::__ops::_Iter_comp_iter&lt;GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;)::{lambda(unsigned int, unsigned int)#1}&gt;, __gnu_cxx::__ops::_Iter_comp_iter&lt;GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;)::{lambda(unsigned int, unsigned int)#1}&gt;)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A67A15</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A67C6F</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned int, unsigned int)#2}::operator()(unsigned int, unsigned int) const</fn>
-    </frame>
-    <frame>
-      <ip>0x493237D</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::ParallelForSliceThread::run()</fn>
-    </frame>
-    <frame>
-      <ip>0x4937FE6</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::PThreadManager::run_thread(void*)</fn>
-    </frame>
-    <frame>
-      <ip>0x539F608</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
-      <fn>start_thread</fn>
-      <dir>/build/glibc-BHL3KM/glibc-2.31/nptl</dir>
-      <file>pthread_create.c</file>
-      <line>477</line>
-    </frame>
-    <frame>
-      <ip>0x52C2132</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
-      <fn>clone</fn>
-      <dir>/build/glibc-BHL3KM/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
-      <file>clone.S</file>
-      <line>95</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0xc</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>40 bytes in 1 blocks are still reachable in loss record 13 of 127</text>
+    <text>40 bytes in 1 blocks are still reachable in loss record 12 of 127</text>
     <leakedbytes>40</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -887,11 +808,11 @@
 </error>
 
 <error>
-  <unique>0xd</unique>
+  <unique>0xc</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>40 bytes in 1 blocks are still reachable in loss record 14 of 127</text>
+    <text>40 bytes in 1 blocks are still reachable in loss record 13 of 127</text>
     <leakedbytes>40</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -960,11 +881,11 @@
 </error>
 
 <error>
-  <unique>0xe</unique>
+  <unique>0xd</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>40 bytes in 1 blocks are still reachable in loss record 15 of 127</text>
+    <text>40 bytes in 1 blocks are still reachable in loss record 14 of 127</text>
     <leakedbytes>40</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1033,11 +954,11 @@
 </error>
 
 <error>
-  <unique>0xf</unique>
+  <unique>0xe</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>40 bytes in 1 blocks are still reachable in loss record 16 of 127</text>
+    <text>40 bytes in 1 blocks are still reachable in loss record 15 of 127</text>
     <leakedbytes>40</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1106,11 +1027,11 @@
 </error>
 
 <error>
-  <unique>0x11</unique>
+  <unique>0x10</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>48 bytes in 1 blocks are still reachable in loss record 18 of 127</text>
+    <text>48 bytes in 1 blocks are still reachable in loss record 17 of 127</text>
     <leakedbytes>48</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1179,11 +1100,11 @@
 </error>
 
 <error>
-  <unique>0x12</unique>
+  <unique>0x11</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>48 bytes in 1 blocks are still reachable in loss record 19 of 127</text>
+    <text>48 bytes in 1 blocks are still reachable in loss record 18 of 127</text>
     <leakedbytes>48</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1252,11 +1173,11 @@
 </error>
 
 <error>
-  <unique>0x13</unique>
+  <unique>0x12</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>49 bytes in 1 blocks are still reachable in loss record 20 of 127</text>
+    <text>49 bytes in 1 blocks are still reachable in loss record 19 of 127</text>
     <leakedbytes>49</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1285,11 +1206,11 @@
 </error>
 
 <error>
-  <unique>0x14</unique>
+  <unique>0x13</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>56 bytes in 1 blocks are still reachable in loss record 21 of 127</text>
+    <text>56 bytes in 1 blocks are still reachable in loss record 20 of 127</text>
     <leakedbytes>56</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1358,11 +1279,11 @@
 </error>
 
 <error>
-  <unique>0x15</unique>
+  <unique>0x14</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>64 bytes in 1 blocks are still reachable in loss record 22 of 127</text>
+    <text>64 bytes in 1 blocks are still reachable in loss record 21 of 127</text>
     <leakedbytes>64</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1391,11 +1312,11 @@
 </error>
 
 <error>
-  <unique>0x16</unique>
+  <unique>0x15</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>64 bytes in 1 blocks are still reachable in loss record 23 of 127</text>
+    <text>64 bytes in 1 blocks are still reachable in loss record 22 of 127</text>
     <leakedbytes>64</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1419,11 +1340,11 @@
 </error>
 
 <error>
-  <unique>0x17</unique>
+  <unique>0x16</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>64 bytes in 1 blocks are still reachable in loss record 24 of 127</text>
+    <text>64 bytes in 1 blocks are still reachable in loss record 23 of 127</text>
     <leakedbytes>64</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1452,11 +1373,11 @@
 </error>
 
 <error>
-  <unique>0x18</unique>
+  <unique>0x17</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>64 bytes in 1 blocks are still reachable in loss record 25 of 127</text>
+    <text>64 bytes in 1 blocks are still reachable in loss record 24 of 127</text>
     <leakedbytes>64</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1480,6 +1401,85 @@
       <ip>0x10C2B0</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/compute_CSG</obj>
       <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x18</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>64 bytes in 1 blocks are still reachable in loss record 25 of 127</text>
+    <leakedbytes>64</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483E0F0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x483E212</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>posix_memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x4A71B7B</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>void std::vector&lt;std::pair&lt;unsigned int, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned int, GEO::Sign&gt;, 64&gt; &gt;::_M_realloc_insert&lt;std::pair&lt;unsigned int, GEO::Sign&gt; &gt;(__gnu_cxx::__normal_iterator&lt;std::pair&lt;unsigned int, GEO::Sign&gt;*, std::vector&lt;std::pair&lt;unsigned int, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned int, GEO::Sign&gt;, 64&gt; &gt; &gt;, std::pair&lt;unsigned int, GEO::Sign&gt;&amp;&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A6720A</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::RadialSort::h_refNorient(unsigned int) const</fn>
+    </frame>
+    <frame>
+      <ip>0x4A67399</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::RadialSort::operator()(unsigned int, unsigned int) const</fn>
+    </frame>
+    <frame>
+      <ip>0x4A678C3</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>void std::__insertion_sort&lt;__gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;, __gnu_cxx::__ops::_Iter_comp_iter&lt;GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;)::{lambda(unsigned int, unsigned int)#1}&gt; &gt;(__gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;, __gnu_cxx::__ops::_Iter_comp_iter&lt;GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;)::{lambda(unsigned int, unsigned int)#1}&gt;, __gnu_cxx::__ops::_Iter_comp_iter&lt;GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;)::{lambda(unsigned int, unsigned int)#1}&gt;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A67A15</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned int*, std::vector&lt;unsigned int, GEO::Memory::aligned_allocator&lt;unsigned int, 64&gt; &gt; &gt;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A67C6F</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned int, unsigned int)#2}::operator()(unsigned int, unsigned int) const</fn>
+    </frame>
+    <frame>
+      <ip>0x493237D</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::ParallelForSliceThread::run()</fn>
+    </frame>
+    <frame>
+      <ip>0x4937FE6</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::PThreadManager::run_thread(void*)</fn>
+    </frame>
+    <frame>
+      <ip>0x539F608</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>start_thread</fn>
+      <dir>/build/glibc-BHL3KM/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x52C2132</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>clone</fn>
+      <dir>/build/glibc-BHL3KM/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>95</line>
     </frame>
   </stack>
 </error>
@@ -5153,11 +5153,11 @@
 </error>
 
 <error>
-  <unique>0x59</unique>
+  <unique>0x5a</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>480 bytes in 1 blocks are still reachable in loss record 90 of 127</text>
+    <text>480 bytes in 1 blocks are still reachable in loss record 91 of 127</text>
     <leakedbytes>480</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5226,11 +5226,11 @@
 </error>
 
 <error>
-  <unique>0x5a</unique>
+  <unique>0x5b</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>512 bytes in 2 blocks are still reachable in loss record 91 of 127</text>
+    <text>512 bytes in 2 blocks are still reachable in loss record 92 of 127</text>
     <leakedbytes>512</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -5299,11 +5299,11 @@
 </error>
 
 <error>
-  <unique>0x5b</unique>
+  <unique>0x5c</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>512 bytes in 2 blocks are still reachable in loss record 92 of 127</text>
+    <text>512 bytes in 2 blocks are still reachable in loss record 93 of 127</text>
     <leakedbytes>512</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -5372,11 +5372,11 @@
 </error>
 
 <error>
-  <unique>0x5c</unique>
+  <unique>0x5d</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>513 bytes in 1 blocks are still reachable in loss record 93 of 127</text>
+    <text>513 bytes in 1 blocks are still reachable in loss record 94 of 127</text>
     <leakedbytes>513</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7096,8 +7096,8 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>9,780 bytes in 1 blocks are still reachable in loss record 120 of 127</text>
-    <leakedbytes>9780</leakedbytes>
+    <text>9,756 bytes in 1 blocks are still reachable in loss record 120 of 127</text>
+    <leakedbytes>9756</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
   <stack>
