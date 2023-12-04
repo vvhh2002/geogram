@@ -122,8 +122,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1428,22): warning C4457: 
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1402,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1454,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1402,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-  mesh_degree3_vertices.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1490): warning C4702: unreachable code [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+  mesh_degree3_vertices.cpp
   mesh_distance.cpp
   mesh_fill_holes.cpp
   mesh_frame_field.cpp
@@ -142,13 +142,13 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1490): warning C4702: unr
   mesh_surface_intersection.cpp
   mesh_surface_intersection_internal.cpp
   mesh_tetrahedralize.cpp
+  mesh_topology.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1429,45): warning C4456: declaration of 'i' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1394,37): message : see declaration of 'i' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1449,45): warning C4456: declaration of 'i' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1394,37): message : see declaration of 'i' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1465,38): warning C4456: declaration of 'OK' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1406,34): message : see declaration of 'OK' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-  mesh_topology.cpp
   triangle_intersection.cpp
   CDT_2d.cpp
   LFS.cpp
@@ -410,8 +410,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1406,34)
   libf2c_h_abs.c
   libf2c_h_dim.c
   libf2c_h_dnnt.c
-  libf2c_h_len.c
   libf2c_h_indx.c
+  libf2c_h_len.c
   libf2c_h_mod.c
   libf2c_h_nint.c
   libf2c_h_sign.c
