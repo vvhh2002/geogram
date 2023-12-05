@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/compute_CSG /home/runner/work/geogram/geogram/tests/data/CSG/example022.csg</line>
 </preamble>
 
-<pid>14433</pid>
-<ppid>12563</ppid>
+<pid>14334</pid>
+<ppid>12490</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -41,7 +41,7 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:00:05.778 </time>
+  <time>00:00:00:05.774 </time>
 </status>
 
 <error>
@@ -1337,8 +1337,8 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>64 bytes in 4 blocks are still reachable in loss record 24 of 135</text>
-    <leakedbytes>64</leakedbytes>
+    <text>68 bytes in 4 blocks are still reachable in loss record 24 of 135</text>
+    <leakedbytes>68</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
   <stack>

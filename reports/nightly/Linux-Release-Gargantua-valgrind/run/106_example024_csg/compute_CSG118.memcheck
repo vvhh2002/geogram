@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/compute_CSG /home/runner/work/geogram/geogram/tests/data/CSG/example024.csg</line>
 </preamble>
 
-<pid>8851</pid>
-<ppid>6913</ppid>
+<pid>8919</pid>
+<ppid>6956</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -41,7 +41,7 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:04:10.972 </time>
+  <time>00:00:04:11.574 </time>
 </status>
 
 <error>
@@ -49,7 +49,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>8 bytes in 1 blocks are still reachable in loss record 2 of 128</text>
+    <text>8 bytes in 1 blocks are still reachable in loss record 2 of 131</text>
     <leakedbytes>8</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -122,7 +122,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>8 bytes in 1 blocks are still reachable in loss record 3 of 128</text>
+    <text>8 bytes in 1 blocks are still reachable in loss record 3 of 131</text>
     <leakedbytes>8</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -195,7 +195,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>8 bytes in 1 blocks are still reachable in loss record 4 of 128</text>
+    <text>8 bytes in 1 blocks are still reachable in loss record 4 of 131</text>
     <leakedbytes>8</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -268,7 +268,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>8 bytes in 1 blocks are still reachable in loss record 5 of 128</text>
+    <text>8 bytes in 1 blocks are still reachable in loss record 5 of 131</text>
     <leakedbytes>8</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -341,7 +341,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>8 bytes in 1 blocks are still reachable in loss record 6 of 128</text>
+    <text>8 bytes in 1 blocks are still reachable in loss record 6 of 131</text>
     <leakedbytes>8</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -414,7 +414,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>32 bytes in 1 blocks are still reachable in loss record 7 of 128</text>
+    <text>32 bytes in 1 blocks are still reachable in loss record 7 of 131</text>
     <leakedbytes>32</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -452,7 +452,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>32 bytes in 1 blocks are still reachable in loss record 8 of 128</text>
+    <text>32 bytes in 1 blocks are still reachable in loss record 8 of 131</text>
     <leakedbytes>32</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -525,7 +525,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>32 bytes in 1 blocks are still reachable in loss record 9 of 128</text>
+    <text>32 bytes in 1 blocks are still reachable in loss record 9 of 131</text>
     <leakedbytes>32</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -598,7 +598,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>32 bytes in 4 blocks are still reachable in loss record 10 of 128</text>
+    <text>32 bytes in 4 blocks are still reachable in loss record 10 of 131</text>
     <leakedbytes>32</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -671,7 +671,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>32 bytes in 4 blocks are still reachable in loss record 11 of 128</text>
+    <text>32 bytes in 4 blocks are still reachable in loss record 11 of 131</text>
     <leakedbytes>32</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -744,7 +744,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>40 bytes in 1 blocks are still reachable in loss record 12 of 128</text>
+    <text>40 bytes in 1 blocks are still reachable in loss record 12 of 131</text>
     <leakedbytes>40</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -817,7 +817,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>40 bytes in 1 blocks are still reachable in loss record 13 of 128</text>
+    <text>40 bytes in 1 blocks are still reachable in loss record 13 of 131</text>
     <leakedbytes>40</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -890,7 +890,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>40 bytes in 1 blocks are still reachable in loss record 14 of 128</text>
+    <text>40 bytes in 1 blocks are still reachable in loss record 14 of 131</text>
     <leakedbytes>40</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -963,7 +963,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>40 bytes in 1 blocks are still reachable in loss record 15 of 128</text>
+    <text>40 bytes in 1 blocks are still reachable in loss record 15 of 131</text>
     <leakedbytes>40</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1036,7 +1036,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>40 bytes in 1 blocks are still reachable in loss record 16 of 128</text>
+    <text>40 bytes in 1 blocks are still reachable in loss record 16 of 131</text>
     <leakedbytes>40</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1109,7 +1109,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>40 bytes in 1 blocks are still reachable in loss record 17 of 128</text>
+    <text>40 bytes in 1 blocks are still reachable in loss record 17 of 131</text>
     <leakedbytes>40</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1182,7 +1182,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>49 bytes in 1 blocks are still reachable in loss record 19 of 128</text>
+    <text>49 bytes in 1 blocks are still reachable in loss record 19 of 131</text>
     <leakedbytes>49</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1215,7 +1215,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>64 bytes in 1 blocks are still reachable in loss record 20 of 128</text>
+    <text>64 bytes in 1 blocks are still reachable in loss record 20 of 131</text>
     <leakedbytes>64</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1248,7 +1248,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>64 bytes in 1 blocks are still reachable in loss record 21 of 128</text>
+    <text>64 bytes in 1 blocks are still reachable in loss record 21 of 131</text>
     <leakedbytes>64</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1276,7 +1276,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>64 bytes in 1 blocks are still reachable in loss record 22 of 128</text>
+    <text>64 bytes in 1 blocks are still reachable in loss record 22 of 131</text>
     <leakedbytes>64</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1309,7 +1309,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>64 bytes in 1 blocks are still reachable in loss record 23 of 128</text>
+    <text>64 bytes in 1 blocks are still reachable in loss record 23 of 131</text>
     <leakedbytes>64</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1342,86 +1342,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>64 bytes in 1 blocks are still reachable in loss record 24 of 128</text>
-    <leakedbytes>64</leakedbytes>
-    <leakedblocks>1</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x483E0F0</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>memalign</fn>
-    </frame>
-    <frame>
-      <ip>0x483E212</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>posix_memalign</fn>
-    </frame>
-    <frame>
-      <ip>0x4A6EFEB</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>void std::vector&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt;::_M_realloc_insert&lt;std::pair&lt;unsigned long, GEO::Sign&gt; &gt;(__gnu_cxx::__normal_iterator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;*, std::vector&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt; &gt;, std::pair&lt;unsigned long, GEO::Sign&gt;&amp;&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A65C82</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::RadialSort::h_refNorient(unsigned long) const</fn>
-    </frame>
-    <frame>
-      <ip>0x4A65E12</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::RadialSort::operator()(unsigned long, unsigned long) const</fn>
-    </frame>
-    <frame>
-      <ip>0x4A663A5</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>void std::__insertion_sort&lt;__gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__ops::_Iter_comp_iter&lt;GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;)::{lambda(unsigned long, unsigned long)#1}&gt; &gt;(__gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__ops::_Iter_comp_iter&lt;GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;)::{lambda(unsigned long, unsigned long)#1}&gt;, __gnu_cxx::__ops::_Iter_comp_iter&lt;GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;)::{lambda(unsigned long, unsigned long)#1}&gt;)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A6650D</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A667F2</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned long, unsigned long)#6}::operator()(unsigned long, unsigned long) const</fn>
-    </frame>
-    <frame>
-      <ip>0x4929D04</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::ParallelForSliceThread::run()</fn>
-    </frame>
-    <frame>
-      <ip>0x492FA76</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
-      <fn>(anonymous namespace)::PThreadManager::run_thread(void*)</fn>
-    </frame>
-    <frame>
-      <ip>0x52C3608</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
-      <fn>start_thread</fn>
-      <dir>/build/glibc-BHL3KM/glibc-2.31/nptl</dir>
-      <file>pthread_create.c</file>
-      <line>477</line>
-    </frame>
-    <frame>
-      <ip>0x51E6132</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
-      <fn>clone</fn>
-      <dir>/build/glibc-BHL3KM/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
-      <file>clone.S</file>
-      <line>95</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x18</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>69 bytes in 3 blocks are still reachable in loss record 25 of 128</text>
+    <text>69 bytes in 3 blocks are still reachable in loss record 24 of 131</text>
     <leakedbytes>69</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -1490,11 +1411,11 @@
 </error>
 
 <error>
-  <unique>0x19</unique>
+  <unique>0x18</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>72 bytes in 1 blocks are still reachable in loss record 26 of 128</text>
+    <text>72 bytes in 1 blocks are still reachable in loss record 25 of 131</text>
     <leakedbytes>72</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1563,11 +1484,11 @@
 </error>
 
 <error>
-  <unique>0x1a</unique>
+  <unique>0x19</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>72 bytes in 1 blocks are still reachable in loss record 27 of 128</text>
+    <text>72 bytes in 1 blocks are still reachable in loss record 26 of 131</text>
     <leakedbytes>72</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1636,11 +1557,11 @@
 </error>
 
 <error>
-  <unique>0x1b</unique>
+  <unique>0x1a</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>72 bytes in 1 blocks are still reachable in loss record 28 of 128</text>
+    <text>72 bytes in 1 blocks are still reachable in loss record 27 of 131</text>
     <leakedbytes>72</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1709,11 +1630,11 @@
 </error>
 
 <error>
-  <unique>0x1c</unique>
+  <unique>0x1b</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>72 bytes in 1 blocks are still reachable in loss record 29 of 128</text>
+    <text>72 bytes in 1 blocks are still reachable in loss record 28 of 131</text>
     <leakedbytes>72</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1782,11 +1703,11 @@
 </error>
 
 <error>
-  <unique>0x1d</unique>
+  <unique>0x1c</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>72 bytes in 1 blocks are still reachable in loss record 30 of 128</text>
+    <text>72 bytes in 1 blocks are still reachable in loss record 29 of 131</text>
     <leakedbytes>72</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1855,11 +1776,11 @@
 </error>
 
 <error>
-  <unique>0x1e</unique>
+  <unique>0x1d</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>72 bytes in 1 blocks are still reachable in loss record 31 of 128</text>
+    <text>72 bytes in 1 blocks are still reachable in loss record 30 of 131</text>
     <leakedbytes>72</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -1928,11 +1849,11 @@
 </error>
 
 <error>
-  <unique>0x1f</unique>
+  <unique>0x1e</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>72 bytes in 1 blocks are still reachable in loss record 32 of 128</text>
+    <text>72 bytes in 1 blocks are still reachable in loss record 31 of 131</text>
     <leakedbytes>72</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2001,11 +1922,11 @@
 </error>
 
 <error>
-  <unique>0x20</unique>
+  <unique>0x1f</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 33 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 32 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2034,11 +1955,11 @@
 </error>
 
 <error>
-  <unique>0x21</unique>
+  <unique>0x20</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 34 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 33 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2067,11 +1988,11 @@
 </error>
 
 <error>
-  <unique>0x22</unique>
+  <unique>0x21</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 35 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 34 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2100,11 +2021,11 @@
 </error>
 
 <error>
-  <unique>0x23</unique>
+  <unique>0x22</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 36 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 35 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2133,11 +2054,11 @@
 </error>
 
 <error>
-  <unique>0x24</unique>
+  <unique>0x23</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 37 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 36 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2166,11 +2087,11 @@
 </error>
 
 <error>
-  <unique>0x25</unique>
+  <unique>0x24</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 38 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 37 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2199,11 +2120,11 @@
 </error>
 
 <error>
-  <unique>0x26</unique>
+  <unique>0x25</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 39 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 38 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2232,11 +2153,11 @@
 </error>
 
 <error>
-  <unique>0x27</unique>
+  <unique>0x26</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 40 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 39 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2265,11 +2186,11 @@
 </error>
 
 <error>
-  <unique>0x28</unique>
+  <unique>0x27</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 41 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 40 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2298,11 +2219,11 @@
 </error>
 
 <error>
-  <unique>0x29</unique>
+  <unique>0x28</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 42 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 41 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2331,11 +2252,11 @@
 </error>
 
 <error>
-  <unique>0x2a</unique>
+  <unique>0x29</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 43 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 42 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2364,11 +2285,11 @@
 </error>
 
 <error>
-  <unique>0x2b</unique>
+  <unique>0x2a</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 44 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 43 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2397,11 +2318,11 @@
 </error>
 
 <error>
-  <unique>0x2c</unique>
+  <unique>0x2b</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 45 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 44 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2430,11 +2351,11 @@
 </error>
 
 <error>
-  <unique>0x2d</unique>
+  <unique>0x2c</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 46 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 45 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2463,11 +2384,11 @@
 </error>
 
 <error>
-  <unique>0x2e</unique>
+  <unique>0x2d</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 47 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 46 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2496,11 +2417,11 @@
 </error>
 
 <error>
-  <unique>0x2f</unique>
+  <unique>0x2e</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 48 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 47 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2529,11 +2450,11 @@
 </error>
 
 <error>
-  <unique>0x30</unique>
+  <unique>0x2f</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 49 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 48 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2562,11 +2483,11 @@
 </error>
 
 <error>
-  <unique>0x31</unique>
+  <unique>0x30</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 50 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 49 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2595,11 +2516,11 @@
 </error>
 
 <error>
-  <unique>0x32</unique>
+  <unique>0x31</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 51 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 50 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2628,11 +2549,11 @@
 </error>
 
 <error>
-  <unique>0x33</unique>
+  <unique>0x32</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>80 bytes in 1 blocks are still reachable in loss record 52 of 128</text>
+    <text>80 bytes in 1 blocks are still reachable in loss record 51 of 131</text>
     <leakedbytes>80</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2661,11 +2582,11 @@
 </error>
 
 <error>
-  <unique>0x34</unique>
+  <unique>0x33</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>85 bytes in 1 blocks are still reachable in loss record 53 of 128</text>
+    <text>85 bytes in 1 blocks are still reachable in loss record 52 of 131</text>
     <leakedbytes>85</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2715,11 +2636,11 @@
 </error>
 
 <error>
-  <unique>0x35</unique>
+  <unique>0x34</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are still reachable in loss record 54 of 128</text>
+    <text>96 bytes in 1 blocks are still reachable in loss record 53 of 131</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2788,11 +2709,65 @@
 </error>
 
 <error>
+  <unique>0x35</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>96 bytes in 3 blocks are still reachable in loss record 54 of 131</text>
+    <leakedbytes>96</leakedbytes>
+    <leakedblocks>3</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483E0F0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x483E212</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>posix_memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x4A66C12</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned long, unsigned long)#6}::operator()(unsigned long, unsigned long) const</fn>
+    </frame>
+    <frame>
+      <ip>0x4929D04</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::ParallelForSliceThread::run()</fn>
+    </frame>
+    <frame>
+      <ip>0x492FA76</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::PThreadManager::run_thread(void*)</fn>
+    </frame>
+    <frame>
+      <ip>0x52C3608</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>start_thread</fn>
+      <dir>/build/glibc-BHL3KM/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x51E6132</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>clone</fn>
+      <dir>/build/glibc-BHL3KM/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>95</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
   <unique>0x36</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>104 bytes in 1 blocks are still reachable in loss record 55 of 128</text>
+    <text>104 bytes in 1 blocks are still reachable in loss record 55 of 131</text>
     <leakedbytes>104</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2865,7 +2840,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 56 of 128</text>
+    <text>128 bytes in 1 blocks are still reachable in loss record 56 of 131</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -2938,7 +2913,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 57 of 128</text>
+    <text>128 bytes in 1 blocks are still reachable in loss record 57 of 131</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3011,7 +2986,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 58 of 128</text>
+    <text>128 bytes in 1 blocks are still reachable in loss record 58 of 131</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3084,7 +3059,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 59 of 128</text>
+    <text>128 bytes in 1 blocks are still reachable in loss record 59 of 131</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3157,7 +3132,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 60 of 128</text>
+    <text>128 bytes in 1 blocks are still reachable in loss record 60 of 131</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3230,7 +3205,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 1 blocks are still reachable in loss record 61 of 128</text>
+    <text>128 bytes in 1 blocks are still reachable in loss record 61 of 131</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3303,7 +3278,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>128 bytes in 4 blocks are still reachable in loss record 62 of 128</text>
+    <text>128 bytes in 4 blocks are still reachable in loss record 62 of 131</text>
     <leakedbytes>128</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -3376,7 +3351,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>144 bytes in 2 blocks are still reachable in loss record 63 of 128</text>
+    <text>144 bytes in 2 blocks are still reachable in loss record 63 of 131</text>
     <leakedbytes>144</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -3449,7 +3424,7 @@
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>144 bytes in 1 blocks are possibly lost in loss record 64 of 128</text>
+    <text>144 bytes in 1 blocks are possibly lost in loss record 64 of 131</text>
     <leakedbytes>144</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3508,7 +3483,7 @@
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>149 bytes in 1 blocks are possibly lost in loss record 65 of 128</text>
+    <text>149 bytes in 1 blocks are possibly lost in loss record 65 of 131</text>
     <leakedbytes>149</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3586,7 +3561,7 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>160 bytes in 4 blocks are still reachable in loss record 66 of 128</text>
+    <text>160 bytes in 4 blocks are still reachable in loss record 66 of 131</text>
     <leakedbytes>160</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -3659,7 +3634,115 @@
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>216 bytes in 3 blocks are still reachable in loss record 68 of 128</text>
+    <text>192 bytes in 3 blocks are still reachable in loss record 68 of 131</text>
+    <leakedbytes>192</leakedbytes>
+    <leakedblocks>3</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x498E348</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>void std::vector&lt;std::pair&lt;unsigned long, unsigned long&gt;, std::allocator&lt;std::pair&lt;unsigned long, unsigned long&gt; &gt; &gt;::_M_realloc_insert&lt;std::pair&lt;unsigned long, unsigned long&gt; &gt;(__gnu_cxx::__normal_iterator&lt;std::pair&lt;unsigned long, unsigned long&gt;*, std::vector&lt;std::pair&lt;unsigned long, unsigned long&gt;, std::allocator&lt;std::pair&lt;unsigned long, unsigned long&gt; &gt; &gt; &gt;, std::pair&lt;unsigned long, unsigned long&gt;&amp;&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A668A4</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned long, unsigned long)#6}::operator()(unsigned long, unsigned long) const</fn>
+    </frame>
+    <frame>
+      <ip>0x4929D04</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::ParallelForSliceThread::run()</fn>
+    </frame>
+    <frame>
+      <ip>0x492FA76</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::PThreadManager::run_thread(void*)</fn>
+    </frame>
+    <frame>
+      <ip>0x52C3608</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>start_thread</fn>
+      <dir>/build/glibc-BHL3KM/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x51E6132</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>clone</fn>
+      <dir>/build/glibc-BHL3KM/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>95</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x44</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>192 bytes in 3 blocks are still reachable in loss record 69 of 131</text>
+    <leakedbytes>192</leakedbytes>
+    <leakedblocks>3</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x498E348</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>void std::vector&lt;std::pair&lt;unsigned long, unsigned long&gt;, std::allocator&lt;std::pair&lt;unsigned long, unsigned long&gt; &gt; &gt;::_M_realloc_insert&lt;std::pair&lt;unsigned long, unsigned long&gt; &gt;(__gnu_cxx::__normal_iterator&lt;std::pair&lt;unsigned long, unsigned long&gt;*, std::vector&lt;std::pair&lt;unsigned long, unsigned long&gt;, std::allocator&lt;std::pair&lt;unsigned long, unsigned long&gt; &gt; &gt; &gt;, std::pair&lt;unsigned long, unsigned long&gt;&amp;&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A66BD4</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned long, unsigned long)#6}::operator()(unsigned long, unsigned long) const</fn>
+    </frame>
+    <frame>
+      <ip>0x4929D04</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::ParallelForSliceThread::run()</fn>
+    </frame>
+    <frame>
+      <ip>0x492FA76</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::PThreadManager::run_thread(void*)</fn>
+    </frame>
+    <frame>
+      <ip>0x52C3608</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>start_thread</fn>
+      <dir>/build/glibc-BHL3KM/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x51E6132</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>clone</fn>
+      <dir>/build/glibc-BHL3KM/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>95</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x45</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>216 bytes in 3 blocks are still reachable in loss record 70 of 131</text>
     <leakedbytes>216</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -3728,11 +3811,11 @@
 </error>
 
 <error>
-  <unique>0x44</unique>
+  <unique>0x46</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>216 bytes in 3 blocks are still reachable in loss record 69 of 128</text>
+    <text>216 bytes in 3 blocks are still reachable in loss record 71 of 131</text>
     <leakedbytes>216</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -3801,11 +3884,11 @@
 </error>
 
 <error>
-  <unique>0x45</unique>
+  <unique>0x47</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>216 bytes in 3 blocks are still reachable in loss record 70 of 128</text>
+    <text>216 bytes in 3 blocks are still reachable in loss record 72 of 131</text>
     <leakedbytes>216</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -3874,11 +3957,11 @@
 </error>
 
 <error>
-  <unique>0x46</unique>
+  <unique>0x48</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>216 bytes in 3 blocks are still reachable in loss record 71 of 128</text>
+    <text>216 bytes in 3 blocks are still reachable in loss record 73 of 131</text>
     <leakedbytes>216</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -3947,11 +4030,11 @@
 </error>
 
 <error>
-  <unique>0x47</unique>
+  <unique>0x49</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>216 bytes in 3 blocks are still reachable in loss record 72 of 128</text>
+    <text>216 bytes in 3 blocks are still reachable in loss record 74 of 131</text>
     <leakedbytes>216</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -4020,11 +4103,11 @@
 </error>
 
 <error>
-  <unique>0x48</unique>
+  <unique>0x4a</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>216 bytes in 3 blocks are still reachable in loss record 73 of 128</text>
+    <text>216 bytes in 3 blocks are still reachable in loss record 75 of 131</text>
     <leakedbytes>216</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -4093,11 +4176,90 @@
 </error>
 
 <error>
-  <unique>0x49</unique>
+  <unique>0x4b</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>288 bytes in 4 blocks are still reachable in loss record 74 of 128</text>
+    <text>256 bytes in 4 blocks are still reachable in loss record 76 of 131</text>
+    <leakedbytes>256</leakedbytes>
+    <leakedblocks>4</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483E0F0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x483E212</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>posix_memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x4A6EFEB</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>void std::vector&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt;::_M_realloc_insert&lt;std::pair&lt;unsigned long, GEO::Sign&gt; &gt;(__gnu_cxx::__normal_iterator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;*, std::vector&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, GEO::Memory::aligned_allocator&lt;std::pair&lt;unsigned long, GEO::Sign&gt;, 64&gt; &gt; &gt;, std::pair&lt;unsigned long, GEO::Sign&gt;&amp;&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A65C82</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::RadialSort::h_refNorient(unsigned long) const</fn>
+    </frame>
+    <frame>
+      <ip>0x4A65E12</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::RadialSort::operator()(unsigned long, unsigned long) const</fn>
+    </frame>
+    <frame>
+      <ip>0x4A663A5</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>void std::__insertion_sort&lt;__gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__ops::_Iter_comp_iter&lt;GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;)::{lambda(unsigned long, unsigned long)#1}&gt; &gt;(__gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__ops::_Iter_comp_iter&lt;GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;)::{lambda(unsigned long, unsigned long)#1}&gt;, __gnu_cxx::__ops::_Iter_comp_iter&lt;GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;)::{lambda(unsigned long, unsigned long)#1}&gt;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A6650D</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::radial_sort(GEO::MeshSurfaceIntersection::RadialSort&amp;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;, __gnu_cxx::__normal_iterator&lt;unsigned long*, std::vector&lt;unsigned long, GEO::Memory::aligned_allocator&lt;unsigned long, 64&gt; &gt; &gt;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4A667F2</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>GEO::MeshSurfaceIntersection::build_Weiler_model()::{lambda(unsigned long, unsigned long)#6}::operator()(unsigned long, unsigned long) const</fn>
+    </frame>
+    <frame>
+      <ip>0x4929D04</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::ParallelForSliceThread::run()</fn>
+    </frame>
+    <frame>
+      <ip>0x492FA76</ip>
+      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
+      <fn>(anonymous namespace)::PThreadManager::run_thread(void*)</fn>
+    </frame>
+    <frame>
+      <ip>0x52C3608</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>start_thread</fn>
+      <dir>/build/glibc-BHL3KM/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x51E6132</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>clone</fn>
+      <dir>/build/glibc-BHL3KM/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>95</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4c</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>288 bytes in 4 blocks are still reachable in loss record 77 of 131</text>
     <leakedbytes>288</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -4166,11 +4328,11 @@
 </error>
 
 <error>
-  <unique>0x4a</unique>
+  <unique>0x4d</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>288 bytes in 4 blocks are still reachable in loss record 75 of 128</text>
+    <text>288 bytes in 4 blocks are still reachable in loss record 78 of 131</text>
     <leakedbytes>288</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -4239,11 +4401,11 @@
 </error>
 
 <error>
-  <unique>0x4b</unique>
+  <unique>0x4e</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>288 bytes in 4 blocks are still reachable in loss record 76 of 128</text>
+    <text>288 bytes in 4 blocks are still reachable in loss record 79 of 131</text>
     <leakedbytes>288</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -4312,11 +4474,11 @@
 </error>
 
 <error>
-  <unique>0x4c</unique>
+  <unique>0x4f</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>288 bytes in 4 blocks are still reachable in loss record 77 of 128</text>
+    <text>288 bytes in 4 blocks are still reachable in loss record 80 of 131</text>
     <leakedbytes>288</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -4385,11 +4547,11 @@
 </error>
 
 <error>
-  <unique>0x4d</unique>
+  <unique>0x50</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>288 bytes in 4 blocks are still reachable in loss record 78 of 128</text>
+    <text>288 bytes in 4 blocks are still reachable in loss record 81 of 131</text>
     <leakedbytes>288</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -4458,11 +4620,11 @@
 </error>
 
 <error>
-  <unique>0x4e</unique>
+  <unique>0x51</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>288 bytes in 4 blocks are still reachable in loss record 79 of 128</text>
+    <text>288 bytes in 4 blocks are still reachable in loss record 82 of 131</text>
     <leakedbytes>288</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -4531,11 +4693,11 @@
 </error>
 
 <error>
-  <unique>0x50</unique>
+  <unique>0x53</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>384 bytes in 1 blocks are still reachable in loss record 81 of 128</text>
+    <text>384 bytes in 1 blocks are still reachable in loss record 84 of 131</text>
     <leakedbytes>384</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4604,11 +4766,11 @@
 </error>
 
 <error>
-  <unique>0x51</unique>
+  <unique>0x54</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>384 bytes in 3 blocks are still reachable in loss record 82 of 128</text>
+    <text>384 bytes in 3 blocks are still reachable in loss record 85 of 131</text>
     <leakedbytes>384</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -4677,11 +4839,11 @@
 </error>
 
 <error>
-  <unique>0x52</unique>
+  <unique>0x55</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>384 bytes in 3 blocks are still reachable in loss record 83 of 128</text>
+    <text>384 bytes in 3 blocks are still reachable in loss record 86 of 131</text>
     <leakedbytes>384</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -4750,11 +4912,11 @@
 </error>
 
 <error>
-  <unique>0x53</unique>
+  <unique>0x56</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>384 bytes in 3 blocks are still reachable in loss record 84 of 128</text>
+    <text>384 bytes in 3 blocks are still reachable in loss record 87 of 131</text>
     <leakedbytes>384</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -4823,11 +4985,11 @@
 </error>
 
 <error>
-  <unique>0x54</unique>
+  <unique>0x57</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>384 bytes in 3 blocks are still reachable in loss record 85 of 128</text>
+    <text>384 bytes in 3 blocks are still reachable in loss record 88 of 131</text>
     <leakedbytes>384</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -4896,11 +5058,11 @@
 </error>
 
 <error>
-  <unique>0x55</unique>
+  <unique>0x58</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>512 bytes in 1 blocks are still reachable in loss record 86 of 128</text>
+    <text>512 bytes in 1 blocks are still reachable in loss record 89 of 131</text>
     <leakedbytes>512</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4969,11 +5131,11 @@
 </error>
 
 <error>
-  <unique>0x56</unique>
+  <unique>0x59</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>512 bytes in 1 blocks are still reachable in loss record 87 of 128</text>
+    <text>512 bytes in 1 blocks are still reachable in loss record 90 of 131</text>
     <leakedbytes>512</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5042,11 +5204,11 @@
 </error>
 
 <error>
-  <unique>0x57</unique>
+  <unique>0x5a</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>512 bytes in 4 blocks are still reachable in loss record 88 of 128</text>
+    <text>512 bytes in 4 blocks are still reachable in loss record 91 of 131</text>
     <leakedbytes>512</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -5115,11 +5277,11 @@
 </error>
 
 <error>
-  <unique>0x58</unique>
+  <unique>0x5b</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>512 bytes in 4 blocks are still reachable in loss record 89 of 128</text>
+    <text>512 bytes in 4 blocks are still reachable in loss record 92 of 131</text>
     <leakedbytes>512</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -5188,11 +5350,11 @@
 </error>
 
 <error>
-  <unique>0x59</unique>
+  <unique>0x5c</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>512 bytes in 4 blocks are still reachable in loss record 90 of 128</text>
+    <text>512 bytes in 4 blocks are still reachable in loss record 93 of 131</text>
     <leakedbytes>512</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -5261,11 +5423,11 @@
 </error>
 
 <error>
-  <unique>0x5a</unique>
+  <unique>0x5d</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>512 bytes in 4 blocks are still reachable in loss record 91 of 128</text>
+    <text>512 bytes in 4 blocks are still reachable in loss record 94 of 131</text>
     <leakedbytes>512</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -5334,11 +5496,11 @@
 </error>
 
 <error>
-  <unique>0x5b</unique>
+  <unique>0x5e</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>512 bytes in 4 blocks are still reachable in loss record 92 of 128</text>
+    <text>512 bytes in 4 blocks are still reachable in loss record 95 of 131</text>
     <leakedbytes>512</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -5407,11 +5569,11 @@
 </error>
 
 <error>
-  <unique>0x5c</unique>
+  <unique>0x5f</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>512 bytes in 4 blocks are still reachable in loss record 93 of 128</text>
+    <text>512 bytes in 4 blocks are still reachable in loss record 96 of 131</text>
     <leakedbytes>512</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -5480,11 +5642,11 @@
 </error>
 
 <error>
-  <unique>0x5d</unique>
+  <unique>0x60</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>513 bytes in 1 blocks are still reachable in loss record 94 of 128</text>
+    <text>513 bytes in 1 blocks are still reachable in loss record 97 of 131</text>
     <leakedbytes>513</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5554,11 +5716,11 @@
 </error>
 
 <error>
-  <unique>0x61</unique>
+  <unique>0x64</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>1,128 bytes in 1 blocks are still reachable in loss record 98 of 128</text>
+    <text>1,128 bytes in 1 blocks are still reachable in loss record 101 of 131</text>
     <leakedbytes>1128</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5627,11 +5789,11 @@
 </error>
 
 <error>
-  <unique>0x62</unique>
+  <unique>0x65</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>1,752 bytes in 3 blocks are still reachable in loss record 99 of 128</text>
+    <text>1,752 bytes in 3 blocks are still reachable in loss record 102 of 131</text>
     <leakedbytes>1752</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -5700,11 +5862,11 @@
 </error>
 
 <error>
-  <unique>0x64</unique>
+  <unique>0x67</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>4,512 bytes in 4 blocks are still reachable in loss record 101 of 128</text>
+    <text>4,512 bytes in 4 blocks are still reachable in loss record 104 of 131</text>
     <leakedbytes>4512</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -5773,11 +5935,11 @@
 </error>
 
 <error>
-  <unique>0x65</unique>
+  <unique>0x68</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>5,256 bytes in 3 blocks are still reachable in loss record 102 of 128</text>
+    <text>5,256 bytes in 3 blocks are still reachable in loss record 105 of 131</text>
     <leakedbytes>5256</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -5846,11 +6008,11 @@
 </error>
 
 <error>
-  <unique>0x66</unique>
+  <unique>0x69</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>14,016 bytes in 1 blocks are still reachable in loss record 103 of 128</text>
+    <text>14,016 bytes in 1 blocks are still reachable in loss record 106 of 131</text>
     <leakedbytes>14016</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5919,11 +6081,11 @@
 </error>
 
 <error>
-  <unique>0x67</unique>
+  <unique>0x6a</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>21,024 bytes in 1 blocks are still reachable in loss record 104 of 128</text>
+    <text>21,024 bytes in 1 blocks are still reachable in loss record 107 of 131</text>
     <leakedbytes>21024</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5992,11 +6154,11 @@
 </error>
 
 <error>
-  <unique>0x68</unique>
+  <unique>0x6b</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>42,048 bytes in 1 blocks are still reachable in loss record 105 of 128</text>
+    <text>42,048 bytes in 1 blocks are still reachable in loss record 108 of 131</text>
     <leakedbytes>42048</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6065,11 +6227,11 @@
 </error>
 
 <error>
-  <unique>0x69</unique>
+  <unique>0x6c</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>42,048 bytes in 3 blocks are still reachable in loss record 106 of 128</text>
+    <text>42,048 bytes in 3 blocks are still reachable in loss record 109 of 131</text>
     <leakedbytes>42048</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -6138,11 +6300,11 @@
 </error>
 
 <error>
-  <unique>0x6a</unique>
+  <unique>0x6d</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>42,048 bytes in 3 blocks are still reachable in loss record 107 of 128</text>
+    <text>42,048 bytes in 3 blocks are still reachable in loss record 110 of 131</text>
     <leakedbytes>42048</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -6211,11 +6373,11 @@
 </error>
 
 <error>
-  <unique>0x6b</unique>
+  <unique>0x6e</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>42,048 bytes in 3 blocks are still reachable in loss record 108 of 128</text>
+    <text>42,048 bytes in 3 blocks are still reachable in loss record 111 of 131</text>
     <leakedbytes>42048</leakedbytes>
     <leakedblocks>3</leakedblocks>
   </xwhat>
@@ -6284,11 +6446,11 @@
 </error>
 
 <error>
-  <unique>0x6c</unique>
+  <unique>0x6f</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>59,217 bytes in 1 blocks are still reachable in loss record 109 of 128</text>
+    <text>59,217 bytes in 1 blocks are still reachable in loss record 112 of 131</text>
     <leakedbytes>59217</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6327,11 +6489,11 @@
 </error>
 
 <error>
-  <unique>0x6d</unique>
+  <unique>0x70</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>63,072 bytes in 1 blocks are still reachable in loss record 110 of 128</text>
+    <text>63,072 bytes in 1 blocks are still reachable in loss record 113 of 131</text>
     <leakedbytes>63072</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6400,11 +6562,11 @@
 </error>
 
 <error>
-  <unique>0x6e</unique>
+  <unique>0x71</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>63,072 bytes in 1 blocks are still reachable in loss record 111 of 128</text>
+    <text>63,072 bytes in 1 blocks are still reachable in loss record 114 of 131</text>
     <leakedbytes>63072</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6473,11 +6635,11 @@
 </error>
 
 <error>
-  <unique>0x6f</unique>
+  <unique>0x72</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>65,536 bytes in 1 blocks are still reachable in loss record 112 of 128</text>
+    <text>65,536 bytes in 1 blocks are still reachable in loss record 115 of 131</text>
     <leakedbytes>65536</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6506,11 +6668,11 @@
 </error>
 
 <error>
-  <unique>0x70</unique>
+  <unique>0x73</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>131,072 bytes in 1 blocks are still reachable in loss record 113 of 128</text>
+    <text>131,072 bytes in 1 blocks are still reachable in loss record 116 of 131</text>
     <leakedbytes>131072</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6579,11 +6741,11 @@
 </error>
 
 <error>
-  <unique>0x71</unique>
+  <unique>0x74</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>242,848 bytes in 1 blocks are still reachable in loss record 114 of 128</text>
+    <text>242,848 bytes in 1 blocks are still reachable in loss record 117 of 131</text>
     <leakedbytes>242848</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6652,11 +6814,11 @@
 </error>
 
 <error>
-  <unique>0x72</unique>
+  <unique>0x75</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>262,144 bytes in 1 blocks are still reachable in loss record 115 of 128</text>
+    <text>262,144 bytes in 1 blocks are still reachable in loss record 118 of 131</text>
     <leakedbytes>262144</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6725,11 +6887,11 @@
 </error>
 
 <error>
-  <unique>0x73</unique>
+  <unique>0x76</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>448,512 bytes in 1 blocks are still reachable in loss record 116 of 128</text>
+    <text>448,512 bytes in 1 blocks are still reachable in loss record 119 of 131</text>
     <leakedbytes>448512</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6799,11 +6961,11 @@
 </error>
 
 <error>
-  <unique>0x74</unique>
+  <unique>0x77</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>680,160 bytes in 4 blocks are still reachable in loss record 117 of 128</text>
+    <text>680,160 bytes in 4 blocks are still reachable in loss record 120 of 131</text>
     <leakedbytes>680160</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -6872,11 +7034,11 @@
 </error>
 
 <error>
-  <unique>0x75</unique>
+  <unique>0x78</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>1,345,536 bytes in 1 blocks are still reachable in loss record 118 of 128</text>
+    <text>1,345,536 bytes in 1 blocks are still reachable in loss record 121 of 131</text>
     <leakedbytes>1345536</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6946,11 +7108,11 @@
 </error>
 
 <error>
-  <unique>0x76</unique>
+  <unique>0x79</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>1,813,760 bytes in 4 blocks are still reachable in loss record 119 of 128</text>
+    <text>1,813,760 bytes in 4 blocks are still reachable in loss record 122 of 131</text>
     <leakedbytes>1813760</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -7019,11 +7181,11 @@
 </error>
 
 <error>
-  <unique>0x77</unique>
+  <unique>0x7a</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>1,813,760 bytes in 4 blocks are still reachable in loss record 120 of 128</text>
+    <text>1,813,760 bytes in 4 blocks are still reachable in loss record 123 of 131</text>
     <leakedbytes>1813760</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -7092,11 +7254,11 @@
 </error>
 
 <error>
-  <unique>0x78</unique>
+  <unique>0x7b</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>2,059,488 bytes in 28,604 blocks are still reachable in loss record 121 of 128</text>
+    <text>2,059,488 bytes in 28,604 blocks are still reachable in loss record 124 of 131</text>
     <leakedbytes>2059488</leakedbytes>
     <leakedblocks>28604</leakedblocks>
   </xwhat>
@@ -7156,11 +7318,11 @@
 </error>
 
 <error>
-  <unique>0x79</unique>
+  <unique>0x7c</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>2,219,200 bytes in 1 blocks are still reachable in loss record 122 of 128</text>
+    <text>2,219,200 bytes in 1 blocks are still reachable in loss record 125 of 131</text>
     <leakedbytes>2219200</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7229,11 +7391,11 @@
 </error>
 
 <error>
-  <unique>0x7a</unique>
+  <unique>0x7d</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>4,194,304 bytes in 1 blocks are still reachable in loss record 123 of 128</text>
+    <text>4,194,304 bytes in 1 blocks are still reachable in loss record 126 of 131</text>
     <leakedbytes>4194304</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7302,11 +7464,11 @@
 </error>
 
 <error>
-  <unique>0x7b</unique>
+  <unique>0x7e</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>5,315,136 bytes in 1 blocks are still reachable in loss record 124 of 128</text>
+    <text>5,315,136 bytes in 1 blocks are still reachable in loss record 127 of 131</text>
     <leakedbytes>5315136</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7375,11 +7537,11 @@
 </error>
 
 <error>
-  <unique>0x7c</unique>
+  <unique>0x7f</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>5,441,280 bytes in 4 blocks are still reachable in loss record 125 of 128</text>
+    <text>5,441,280 bytes in 4 blocks are still reachable in loss record 128 of 131</text>
     <leakedbytes>5441280</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -7448,11 +7610,11 @@
 </error>
 
 <error>
-  <unique>0x7d</unique>
+  <unique>0x80</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>8,388,608 bytes in 1 blocks are still reachable in loss record 126 of 128</text>
+    <text>8,388,608 bytes in 1 blocks are still reachable in loss record 129 of 131</text>
     <leakedbytes>8388608</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7507,11 +7669,11 @@
 </error>
 
 <error>
-  <unique>0x7e</unique>
+  <unique>0x81</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>8,585,216 bytes in 4 blocks are still reachable in loss record 127 of 128</text>
+    <text>8,585,216 bytes in 4 blocks are still reachable in loss record 130 of 131</text>
     <leakedbytes>8585216</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
@@ -7580,11 +7742,11 @@
 </error>
 
 <error>
-  <unique>0x7f</unique>
+  <unique>0x82</unique>
   <tid>1</tid>
   <kind>Leak_StillReachable</kind>
   <xwhat>
-    <text>8,585,216 bytes in 4 blocks are still reachable in loss record 128 of 128</text>
+    <text>8,585,216 bytes in 4 blocks are still reachable in loss record 131 of 131</text>
     <leakedbytes>8585216</leakedbytes>
     <leakedblocks>4</leakedblocks>
   </xwhat>
