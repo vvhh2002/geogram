@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/compute_CSG /home/runner/work/geogram/geogram/tests/data/CSG/example021.csg</line>
 </preamble>
 
-<pid>14309</pid>
-<ppid>12490</ppid>
+<pid>14359</pid>
+<ppid>12529</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -41,7 +41,7 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:00:22.241 </time>
+  <time>00:00:00:22.339 </time>
 </status>
 
 <error>
@@ -60,12 +60,12 @@
       <fn>operator new[](unsigned long)</fn>
     </frame>
     <frame>
-      <ip>0x49BA0B3</ip>
+      <ip>0x49BA1D3</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::CSGCompiler::compile_string(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
     </frame>
     <frame>
-      <ip>0x49BA5C5</ip>
+      <ip>0x49BA6E5</ip>
       <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.8.7-rc</obj>
       <fn>GEO::CSGCompiler::compile_file(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
     </frame>
