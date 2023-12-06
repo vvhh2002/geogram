@@ -90,10 +90,12 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1402,56): message : see d
   mesh_surface_intersection_internal.cpp
   mesh_tetrahedralize.cpp
   mesh_topology.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1284,38): warning C4456: declaration of 'OK' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1227,34): message : see declaration of 'OK' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1972,29): warning C4456: declaration of 'f' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1935,21): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1221,38): warning C4456: declaration of 'OK' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1188,34): message : see declaration of 'OK' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1556,34): warning C4456: declaration of 'OK' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1523,30): message : see declaration of 'OK' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(2044,29): warning C4456: declaration of 'f' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(2007,21): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   triangle_intersection.cpp
   CDT_2d.cpp
   LFS.cpp

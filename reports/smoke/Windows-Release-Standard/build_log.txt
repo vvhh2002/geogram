@@ -26,8 +26,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   gzwrite.c
   inffast.c
   inflate.c
-  trees.c
   inftrees.c
+  trees.c
   uncompr.c
   zutil.c
   lapi.c
@@ -115,10 +115,10 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   mesh.cpp
   mesh_AABB.cpp
   mesh_CSG.cpp
-  mesh_baking.cpp
-  mesh_compare.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1428,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+  mesh_baking.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1402,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+  mesh_compare.cpp
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1454,22): warning C4457: declaration of 'scope' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
 D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1402,56): message : see declaration of 'scope' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_decimate.cpp
@@ -141,18 +141,13 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1402,56): message : see d
   mesh_surface_intersection.cpp
   mesh_surface_intersection_internal.cpp
   mesh_tetrahedralize.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1284,38): warning C4456: declaration of 'OK' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1227,34): message : see declaration of 'OK' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1972,29): warning C4456: declaration of 'f' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1935,21): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1221,38): warning C4456: declaration of 'OK' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1188,34): message : see declaration of 'OK' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1556,34): warning C4456: declaration of 'OK' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1523,30): message : see declaration of 'OK' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(2044,29): warning C4456: declaration of 'f' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(2007,21): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_topology.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include\utility(270,61): warning C4267: 'initializing': conversion from 'size_t' to '_Ty2', possible loss of data [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-          with
-          [
-              _Ty2=GEO::index_t
-          ] (compiling source file D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp)
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1198,51): message : see reference to function template instantiation 'std::pair<GEO::index_t,GEO::index_t>::pair<unsigned int,unsigned __int64,0>(std::pair<unsigned int,unsigned __int64> &&) noexcept' being compiled [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1197,65): message : see the first reference to 'std::pair<GEO::index_t,GEO::index_t>::pair' in 'GEO::MeshSurfaceIntersection::build_Weiler_model::<lambda_ff70bc9ae121730bd332c3ec2f95ace1>::operator ()' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   triangle_intersection.cpp
   CDT_2d.cpp
   LFS.cpp
@@ -914,8 +909,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1197,65)
   sgsrfs.c
   sgssv.c
   sgssvx.c
-  sgstrf.c
   sgstrs.c
+  sgstrf.c
   slacon2.c
   slangs.c
   slaqgs.c
