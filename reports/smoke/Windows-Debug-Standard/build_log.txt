@@ -142,10 +142,10 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_CSG.cpp(1500): warning C4702: unr
   mesh_surface_intersection.cpp
   mesh_surface_intersection_internal.cpp
   mesh_tetrahedralize.cpp
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1447,34): warning C4456: declaration of 'OK' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1411,30): message : see declaration of 'OK' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1989,29): warning C4456: declaration of 'f' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
-D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1952,21): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1449,34): warning C4456: declaration of 'OK' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1413,30): message : see declaration of 'OK' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1992,29): warning C4456: declaration of 'f' hides previous local declaration [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1955,21): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   mesh_topology.cpp
   triangle_intersection.cpp
   CDT_2d.cpp
@@ -896,8 +896,8 @@ D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection.cpp(1952,21)
   qselect.c
   relax_snode.c
   scolumn_bmod.c
-  scolumn_dfs.c
   scomplex.c
+  scolumn_dfs.c
   scopy_to_ucol.c
   scsum1.c
   sdiagonal.c
