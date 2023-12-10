@@ -138,6 +138,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   mesh_surface_intersection_internal.cpp
   mesh_tetrahedralize.cpp
   mesh_topology.cpp
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp(1072,25): warning C4457: declaration of 'f' hides function parameter [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
+D:\a\geogram\geogram\src\lib\geogram\mesh\mesh_surface_intersection_internal.cpp(1045,38): message : see declaration of 'f' [D:\a\geogram\geogram\build\Windows\src\lib\geogram\geogram.vcxproj]
   triangle_intersection.cpp
   CDT_2d.cpp
   LFS.cpp
@@ -464,8 +466,8 @@ MSBuild version 17.8.3+195e7f5a3 for .NET Framework
   libf2c_r_tan.c
   libf2c_r_tanh.c
   libf2c_rdfmt.c
-  libf2c_rsfe.c
   libf2c_rewind.c
+  libf2c_rsfe.c
   libf2c_rsli.c
   libf2c_rsne.c
   libf2c_s_cat.c
